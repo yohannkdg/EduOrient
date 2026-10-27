@@ -1,0 +1,2708 @@
+[
+  {
+    "id": 1,
+    "name": "Établissement de démonstration A",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "CEPE",
+      "BEPC"
+    ],
+    "programs": [
+      "Collège",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Adresse à vérifier",
+    "phone": "",
+    "admission": [
+      "Vérifier les conditions auprès de l'établissement",
+      "Confirmer les pièces du dossier d'inscription"
+    ],
+    "description": "Fiche exemple pour découvrir les informations d'un établissement.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 2,
+    "name": "Établissement de démonstration B",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "BEPC"
+    ],
+    "programs": [
+      "Lycée",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Adresse à vérifier",
+    "phone": "",
+    "admission": [
+      "Vérifier les conditions d'affectation",
+      "Confirmer les modalités d'inscription"
+    ],
+    "description": "Exemple de fiche pour un établissement secondaire.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 3,
+    "name": "Établissement de démonstration C",
+    "city": "Yamoussoukro",
+    "type": "Privé",
+    "diplomas": [
+      "BAC"
+    ],
+    "programs": [
+      "Informatique",
+      "Gestion"
+    ],
+    "price": null,
+    "address": "Adresse à vérifier",
+    "phone": "",
+    "admission": [
+      "Confirmer les diplômes acceptés",
+      "Demander les frais et les conditions d'admission"
+    ],
+    "description": "Exemple de fiche pour une formation supérieure.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 4,
+    "name": "Établissement de démonstration D",
+    "city": "Bouaké",
+    "type": "Public",
+    "diplomas": [
+      "BAC"
+    ],
+    "programs": [
+      "Université",
+      "Sciences"
+    ],
+    "price": null,
+    "address": "Adresse à vérifier",
+    "phone": "",
+    "admission": [
+      "Vérifier les conditions d'accès à la formation",
+      "Confirmer la procédure d'inscription"
+    ],
+    "description": "Exemple de fiche pour une orientation universitaire.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 5,
+    "name": "Établissement de démonstration E",
+    "city": "San Pedro",
+    "type": "Privé",
+    "diplomas": [
+      "BEPC",
+      "BAC"
+    ],
+    "programs": [
+      "Gestion",
+      "Commerce"
+    ],
+    "price": null,
+    "address": "Adresse à vérifier",
+    "phone": "",
+    "admission": [
+      "Demander la liste des pièces du dossier",
+      "Vérifier les frais auprès de l'établissement"
+    ],
+    "description": "Exemple de fiche pour explorer plusieurs filières.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 6,
+    "name": "Établissement de démonstration F",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "BAC"
+    ],
+    "programs": [
+      "Informatique",
+      "Réseaux"
+    ],
+    "price": null,
+    "address": "Adresse à vérifier",
+    "phone": "",
+    "admission": [
+      "Confirmer les diplômes requis",
+      "Demander les modalités d'admission"
+    ],
+    "description": "Exemple de fiche pour une formation technique.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 7,
+    "name": "Bordeaux École de Management (BEM Abidjan)",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "BAC"
+    ],
+    "programs": [
+      "Enseignement supérieur"
+    ],
+    "price": null,
+    "address": "Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Vérifier les formations disponibles auprès de l'établissement",
+      "Confirmer les conditions d'admission et les frais de scolarité"
+    ],
+    "description": "Établissement privé d'enseignement supérieur répertorié par le MESRS. Les formations, les conditions d'admission et les frais doivent être confirmés auprès de l'établissement.",
+    "image": "images/bem.jpg",
+    "feesByLevel": [
+      {
+        "level": "Bachelor",
+        "academicYear": "2026-2027",
+        "registrationFee": null,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "status": "Tarifs à confirmer auprès de BEM",
+        "source": "https://bem.ci/",
+        "verified": false
+      },
+      {
+        "level": "Master / Programme Grande École",
+        "academicYear": "2026-2027",
+        "registrationFee": null,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "status": "Tarifs à confirmer auprès de BEM",
+        "source": "https://bem.ci/",
+        "verified": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Université de San Pedro",
+    "city": "San Pedro",
+    "type": "Public",
+    "diplomas": [
+      "BAC"
+    ],
+    "programs": [
+      "Enseignement supérieur"
+    ],
+    "price": null,
+    "address": "San Pedro, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Vérifier les conditions d'orientation auprès du MESRS",
+      "Confirmer les formations disponibles et les modalités d'admission"
+    ],
+    "description": "Université publique située à San Pedro, en Côte d'Ivoire. Les formations et conditions d'admission doivent être vérifiées auprès des sources officielles.",
+    "image": "images/universite-san-pedro.jpg",
+    "feesByLevel": [
+      {
+        "level": "Licence",
+        "academicYear": "2026-2027",
+        "registrationFee": null,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "status": "Montants à confirmer auprès de l'université",
+        "source": "https://www.usp.edu.ci/",
+        "verified": false
+      },
+      {
+        "level": "Master",
+        "academicYear": "2026-2027",
+        "registrationFee": null,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "status": "Montants à confirmer auprès de l'université",
+        "source": "https://www.usp.edu.ci/",
+        "verified": false
+      },
+      {
+        "level": "Concours commun génie civil et génie naval",
+        "academicYear": "2026",
+        "registrationFee": 20000,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "otherFees": {
+          "dossier": 3000,
+          "photo": 1000
+        },
+        "status": "Frais du concours 2026 uniquement",
+        "source": "https://usp.edu.ci/",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Lycée Municipal 2 de Koumassi",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "BAC"
+    ],
+    "programs": [
+      "Lycée",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Koumassi, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Vérifier les conditions d'affectation auprès du ministère",
+      "Confirmer les classes et les séries disponibles auprès du lycée"
+    ],
+    "description": "Lycée public situé à Koumassi, Abidjan. Les séries disponibles et les modalités d'affectation restent à confirmer.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 10,
+    "name": "EPP Cocody Sud",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "CEPE"
+    ],
+    "programs": [
+      "Primaire"
+    ],
+    "price": null,
+    "address": "Cocody, derrière l'hôtel communal, Abidjan",
+    "phone": "",
+    "admission": [
+      "Confirmer les conditions d'inscription auprès de l'école",
+      "Demander la liste des pièces nécessaires"
+    ],
+    "description": "École primaire publique située dans la commune de Cocody à Abidjan. Les modalités d'inscription et les informations pratiques restent à confirmer auprès de l'établissement.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 11,
+    "name": "Lycée Classique d'Abidjan",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "BAC"
+    ],
+    "programs": [
+      "Lycée",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Avenue Aka, quartier des Ambassades, Cocody, Abidjan",
+    "phone": "",
+    "admission": [
+      "Vérifier les conditions d'affectation et d'inscription auprès du lycée",
+      "Confirmer les séries et les classes disponibles"
+    ],
+    "description": "Lycée public situé à Cocody, Abidjan. Consulter le site officiel pour les informations sur les inscriptions et les conditions d'admission.",
+    "image": "images/lycee-classique.jpg",
+    "feesByLevel": []
+  },
+  {
+    "id": 12,
+    "name": "Lycée Moderne de Cocody Angré",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "BAC"
+    ],
+    "programs": [
+      "Lycée",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Angré, Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Vérifier les conditions d'affectation auprès du ministère",
+      "Confirmer les classes et les séries disponibles auprès du lycée"
+    ],
+    "description": "Lycée public situé dans le secteur d'Angré à Cocody. Les séries proposées et les modalités d'admission doivent être confirmées auprès de l'établissement.",
+    "image": "images/lycee-moderne-cocody-angre.jpg",
+    "feesByLevel": []
+  },
+  {
+    "id": 13,
+    "name": "Collège Moderne de Cocody",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "BEPC"
+    ],
+    "programs": [
+      "Collège",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Vérifier les conditions d'affectation auprès du ministère",
+      "Confirmer les classes disponibles auprès du collège"
+    ],
+    "description": "Collège public répertorié à Cocody, Abidjan. Les coordonnées précises et les modalités d'affectation doivent être confirmées auprès de l'établissement.",
+    "image": "images/college-moderne-cocody.jpg",
+    "feesByLevel": []
+  },
+  {
+    "id": 14,
+    "name": "Collège Les Florianes",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "BEPC"
+    ],
+    "programs": [
+      "Collège",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Cocody Angré Château, Abidjan, Côte d'Ivoire",
+    "phone": "+225 42 78 78 01",
+    "admission": [
+      "Contacter l'établissement pour connaître les conditions d'admission",
+      "Confirmer les pièces à fournir auprès de l'administration"
+    ],
+    "description": "Établissement privé situé dans le secteur de Cocody Angré Château. Les niveaux proposés et les conditions d'inscription sont à confirmer auprès de l'établissement.",
+    "image": "images/college-les-florianes.jpg",
+    "feesByLevel": []
+  },
+  {
+    "id": 15,
+    "name": "Lycée Sainte-Marie de Cocody",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "BAC"
+    ],
+    "programs": [
+      "Collège",
+      "Lycée",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Rue Sainte-Marie, Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "+225 27 22 44 09 65",
+    "admission": [
+      "Se renseigner auprès de l'administration sur les modalités d'affectation",
+      "Confirmer les documents requis pour l'inscription"
+    ],
+    "description": "Établissement secondaire public de jeunes filles situé à Cocody. Les conditions d'admission et les modalités d'inscription doivent être confirmées auprès de l'administration.",
+    "image": "images/lycee-sainte-marie-cocody.jpg",
+    "feesByLevel": []
+  },
+  {
+    "id": 16,
+    "name": "EPP Cocody Sud 1",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "CEPE"
+    ],
+    "programs": [
+      "Primaire"
+    ],
+    "price": null,
+    "address": "Cocody Sud, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Se renseigner auprès de l'administration pour l'inscription",
+      "Confirmer les documents nécessaires et les modalités d'affectation"
+    ],
+    "description": "École primaire publique de Cocody. Les informations précises sur les inscriptions et les niveaux disponibles sont à confirmer auprès de l'établissement.",
+    "image": "images/epp-cocody-sud-1.jpg",
+    "feesByLevel": []
+  },
+  {
+    "id": 17,
+    "name": "Groupe Scolaire Shalom",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "CEPE",
+      "BEPC"
+    ],
+    "programs": [
+      "Maternelle",
+      "Primaire",
+      "Collège"
+    ],
+    "price": null,
+    "address": "Boulevard des Martyrs, Deux-Plateaux, Cocody, Abidjan",
+    "phone": "+225 08 73 73 73",
+    "admission": [
+      "Contacter l'administration pour connaître les places disponibles",
+      "Demander la liste des pièces nécessaires à l'inscription",
+      "Confirmer les frais d'inscription et de scolarité"
+    ],
+    "description": "Établissement scolaire privé situé aux Deux-Plateaux, à Cocody. Les niveaux proposés, les frais et les modalités d'inscription sont à confirmer auprès de l'administration.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 18,
+    "name": "EPP Deux-Plateaux Nord 1",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "CEPE"
+    ],
+    "programs": [
+      "Primaire"
+    ],
+    "price": null,
+    "address": "Deux-Plateaux Nord, Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Se renseigner auprès de l'administration pour l'inscription",
+      "Confirmer les documents nécessaires et les modalités d'affectation"
+    ],
+    "description": "École primaire publique située dans le secteur des Deux-Plateaux Nord à Cocody. Les informations détaillées sur les inscriptions sont à confirmer auprès de l'administration.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 19,
+    "name": "EPP Aghien II Plateaux",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "CEPE"
+    ],
+    "programs": [
+      "Primaire"
+    ],
+    "price": null,
+    "address": "Deux-Plateaux Aghien, Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Contacter l'administration pour connaître les modalités d'inscription",
+      "Confirmer les documents nécessaires auprès de l'école"
+    ],
+    "description": "École primaire publique située dans le secteur des Deux-Plateaux Aghien à Cocody. Les modalités d'inscription sont à confirmer auprès de l'administration.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 20,
+    "name": "EPP Angré 1",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "CEPE"
+    ],
+    "programs": [
+      "Primaire"
+    ],
+    "price": null,
+    "address": "C226+832, L 150, Angré, Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Contacter l'administration pour connaître les modalités d'inscription",
+      "Confirmer les documents nécessaires auprès de l'école"
+    ],
+    "description": "École primaire publique située dans le secteur d'Angré à Cocody. Les modalités d'inscription et les informations administratives sont à confirmer auprès de l'établissement.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 21,
+    "name": "Lycée Moderne de Cocody",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "BAC"
+    ],
+    "programs": [
+      "Collège",
+      "Lycée",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Se renseigner sur les conditions d'affectation auprès des services compétents",
+      "Confirmer les pièces à fournir auprès de l'administration"
+    ],
+    "description": "Établissement public d'enseignement secondaire situé à Cocody, Abidjan. Les séries proposées et les modalités d'inscription sont à confirmer auprès de l'administration.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 22,
+    "name": "Lycée Technique d'Abidjan",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "BAC"
+    ],
+    "programs": [
+      "Lycée technique",
+      "Enseignement technique",
+      "Formation professionnelle"
+    ],
+    "price": null,
+    "address": "Rue du Lycée Technique, Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "+225 27 21 30 45 55",
+    "admission": [
+      "Consulter les conditions officielles d'admission",
+      "Vérifier les filières disponibles et les critères d'orientation",
+      "Confirmer les pièces à fournir auprès de l'administration"
+    ],
+    "description": "Établissement d'enseignement technique et professionnel situé à Cocody, Abidjan. Les filières disponibles et les conditions d'admission sont à confirmer auprès de l'administration.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 23,
+    "name": "Lycée Moderne de Treichville",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "BAC"
+    ],
+    "programs": [
+      "Collège",
+      "Lycée",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Avenue Gabriel Dadie, boulevard Mamadou Konaté, Treichville, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Se renseigner sur les conditions d'affectation",
+      "Confirmer les niveaux et les séries disponibles",
+      "Demander les documents nécessaires à l'inscription"
+    ],
+    "description": "Établissement public d'enseignement secondaire situé à Treichville, Abidjan. Les niveaux, les séries et les modalités d'inscription sont à confirmer auprès de l'administration.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 24,
+    "name": "Lycée Moderne Harris d'Adjamé",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "BAC"
+    ],
+    "programs": [
+      "Collège",
+      "Lycée",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Saint-Michel, Adjamé, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Se renseigner sur les conditions d'affectation",
+      "Confirmer les niveaux et les séries disponibles",
+      "Demander les documents nécessaires à l'inscription"
+    ],
+    "description": "Établissement public d'enseignement secondaire situé dans le secteur Saint-Michel à Adjamé. Les niveaux et les modalités d'inscription sont à confirmer auprès de l'administration.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 25,
+    "name": "Lycée Moderne Amagou Victor de Marcory",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "BAC"
+    ],
+    "programs": [
+      "Collège",
+      "Lycée",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Remblai, Marcory, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Se renseigner sur les conditions officielles d'affectation",
+      "Confirmer les niveaux et les séries disponibles",
+      "Demander la liste des documents nécessaires à l'inscription"
+    ],
+    "description": "Établissement public secondaire situé dans le secteur des Remblai à Marcory, Abidjan. Les niveaux proposés et les modalités d'inscription sont à confirmer auprès de l'administration.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 26,
+    "name": "Lycée Moderne de Koumassi",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "BAC"
+    ],
+    "programs": [
+      "Collège",
+      "Lycée",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Boulevard du 7 Décembre, Koumassi, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Se renseigner sur les conditions officielles d'affectation",
+      "Confirmer les niveaux et les séries disponibles",
+      "Demander les documents nécessaires à l'inscription"
+    ],
+    "description": "Établissement public d'enseignement secondaire situé à Koumassi, Abidjan. Les séries disponibles et les modalités d'inscription sont à confirmer auprès de l'administration.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 27,
+    "name": "Lycée Professionnel et Commercial de Cocody",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "BT",
+      "BTS"
+    ],
+    "programs": [
+      "Enseignement technique",
+      "Formation professionnelle",
+      "Commerce",
+      "Gestion",
+      "Logistique"
+    ],
+    "price": null,
+    "address": "Danga, Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Consulter les conditions officielles d'admission",
+      "Vérifier les filières et les diplômes proposés cette année",
+      "Demander les pièces nécessaires à l'inscription"
+    ],
+    "description": "Établissement public d'enseignement professionnel et commercial situé à Cocody, Abidjan. Les filières ouvertes et les conditions d'admission sont à confirmer auprès de l'administration.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 28,
+    "name": "Collège Le Figuier de la Riviera Palmeraie",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "BEPC",
+      "BAC"
+    ],
+    "programs": [
+      "Collège",
+      "Lycée",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Riviera Palmeraie, derrière les Rosiers Programme 2, près du rond-point ADO, Cocody, Abidjan",
+    "phone": "+225 05 75 12 17 17",
+    "admission": [
+      "Contacter l'administration pour connaître les places disponibles",
+      "Demander les conditions d'admission et les documents nécessaires",
+      "Vérifier les frais de scolarité de l'année en cours"
+    ],
+    "description": "Établissement privé secondaire situé à Riviera Palmeraie, Cocody. Il prépare au BEPC et aux séries A1, A2, C et D du baccalauréat général.",
+    "image": "images/college-le-figuier.jpg",
+    "feesByLevel": []
+  },
+  {
+    "id": 29,
+    "name": "Cours Secondaire Méthodiste de Cocody",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "BEPC",
+      "BAC"
+    ],
+    "programs": [
+      "Collège",
+      "Lycée",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Boulevard de l'Université, Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "+225 22 44 59 24",
+    "admission": [
+      "Contacter l'administration pour connaître les conditions d'admission",
+      "Confirmer les niveaux et les séries disponibles",
+      "Demander la liste des documents nécessaires à l'inscription"
+    ],
+    "description": "Établissement privé d'enseignement secondaire général situé à Cocody, près du boulevard de l'Université. Les conditions d'admission et les frais de scolarité sont à confirmer auprès de l'administration.",
+    "image": "",
+    "feesByLevel": [
+      {
+        "level": "6ème",
+        "tuitionFee": 265000,
+        "period": "annuel indicatif; hors inscription et services annexes",
+        "source": "https://www.schoolfeespaylater.com/ecoles/cours-secondaire-methodiste-de-cocody",
+        "status": "Indicatif (source tierce)",
+        "verified": false,
+        "notes": "Les frais de scolarité sont indiqués comme annuels et indicatifs; inscription distincte."
+      },
+      {
+        "level": "5ème",
+        "tuitionFee": 270000,
+        "period": "annuel indicatif; hors inscription et services annexes",
+        "source": "https://www.schoolfeespaylater.com/ecoles/cours-secondaire-methodiste-de-cocody",
+        "status": "Indicatif (source tierce)",
+        "verified": false,
+        "notes": "Les frais de scolarité sont indiqués comme annuels et indicatifs; inscription distincte."
+      },
+      {
+        "level": "4ème",
+        "tuitionFee": 280000,
+        "period": "annuel indicatif; hors inscription et services annexes",
+        "source": "https://www.schoolfeespaylater.com/ecoles/cours-secondaire-methodiste-de-cocody",
+        "status": "Indicatif (source tierce)",
+        "verified": false,
+        "notes": "Les frais de scolarité sont indiqués comme annuels et indicatifs; inscription distincte."
+      },
+      {
+        "level": "3ème",
+        "tuitionFee": 290000,
+        "period": "annuel indicatif; hors inscription et services annexes",
+        "source": "https://www.schoolfeespaylater.com/ecoles/cours-secondaire-methodiste-de-cocody",
+        "status": "Indicatif (source tierce)",
+        "verified": false,
+        "notes": "Les frais de scolarité sont indiqués comme annuels et indicatifs; inscription distincte."
+      },
+      {
+        "level": "Seconde",
+        "tuitionFee": 300000,
+        "period": "annuel indicatif; hors inscription et services annexes",
+        "source": "https://www.schoolfeespaylater.com/ecoles/cours-secondaire-methodiste-de-cocody",
+        "status": "Indicatif (source tierce)",
+        "verified": false,
+        "notes": "Les frais de scolarité sont indiqués comme annuels et indicatifs; inscription distincte."
+      },
+      {
+        "level": "Première",
+        "tuitionFee": 315000,
+        "period": "annuel indicatif; hors inscription et services annexes",
+        "source": "https://www.schoolfeespaylater.com/ecoles/cours-secondaire-methodiste-de-cocody",
+        "status": "Indicatif (source tierce)",
+        "verified": false,
+        "notes": "Les frais de scolarité sont indiqués comme annuels et indicatifs; inscription distincte."
+      },
+      {
+        "level": "Terminale",
+        "tuitionFee": 325000,
+        "period": "annuel indicatif; hors inscription et services annexes",
+        "source": "https://www.schoolfeespaylater.com/ecoles/cours-secondaire-methodiste-de-cocody",
+        "status": "Indicatif (source tierce)",
+        "verified": false,
+        "notes": "Les frais de scolarité sont indiqués comme annuels et indicatifs; inscription distincte."
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Collège Saint-Viateur d'Abidjan",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "BEPC",
+      "BAC"
+    ],
+    "programs": [
+      "Collège",
+      "Lycée",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Riviera Palmeraie, Djorobité I, Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "+225 27 22 40 69 61",
+    "admission": [
+      "Contacter l'administration pour connaître les conditions d'admission",
+      "Confirmer les pièces nécessaires selon la classe demandée",
+      "Vérifier les frais de scolarité de l'année en cours"
+    ],
+    "description": "Établissement privé catholique d'enseignement secondaire situé à Riviera Palmeraie, Cocody. Il accueille des élèves du premier et du second cycle. Les conditions d'admission sont à confirmer auprès de l'administration.",
+    "image": "images/college-saint-viateur.jpg",
+    "feesByLevel": [
+      {
+        "level": "Premier cycle — élèves affectés",
+        "tuitionFee": 370000,
+        "period": "total indiqué par l'établissement; année scolaire 2025-2026 à revalider",
+        "source": "https://saintviateur.net/services/frais-scolarite",
+        "status": "Publié (à revalider)",
+        "verified": false,
+        "notes": "Le site officiel publie les totaux; les montants peuvent changer pour 2026-2027."
+      },
+      {
+        "level": "Premier cycle — élèves payants",
+        "tuitionFee": 490000,
+        "period": "total indiqué par l'établissement; année scolaire 2025-2026 à revalider",
+        "source": "https://saintviateur.net/services/frais-scolarite",
+        "status": "Publié (à revalider)",
+        "verified": false,
+        "notes": "Le site officiel publie les totaux; les montants peuvent changer pour 2026-2027."
+      },
+      {
+        "level": "Second cycle — élèves affectés",
+        "tuitionFee": 385000,
+        "period": "total indiqué par l'établissement; année scolaire 2025-2026 à revalider",
+        "source": "https://saintviateur.net/services/frais-scolarite",
+        "status": "Publié (à revalider)",
+        "verified": false,
+        "notes": "Le site officiel publie les totaux; les montants peuvent changer pour 2026-2027."
+      },
+      {
+        "level": "Second cycle — élèves payants",
+        "tuitionFee": 525000,
+        "period": "total indiqué par l'établissement; année scolaire 2025-2026 à revalider",
+        "source": "https://saintviateur.net/services/frais-scolarite",
+        "status": "Publié (à revalider)",
+        "verified": false,
+        "notes": "Le site officiel publie les totaux; les montants peuvent changer pour 2026-2027."
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Groupe Scolaire La Pérouse",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "CEPE",
+      "BEPC",
+      "BAC"
+    ],
+    "programs": [
+      "Maternelle",
+      "Primaire",
+      "Collège",
+      "Lycée",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Rosiers, Programme 4, Riviera Palmeraie, Cocody, Abidjan",
+    "phone": "+225 27 22 49 60 49",
+    "admission": [
+      "Contacter l'administration pour connaître les places disponibles",
+      "Confirmer les conditions d'admission selon la classe",
+      "Demander les frais de scolarité et les documents nécessaires"
+    ],
+    "description": "Établissement scolaire privé proposant la maternelle, le primaire, le collège et le lycée. Situé à la Riviera Palmeraie, dans le secteur des Rosiers Programme 4 à Cocody.",
+    "image": "images/college-la-perouse.jpg",
+    "feesByLevel": []
+  },
+  {
+    "id": 32,
+    "name": "Université Félix Houphouët-Boigny",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "Licence",
+      "Master",
+      "Doctorat"
+    ],
+    "programs": [
+      "Droit",
+      "Médecine",
+      "Sciences et technologies",
+      "Sciences économiques",
+      "Lettres et sciences humaines",
+      "Pharmacie",
+      "Biosciences"
+    ],
+    "price": null,
+    "address": "Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Consulter les conditions officielles d'orientation et d'admission",
+      "Vérifier les filières accessibles selon le baccalauréat obtenu",
+      "Consulter la plateforme officielle d'inscription universitaire"
+    ],
+    "description": "Université publique située à Cocody, Abidjan. Elle propose des formations dans plusieurs domaines, notamment le droit, la médecine, les sciences, l'économie et les lettres. Les conditions d'admission dépendent de la filière choisie.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 33,
+    "name": "Université Internationale de Grand-Bassam",
+    "city": "Grand-Bassam",
+    "type": "Privé",
+    "diplomas": [
+      "Bachelor",
+      "Licence"
+    ],
+    "programs": [
+      "Informatique",
+      "Science des données",
+      "Mathématiques",
+      "Intelligence artificielle",
+      "Ingénierie",
+      "Économie",
+      "Administration des affaires",
+      "Sciences politiques"
+    ],
+    "price": null,
+    "address": "Grand-Bassam, Côte d'Ivoire",
+    "phone": "+225 27 22 41 30 41",
+    "admission": [
+      "Consulter les conditions officielles d'admission",
+      "Vérifier les exigences de niveau d'anglais",
+      "Consulter les frais de scolarité et les possibilités de bourse",
+      "Confirmer les diplômes et programmes ouverts pour l'année en cours"
+    ],
+    "description": "Université proposant un enseignement de style américain en anglais, avec des formations en sciences, ingénierie, informatique, économie et administration des affaires. Les conditions d'admission et les frais sont à vérifier sur le site officiel.",
+    "image": "",
+    "feesByLevel": [
+      {
+        "level": "Bachelor",
+        "academicYear": "2026-2027",
+        "nationality": "CEDEAO",
+        "period": "Semestre",
+        "registrationFee": null,
+        "tuitionFee": 1560000,
+        "mandatoryFees": 680000,
+        "currency": "FCFA",
+        "status": "Tarif publié sur le site de l'université",
+        "source": "https://iugb.edu.ci/tuition-fees-and-financial-aid/",
+        "verified": true
+      },
+      {
+        "level": "Bachelor",
+        "academicYear": "2026-2027",
+        "nationality": "Hors CEDEAO",
+        "period": "Semestre",
+        "registrationFee": null,
+        "tuitionFee": 1728000,
+        "mandatoryFees": 680000,
+        "currency": "FCFA",
+        "status": "Tarif publié sur le site de l'université",
+        "source": "https://iugb.edu.ci/tuition-fees-and-financial-aid/",
+        "verified": true
+      },
+      {
+        "level": "University Preparatory Program (UPP)",
+        "academicYear": "2026-2027",
+        "nationality": "CEDEAO",
+        "period": "Semestre",
+        "registrationFee": null,
+        "tuitionFee": 1200000,
+        "mandatoryFees": 680000,
+        "currency": "FCFA",
+        "status": "Programme préparatoire",
+        "source": "https://iugb.edu.ci/tuition-fees-and-financial-aid/",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Université Félix Houphouët-Boigny",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "Licence",
+      "Master",
+      "Doctorat"
+    ],
+    "programs": [
+      "Sciences et technologies",
+      "Sciences médicales",
+      "Droit",
+      "Économie et gestion",
+      "Lettres et sciences humaines",
+      "Sciences de l'éducation"
+    ],
+    "price": null,
+    "address": "Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Vérifier les conditions d'orientation auprès du MESRS",
+      "Consulter les conditions d'admission de la filière choisie",
+      "Confirmer les dates et modalités d'inscription"
+    ],
+    "description": "Université publique située à Cocody, Abidjan, proposant des formations universitaires dans plusieurs domaines. Les filières ouvertes, les conditions d'admission et les frais doivent être confirmés auprès des services officiels.",
+    "image": "",
+    "feesByLevel": [
+      {
+        "level": "Licence",
+        "academicYear": "2026-2027",
+        "registrationFee": null,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "status": "Tarifs à confirmer auprès des services officiels",
+        "source": "https://scolarite-ufhb.edu.ci/",
+        "verified": false
+      },
+      {
+        "level": "Master",
+        "academicYear": "2026-2027",
+        "registrationFee": null,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "status": "Tarifs à confirmer auprès des services officiels",
+        "source": "https://scolarite-ufhb.edu.ci/",
+        "verified": false
+      },
+      {
+        "level": "Doctorat",
+        "academicYear": "2026-2027",
+        "registrationFee": null,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "status": "Tarifs à confirmer auprès des services officiels",
+        "source": "https://scolarite-ufhb.edu.ci/",
+        "verified": false
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Institut Universitaire d'Abidjan (IUA)",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "Licence",
+      "Master"
+    ],
+    "programs": [
+      "Droit",
+      "Science politique",
+      "Économie",
+      "Gestion et administration des affaires",
+      "Informatique",
+      "Sciences et technologies",
+      "Arts et lettres",
+      "Sciences humaines et sociales"
+    ],
+    "price": null,
+    "address": "II Plateaux, 7e Tranche, Rue L40, Carrefour Cascades, Cocody, Abidjan",
+    "phone": "+225 07 07 23 18 62",
+    "admission": [
+      "Consulter les conditions officielles d'admission",
+      "Vérifier les prérequis de la filière choisie",
+      "Confirmer les pièces à fournir et les frais de scolarité"
+    ],
+    "description": "Établissement privé d'enseignement supérieur situé à Cocody, Abidjan. Il propose des formations dans plusieurs domaines, notamment le droit, l'économie, la gestion, les sciences et les technologies. Les conditions d'admission varient selon la formation.",
+    "image": "images/iua-abidjan.jpg",
+    "feesByLevel": [
+      {
+        "level": "Licence 1 à 3",
+        "program": "Programmes généraux",
+        "academicYear": "À confirmer auprès de l'IUA",
+        "nationality": "Étudiant affecté par l'État",
+        "tuitionFee": 510000,
+        "registrationFee": null,
+        "currency": "FCFA",
+        "period": "Annuel",
+        "source": "https://www.iuaci.org/admissions-et-couts/",
+        "status": "Tarif affiché sur le site officiel ; année à confirmer",
+        "verified": true
+      },
+      {
+        "level": "Licence 1 à 3",
+        "program": "Programmes généraux",
+        "academicYear": "À confirmer auprès de l'IUA",
+        "nationality": "Non affecté ou international",
+        "tuitionFee": 1200000,
+        "registrationFee": null,
+        "currency": "FCFA",
+        "period": "Annuel",
+        "source": "https://www.iuaci.org/admissions-et-couts/",
+        "status": "Tarif affiché sur le site officiel ; année à confirmer",
+        "verified": true
+      },
+      {
+        "level": "Master 1",
+        "program": "Programmes généraux",
+        "academicYear": "À confirmer auprès de l'IUA",
+        "tuitionFee": 1200000,
+        "registrationFee": null,
+        "currency": "FCFA",
+        "period": "Annuel",
+        "source": "https://www.iuaci.org/admissions-et-couts/",
+        "status": "Tarif affiché sur le site officiel ; année à confirmer",
+        "verified": true
+      },
+      {
+        "level": "Master 2",
+        "program": "Programmes généraux",
+        "academicYear": "À confirmer auprès de l'IUA",
+        "tuitionFee": 1500000,
+        "registrationFee": null,
+        "currency": "FCFA",
+        "period": "Annuel",
+        "source": "https://www.iuaci.org/admissions-et-couts/",
+        "status": "Tarif affiché sur le site officiel ; année à confirmer",
+        "verified": true
+      },
+      {
+        "level": "Licence",
+        "program": "Ingénierie ou gestion de projet",
+        "academicYear": "À confirmer auprès de l'IUA",
+        "nationality": "Étudiant affecté par l'État",
+        "tuitionFee": 900000,
+        "registrationFee": null,
+        "currency": "FCFA",
+        "period": "Annuel",
+        "source": "https://www.iuaci.org/admissions-et-couts/",
+        "status": "Tarif affiché sur le site officiel ; année à confirmer",
+        "verified": true
+      },
+      {
+        "level": "Licence",
+        "program": "Ingénierie ou gestion de projet",
+        "academicYear": "À confirmer auprès de l'IUA",
+        "nationality": "Non affecté ou international",
+        "tuitionFee": 1500000,
+        "registrationFee": null,
+        "currency": "FCFA",
+        "period": "Annuel",
+        "source": "https://www.iuaci.org/admissions-et-couts/",
+        "status": "Tarif affiché sur le site officiel ; année à confirmer",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Université Alassane Ouattara (UAO)",
+    "city": "Bouaké",
+    "type": "Public",
+    "diplomas": [
+      "Licence",
+      "Master",
+      "Doctorat"
+    ],
+    "programs": [
+      "Lettres et langues",
+      "Sciences humaines et sociales",
+      "Droit et sciences politiques",
+      "Économie et gestion",
+      "Sciences et technologies",
+      "Sciences médicales",
+      "Sciences pharmaceutiques"
+    ],
+    "price": null,
+    "address": "Ahougnassou, route de Béoumi, Bouaké",
+    "phone": "+225 31 00 00 39",
+    "admission": [
+      "Consulter les conditions officielles d'admission",
+      "Vérifier les conditions d'orientation et de préinscription",
+      "Confirmer les prérequis de la formation choisie"
+    ],
+    "description": "Université publique d'enseignement supérieur et de recherche située à Bouaké. Elle propose plusieurs domaines de formation et des parcours universitaires selon le système Licence-Master-Doctorat.",
+    "image": "",
+    "feesByLevel": [
+      {
+        "level": "Tous niveaux",
+        "academicYear": "À confirmer",
+        "studentStatus": "Bachelier orienté par l'État",
+        "registrationFee": 30000,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "period": "Inscription",
+        "status": "Droits d'inscription publiés ; année du barème à confirmer",
+        "source": "https://univ-ao.edu.ci/",
+        "verified": true
+      },
+      {
+        "level": "Tous niveaux",
+        "academicYear": "À confirmer",
+        "studentStatus": "Étudiant ressortissant UEMOA",
+        "registrationFee": 100000,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "period": "Inscription",
+        "status": "Droits d'inscription publiés ; année du barème à confirmer",
+        "source": "https://univ-ao.edu.ci/",
+        "verified": true
+      },
+      {
+        "level": "Tous niveaux",
+        "academicYear": "À confirmer",
+        "studentStatus": "Étudiant hors UEMOA",
+        "registrationFee": 300000,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "period": "Inscription",
+        "status": "Droits d'inscription publiés ; année du barème à confirmer",
+        "source": "https://univ-ao.edu.ci/",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Université Catholique de l'Afrique de l'Ouest (UCAO-UUA)",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "Licence",
+      "Master"
+    ],
+    "programs": [
+      "Communication",
+      "Journalisme",
+      "Communication des organisations",
+      "Audiovisuel",
+      "Gestion",
+      "Sciences humaines et sociales"
+    ],
+    "price": null,
+    "address": "Rue Sainte-Marie, Cocody, Abidjan",
+    "phone": "+225 27 22 40 06 50",
+    "admission": [
+      "Consulter les conditions officielles d'admission",
+      "Vérifier les diplômes requis pour la filière choisie",
+      "Confirmer les frais de scolarité et les pièces à fournir"
+    ],
+    "description": "Établissement privé d'enseignement supérieur situé à Cocody, Abidjan. L'UCAO-UUA propose des formations universitaires et professionnelles dans plusieurs domaines. Les conditions d'admission dépendent du programme choisi.",
+    "image": "images/ucao-uua.jpg",
+    "feesByLevel": [
+      {
+        "level": "Licence 1 à 3",
+        "academicYear": "2026-2027",
+        "studentStatus": "Non affecté par l'État",
+        "period": "Annuel",
+        "tuitionFee": 600000,
+        "registrationFee": 230000,
+        "currency": "FCFA",
+        "status": "Tarif publié pour 2026 ; confirmer les conditions de la rentrée 2026-2027",
+        "source": "https://ucaouua.com/images/UCAO2526.pdf",
+        "verified": true
+      },
+      {
+        "level": "Master 1 à 2",
+        "academicYear": "2026-2027",
+        "studentStatus": "Non affecté par l'État",
+        "period": "Annuel",
+        "tuitionFee": 800000,
+        "registrationFee": 230000,
+        "currency": "FCFA",
+        "status": "Tarif publié pour 2026 ; confirmer les conditions de la rentrée 2026-2027",
+        "source": "https://ucaouua.com/images/UCAO2526.pdf",
+        "verified": true
+      },
+      {
+        "level": "Licence 1 à 3",
+        "academicYear": "2026-2027",
+        "studentStatus": "Affecté par l'État",
+        "period": "Annuel",
+        "tuitionFee": 200000,
+        "registrationFee": 230000,
+        "currency": "FCFA",
+        "status": "Tarif publié pour 2026 ; confirmer les conditions de la rentrée 2026-2027",
+        "source": "https://ucaouua.com/images/UCAO2526.pdf",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Université Méthodiste de Côte d'Ivoire (UMECI)",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "BTS",
+      "Licence",
+      "Master",
+      "Doctorat"
+    ],
+    "programs": [
+      "Droit",
+      "Sciences politiques",
+      "Économie",
+      "Gestion",
+      "Commerce et marketing",
+      "Comptabilité",
+      "Ressources humaines",
+      "Communication",
+      "Lettres modernes",
+      "Anglais",
+      "Musique et musicologie",
+      "Théologie",
+      "Informatique"
+    ],
+    "price": null,
+    "address": "Boulevard de l'Université, en face du CHU de Cocody, Abidjan",
+    "phone": "+225 27 22 44 66 68",
+    "admission": [
+      "Consulter les conditions officielles d'admission",
+      "Vérifier les prérequis de la formation choisie",
+      "Confirmer les frais de scolarité et les pièces à fournir"
+    ],
+    "description": "Université privée située à Cocody, Abidjan. L'UMECI regroupe plusieurs unités de formation ainsi qu'une école supérieure de commerce et de technologie. Elle propose des parcours en système LMD et des formations conduisant au BTS.",
+    "image": "images/umeci.jpg",
+    "feesByLevel": [
+      {
+        "level": "Licence 1 à 3",
+        "academicYear": "À confirmer",
+        "studentStatus": "Non affecté par l'État",
+        "tuitionFee": 845000,
+        "registrationFee": null,
+        "currency": "FCFA",
+        "period": "Annuel à confirmer",
+        "source": "https://umeci.org.ci/frais-de-scolarite/",
+        "status": "Tarif publié ; année universitaire à confirmer",
+        "verified": true
+      },
+      {
+        "level": "Master 1",
+        "academicYear": "À confirmer",
+        "studentStatus": "Non affecté par l'État",
+        "tuitionFee": 945000,
+        "registrationFee": null,
+        "currency": "FCFA",
+        "period": "Annuel à confirmer",
+        "source": "https://umeci.org.ci/frais-de-scolarite/",
+        "status": "Tarif publié ; année universitaire à confirmer",
+        "verified": true
+      },
+      {
+        "level": "Master 2",
+        "academicYear": "À confirmer",
+        "studentStatus": "Non affecté par l'État",
+        "tuitionFee": 1235000,
+        "registrationFee": null,
+        "currency": "FCFA",
+        "period": "Annuel à confirmer",
+        "source": "https://umeci.org.ci/frais-de-scolarite/",
+        "status": "Tarif publié ; année universitaire à confirmer",
+        "verified": true
+      },
+      {
+        "level": "Licence 1 à 3",
+        "academicYear": "À confirmer",
+        "studentStatus": "Affecté par l'État",
+        "tuitionFee": 395000,
+        "registrationFee": null,
+        "currency": "FCFA",
+        "period": "Annuel à confirmer",
+        "source": "https://umeci.org.ci/frais-de-scolarite/",
+        "status": "Tarif publié ; année universitaire à confirmer",
+        "verified": true
+      },
+      {
+        "level": "Année préparatoire ESMCT",
+        "academicYear": "À confirmer",
+        "studentStatus": "Non affecté par l'État",
+        "tuitionFee": 295000,
+        "registrationFee": null,
+        "currency": "FCFA",
+        "period": "Annuel à confirmer",
+        "source": "https://umeci.org.ci/frais-de-scolarite/",
+        "status": "Tarif publié ; année universitaire à confirmer",
+        "verified": true
+      },
+      {
+        "level": "BTS 1 ESMCT",
+        "academicYear": "À confirmer",
+        "studentStatus": "Non affecté par l'État",
+        "tuitionFee": 305000,
+        "registrationFee": null,
+        "currency": "FCFA",
+        "period": "Annuel à confirmer",
+        "source": "https://umeci.org.ci/frais-de-scolarite/",
+        "status": "Tarif publié ; année universitaire à confirmer",
+        "verified": true
+      },
+      {
+        "level": "BTS 2 ESMCT",
+        "academicYear": "À confirmer",
+        "studentStatus": "Non affecté par l'État",
+        "tuitionFee": 315000,
+        "registrationFee": null,
+        "currency": "FCFA",
+        "period": "Annuel à confirmer",
+        "source": "https://umeci.org.ci/frais-de-scolarite/",
+        "status": "Tarif publié ; année universitaire à confirmer",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Université Internationale de Côte d'Ivoire (UICI)",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "Licence",
+      "Master"
+    ],
+    "programs": [
+      "Informatique",
+      "Sciences et technologies",
+      "Gestion",
+      "Commerce",
+      "Management",
+      "Formations professionnelles"
+    ],
+    "price": null,
+    "address": "Angré, 7e Tranche, près de la pharmacie de la 7e Tranche, Cocody, Abidjan",
+    "phone": "+225 07 07 314 314",
+    "admission": [
+      "Consulter les conditions officielles d'admission",
+      "Vérifier les prérequis de la formation choisie",
+      "Confirmer les frais de scolarité et les pièces à fournir"
+    ],
+    "description": "Établissement privé d'enseignement supérieur situé à Angré, dans la commune de Cocody à Abidjan. Il propose des formations dans différents domaines. Les diplômes et conditions d'admission dépendent du programme choisi.",
+    "image": "",
+    "feesByLevel": [
+      {
+        "level": "Licence",
+        "academicYear": "2026-2027",
+        "studentStatus": "Orienté par l'État",
+        "tuitionFee": 1000000,
+        "registrationFee": 50000,
+        "insuranceFee": 5000,
+        "stateSupport": 450000,
+        "totalPayable": 605000,
+        "currency": "FCFA",
+        "period": "Annuel",
+        "source": "https://uici.edu.ci/admission/frais",
+        "status": "Tarif publié pour 2026-2027",
+        "verified": true
+      },
+      {
+        "level": "Licence",
+        "academicYear": "2026-2027",
+        "studentStatus": "Non orienté par l'État",
+        "tuitionFee": 1000000,
+        "registrationFee": 100000,
+        "insuranceFee": 5000,
+        "stateSupport": 0,
+        "totalPayable": 1105000,
+        "currency": "FCFA",
+        "period": "Annuel",
+        "source": "https://uici.edu.ci/admission/frais",
+        "status": "Tarif publié pour 2026-2027",
+        "verified": true
+      },
+      {
+        "level": "Master",
+        "academicYear": "2026-2027",
+        "studentStatus": "Orienté par l'État",
+        "tuitionFee": 1000000,
+        "registrationFee": 50000,
+        "insuranceFee": 5000,
+        "stateSupport": 0,
+        "totalPayable": 1055000,
+        "currency": "FCFA",
+        "period": "Annuel",
+        "source": "https://uici.edu.ci/admission/frais",
+        "status": "Tarif publié pour 2026-2027",
+        "verified": true
+      },
+      {
+        "level": "Master",
+        "academicYear": "2026-2027",
+        "studentStatus": "Non orienté par l'État",
+        "tuitionFee": 1000000,
+        "registrationFee": 100000,
+        "insuranceFee": 5000,
+        "stateSupport": 0,
+        "totalPayable": 1105000,
+        "currency": "FCFA",
+        "period": "Annuel",
+        "source": "https://uici.edu.ci/admission/frais",
+        "status": "Tarif publié pour 2026-2027",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Université Internationale de Cocody (UIC)",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "BTS",
+      "Licence",
+      "Master"
+    ],
+    "programs": [
+      "Gestion commerciale",
+      "Ressources humaines et communication",
+      "Finance, comptabilité et gestion des entreprises",
+      "Droit privé et droit public",
+      "Informatique",
+      "Gestion",
+      "Sciences sociales"
+    ],
+    "price": null,
+    "address": "Cocody Deux-Plateaux, Angré 7e Tranche, Abidjan",
+    "phone": "+225 07 78 63 74 00",
+    "admission": [
+      "Consulter les conditions officielles d'admission",
+      "Vérifier les diplômes requis pour la formation choisie",
+      "Confirmer les frais de scolarité et les pièces à fournir"
+    ],
+    "description": "Université privée située à Cocody, dans le secteur des Deux-Plateaux et d'Angré. Elle propose des formations de BTS, des parcours de licence et des masters professionnels selon les filières disponibles.",
+    "image": "",
+    "feesByLevel": [
+      {
+        "level": "Tous niveaux",
+        "academicYear": "À confirmer",
+        "registrationFee": 85000,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "source": "https://bac.mesrs-ci.net/offres/ets-prives",
+        "verified": true,
+        "status": "Frais d'inscription indiqués par le ministère ; scolarité annuelle à confirmer auprès de l'UIC"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Université UNDA - Notre Dame d'Abidjan",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "Licence",
+      "Master"
+    ],
+    "programs": [
+      "Chimie",
+      "Droit des entreprises",
+      "Sciences physiques",
+      "Espagnol"
+    ],
+    "price": null,
+    "address": "Campus principal, Cocody, Abidjan",
+    "phone": "",
+    "admission": [
+      "Pour une entrée en licence, préparer le relevé de notes du baccalauréat",
+      "Pour une entrée en master, préparer le diplôme de licence et les relevés de notes",
+      "Vérifier les conditions propres à la formation auprès de l'université"
+    ],
+    "description": "Université Notre Dame d'Abidjan proposant des formations de licence et de master. Elle dispose notamment d'un campus principal à Cocody et d'un campus à Azito, Yopougon.",
+    "image": "",
+    "feesByLevel": [
+      {
+        "level": "Licence",
+        "academicYear": "2026-2027",
+        "registrationFee": null,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "source": "https://www.unda.ci/",
+        "verified": false,
+        "status": "Tarifs à demander au service de scolarité"
+      },
+      {
+        "level": "Master",
+        "academicYear": "2026-2027",
+        "registrationFee": null,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "source": "https://www.unda.ci/",
+        "verified": false,
+        "status": "Tarifs à demander au service de scolarité"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "ETIC University",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "BTS",
+      "Licence",
+      "Master",
+      "Master professionnel"
+    ],
+    "programs": [
+      "Informatique",
+      "Gestion",
+      "Commerce",
+      "Formation professionnelle"
+    ],
+    "price": null,
+    "address": "Cocody-II Plateaux, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Consulter les conditions d'admission selon la formation choisie",
+      "Se renseigner auprès de l'établissement pour les pièces à fournir"
+    ],
+    "description": "Établissement supérieur privé situé à Cocody-II Plateaux, Abidjan. ETIC University propose des formations de BTS, de licence et de master, avec une orientation pratique et professionnelle.",
+    "image": "",
+    "feesByLevel": [
+      {
+        "level": "Licence",
+        "academicYear": "2026-2027",
+        "registrationFee": null,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "source": "https://www.eticecole.com/ecoles/etic-university",
+        "verified": false,
+        "status": "Tarifs à confirmer auprès de l'administration d'ETIC University"
+      },
+      {
+        "level": "Master",
+        "academicYear": "2026-2027",
+        "registrationFee": null,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "source": "https://www.eticecole.com/ecoles/etic-university",
+        "verified": false,
+        "status": "Tarifs à confirmer auprès de l'administration d'ETIC University"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "SWISS UMEF University of Côte d'Ivoire",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "Licence",
+      "Master",
+      "Master exécutif"
+    ],
+    "programs": [
+      "Relations internationales et diplomatie",
+      "Droit et droit des affaires",
+      "Management et leadership",
+      "Finance et banque",
+      "Marketing et communication",
+      "Commerce international",
+      "Informatique et intelligence artificielle"
+    ],
+    "price": null,
+    "address": "Riviera Bonoumin, 176 rue Manouan Jean Aka, Abidjan",
+    "phone": "+225 27 22 21 91 87",
+    "admission": [
+      "Constituer un dossier de candidature",
+      "Fournir une copie du dernier diplôme et les relevés de notes",
+      "Fournir une pièce d'identité, une lettre de motivation et un CV",
+      "Passer le test d'aptitude et l'entretien de motivation si le dossier est retenu"
+    ],
+    "description": "Université privée d'origine suisse implantée à Abidjan. SWISS UMEF propose des formations en relations internationales, droit, management, finance, marketing, commerce international et informatique avec une option en intelligence artificielle.",
+    "image": "images/swiss-umef-abidjan.jpg",
+    "feesByLevel": []
+  },
+  {
+    "id": 44,
+    "name": "Université Internationale Clairefontaine (UICF)",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "Bachelor",
+      "Licence",
+      "Master",
+      "Doctorat"
+    ],
+    "programs": [
+      "Droit",
+      "Économie et gestion",
+      "Communication",
+      "Anglais",
+      "Informatique",
+      "Études bilingues français-anglais"
+    ],
+    "price": null,
+    "address": "II Plateaux Vallon, Cocody, Abidjan",
+    "phone": "+225 01 01 14 14 05",
+    "admission": [
+      "Consulter les conditions d'admission selon le programme choisi",
+      "Préparer les diplômes et relevés de notes requis",
+      "Contacter l'université pour connaître les pièces du dossier"
+    ],
+    "description": "Université privée internationale à Abidjan proposant des études bilingues français-anglais selon le système anglo-saxon ainsi que des formations en français selon le système LMD. Elle dispose de campus à Cocody, Yopougon et Bingerville.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 45,
+    "name": "Graduate School of Management (GSM)",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "Bachelor",
+      "Licence",
+      "Master"
+    ],
+    "programs": [
+      "Management",
+      "Gestion des entreprises",
+      "Commerce",
+      "Business et entrepreneuriat",
+      "Finance",
+      "Marketing"
+    ],
+    "price": null,
+    "address": "Cocody, Riviera Palmeraie, derrière la pharmacie Marie-Esther, Abidjan",
+    "phone": "+225 05 54 27 28 75",
+    "admission": [
+      "Contacter l'établissement pour connaître les conditions d'admission",
+      "Vérifier les diplômes requis selon le programme choisi",
+      "Se renseigner sur les pièces à fournir pour constituer le dossier"
+    ],
+    "description": "Graduate School of Management (GSM) est un établissement privé d'enseignement supérieur fondé en 2002 à Abidjan. Il propose une formation en management et en commerce dans un environnement bilingue français-anglais.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 46,
+    "name": "Lycée International Jean-Mermoz",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "Brevet",
+      "Baccalauréat français"
+    ],
+    "programs": [
+      "Collège",
+      "Seconde",
+      "Première",
+      "Terminale",
+      "Préparation au baccalauréat français"
+    ],
+    "price": null,
+    "address": "Avenue Mermoz, Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "+225 27 22 48 05 29",
+    "admission": [
+      "Constituer un dossier d'inscription",
+      "Fournir les bulletins scolaires de l'élève",
+      "Contacter l'établissement pour connaître les places disponibles et les conditions d'admission"
+    ],
+    "description": "Le Lycée International Jean-Mermoz est un établissement privé international situé à Cocody, Abidjan. Il propose un enseignement suivant le programme français, du collège au lycée, et prépare notamment au baccalauréat français.",
+    "image": "images/lycee-jean-mermoz.jpg",
+    "feesByLevel": []
+  },
+  {
+    "id": 47,
+    "name": "Lycée Français Blaise-Pascal",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "Brevet",
+      "Baccalauréat français"
+    ],
+    "programs": [
+      "Collège",
+      "Seconde",
+      "Première",
+      "Terminale",
+      "Section internationale américaine"
+    ],
+    "price": null,
+    "address": "Riviera 3, Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "+225 27 22 40 55 80",
+    "admission": [
+      "Effectuer la demande d'inscription sur la plateforme EDUKA",
+      "Fournir les bulletins scolaires et les documents demandés",
+      "Consulter les conditions d'admission propres au niveau souhaité"
+    ],
+    "description": "Le Lycée Français Blaise-Pascal est un établissement privé international situé à Riviera 3, Cocody, Abidjan. Il suit les programmes français, accueille les élèves du collège au lycée et prépare au brevet et au baccalauréat français.",
+    "image": "images/lycee-blaise-pascal.jpg",
+    "feesByLevel": []
+  },
+  {
+    "id": 48,
+    "name": "Lycée Maurice Delafosse",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "Brevet",
+      "Baccalauréat français"
+    ],
+    "programs": [
+      "Collège",
+      "Seconde",
+      "Première",
+      "Terminale",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Riviera Golf, rue de la Grande Mosquée, Cocody, Abidjan",
+    "phone": "+225 27 22 43 38 46",
+    "admission": [
+      "Effectuer une demande d'inscription en ligne",
+      "Fournir les bulletins scolaires et les documents demandés",
+      "Vérifier les conditions d'admission pour la classe souhaitée auprès de l'établissement"
+    ],
+    "description": "Le Lycée Maurice Delafosse est un établissement privé d'enseignement secondaire situé à Riviera Golf, Cocody, Abidjan. Il accueille les élèves de la sixième à la terminale et propose un enseignement conforme aux programmes français.",
+    "image": "images/lycee-maurice-delafosse.jpg",
+    "feesByLevel": []
+  },
+  {
+    "id": 49,
+    "name": "Lycée Technique d'Abidjan",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "BT",
+      "Baccalauréat technique"
+    ],
+    "programs": [
+      "Enseignement technique",
+      "Formation professionnelle",
+      "Spécialités techniques"
+    ],
+    "price": null,
+    "address": "Rue du Lycée Technique, Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "+225 27 21 30 45 55",
+    "admission": [
+      "Consulter les conditions officielles d'admission",
+      "Vérifier les séries et spécialités ouvertes pour l'année scolaire",
+      "Préparer les pièces demandées par l'établissement"
+    ],
+    "description": "Le Lycée Technique d'Abidjan est un établissement public situé à Cocody. Il propose un enseignement secondaire technique et professionnel destiné à préparer les élèves à des métiers techniques et à la poursuite d'études.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 51,
+    "name": "École Étimoé - École des Familles",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "CEPE",
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Maternelle",
+      "Primaire",
+      "Collège",
+      "Lycée",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Abatta, Cocody, Abidjan, Côte d'Ivoire",
+    "phone": "+225 05 55 04 38 22",
+    "admission": [
+      "Effectuer l'inscription selon la procédure de l'établissement",
+      "Fournir le livret scolaire pour les nouveaux élèves",
+      "Préparer les relevés de notes et les documents administratifs demandés",
+      "Consulter l'école pour connaître les conditions selon la classe"
+    ],
+    "description": "L'école Étimoé, membre du projet École des Familles, est un établissement privé réservé aux filles, situé à Abatta, Cocody, Abidjan. Elle accueille les élèves de la maternelle au secondaire et met l'accent sur le suivi personnalisé et la collaboration avec les familles.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 52,
+    "name": "École Makoré",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "CEPE",
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Primaire",
+      "Collège",
+      "Lycée",
+      "Enseignement général",
+      "Anglais",
+      "Espagnol"
+    ],
+    "price": null,
+    "address": "Cocody Riviera Abatta, Abidjan, Côte d'Ivoire",
+    "phone": "+225 25 22 00 80 14",
+    "admission": [
+      "Contacter l'établissement pour connaître les modalités d'inscription",
+      "Préparer les bulletins scolaires et les documents administratifs demandés",
+      "Vérifier les conditions d'admission selon la classe souhaitée"
+    ],
+    "description": "L'École Makoré est l'école pour garçons du projet École des Familles, située à Cocody Abatta, Abidjan. Elle accueille les élèves du primaire et du secondaire et met l'accent sur l'éducation personnalisée, les langues et la collaboration entre les familles et l'école.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 53,
+    "name": "Lycée Mamie Houphouët Fêtai de Bingerville",
+    "city": "Bingerville",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Premier cycle : 6e à 3e",
+      "Second cycle : 2nde à Terminale",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Quartier résidentiel CIE, Bingerville, Côte d'Ivoire",
+    "phone": "+225 07 83 27 45 27",
+    "admission": [
+      "Consulter les conditions d'affectation du ministère de l'Éducation nationale",
+      "Se renseigner auprès du lycée pour les inscriptions et les documents requis",
+      "Vérifier les conditions d'admission selon la classe souhaitée"
+    ],
+    "description": "Le Lycée Mamie Houphouët Fêtai de Bingerville est un établissement public secondaire de jeunes filles situé à Bingerville, dans le district autonome d'Abidjan. Il propose un enseignement général et prépare les élèves aux examens du BEPC et du baccalauréat.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 54,
+    "name": "Petit Séminaire Saint-Augustin de Bingerville",
+    "city": "Bingerville",
+    "type": "Privé",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Collège",
+      "Lycée",
+      "Enseignement général",
+      "Formation humaine et spirituelle"
+    ],
+    "price": null,
+    "address": "Ancien marché, BP 12, Bingerville, Côte d'Ivoire",
+    "phone": "+225 27 22 40 30 14",
+    "admission": [
+      "Contacter l'établissement pour connaître les conditions d'admission",
+      "Vérifier les classes ouvertes et les documents nécessaires",
+      "Se renseigner sur les modalités d'internat auprès de l'administration"
+    ],
+    "description": "Le Petit Séminaire Saint-Augustin de Bingerville est un établissement privé catholique d'enseignement secondaire. Il accueille les garçons du collège au lycée et associe formation scolaire, éducation humaine et accompagnement spirituel.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 55,
+    "name": "Lycée de Garçons de Bingerville",
+    "city": "Bingerville",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Collège",
+      "Lycée",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Bingerville, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Vérifier les conditions d'affectation auprès du ministère de l'Éducation nationale",
+      "Contacter l'établissement pour connaître les modalités d'inscription",
+      "Préparer les documents scolaires et administratifs demandés"
+    ],
+    "description": "Le Lycée de Garçons de Bingerville est un établissement secondaire public destiné aux garçons, situé à Bingerville, dans le district autonome d'Abidjan. Les informations relatives aux filières, aux inscriptions et aux diplômes sont à confirmer auprès de l'établissement.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 56,
+    "name": "Lycée Moderne de Jeunes Filles de Yopougon",
+    "city": "Yopougon",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Collège",
+      "Lycée",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Banco Résidentiel, quartier Millionnaire, Yopougon, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Vérifier les conditions d'affectation auprès du ministère de l'Éducation nationale",
+      "Se renseigner auprès du lycée pour les modalités d'inscription",
+      "Préparer les bulletins scolaires et les documents administratifs demandés"
+    ],
+    "description": "Le Lycée Moderne de Jeunes Filles de Yopougon est un établissement public secondaire situé à Yopougon, dans le secteur Banco Résidentiel. Il accueille des jeunes filles et propose un enseignement général préparant aux examens nationaux.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 57,
+    "name": "Lycée Municipal 1 Gadié Pierre",
+    "city": "Yopougon",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Premier cycle : 6e à 3e",
+      "Second cycle : 2nde à Terminale",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Kouté, près du terminus du bus 40, Yopougon, Abidjan",
+    "phone": "+225 07 07 39 77 74",
+    "admission": [
+      "Vérifier les conditions d'affectation auprès du ministère de l'Éducation nationale",
+      "Se renseigner auprès de l'établissement pour les modalités d'inscription",
+      "Préparer les documents scolaires et administratifs demandés"
+    ],
+    "description": "Le Lycée Municipal 1 Gadié Pierre est un établissement public d'enseignement secondaire général situé à Yopougon, dans le secteur de Kouté, près du terminus du bus 40. Il accueille les élèves du premier et du second cycle secondaire.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 58,
+    "name": "Lycée Municipal 2 Gadié Pierre",
+    "city": "Yopougon",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Premier cycle : 6e à 3e",
+      "Second cycle : 2nde à Terminale",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Kouté, près du terminus du bus 40, Yopougon, Abidjan",
+    "phone": "+225 07 08 90 53 87",
+    "admission": [
+      "Vérifier les conditions d'affectation auprès du ministère de l'Éducation nationale",
+      "Se renseigner auprès du lycée pour les modalités d'inscription",
+      "Préparer les documents scolaires et administratifs demandés"
+    ],
+    "description": "Le Lycée Municipal 2 Gadié Pierre est un établissement public d'enseignement secondaire général situé à Yopougon, dans le secteur de Kouté, près du terminus du bus 40. Il accueille les élèves du premier et du second cycle secondaire.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 59,
+    "name": "Lycée Moderne Hamed Bakayoko d'Abobo PK 18",
+    "city": "Abobo",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Premier cycle : 6e à 3e",
+      "Second cycle : 2nde à Terminale",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "PK 18, Abobo, Abidjan",
+    "phone": "",
+    "admission": [
+      "Vérifier les conditions d'affectation auprès du ministère de l'Éducation nationale",
+      "Se renseigner auprès de l'établissement pour les inscriptions",
+      "Préparer les documents scolaires et administratifs demandés"
+    ],
+    "description": "Le Lycée Moderne Hamed Bakayoko d'Abobo PK 18 est un établissement public d'enseignement secondaire situé dans la commune d'Abobo, à Abidjan.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 60,
+    "name": "Lycée Municipal d'Abobo",
+    "city": "Abobo",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Premier cycle : 6e à 3e",
+      "Second cycle : 2nde à Terminale",
+      "Enseignement général"
+    ],
+    "price": null,
+    "address": "Abobo, secteur Agnissankoi, Abidjan",
+    "phone": "",
+    "admission": [
+      "Vérifier les conditions d'affectation auprès du ministère de l'Éducation nationale",
+      "Se renseigner auprès du lycée pour les modalités d'inscription",
+      "Préparer les documents scolaires et administratifs demandés"
+    ],
+    "description": "Le Lycée Municipal d'Abobo est un établissement public d'enseignement secondaire situé dans la commune d'Abobo, à Abidjan.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 61,
+    "name": "Collège Adama Sanogo",
+    "city": "Abobo",
+    "type": "Privé",
+    "diplomas": [
+      "BEPC"
+    ],
+    "programs": [
+      "Premier cycle : 6e à 3e",
+      "Enseignement secondaire général"
+    ],
+    "price": null,
+    "address": "Abobo, Abidjan, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Contacter le collège pour connaître les conditions d'inscription",
+      "Vérifier les pièces administratives à fournir",
+      "Se renseigner sur les frais de scolarité"
+    ],
+    "description": "Le Collège Adama Sanogo est un établissement secondaire répertorié dans la commune d'Abobo. Les informations sur les frais, les filières et les modalités d'inscription sont à confirmer directement auprès de l'établissement.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 62,
+    "name": "Collège Anador Abobo",
+    "city": "Abobo",
+    "type": "Privé",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Premier cycle : 6e à 3e",
+      "Second cycle : 2nde à Terminale",
+      "Enseignement général",
+      "Enseignement technique"
+    ],
+    "price": null,
+    "address": "Abobo Banco Anador, Abidjan",
+    "phone": "+225 07 47 45 82 12",
+    "admission": [
+      "Contacter le collège pour connaître les conditions d'inscription",
+      "Demander la liste des documents à fournir",
+      "Vérifier les frais de scolarité selon le niveau et la filière"
+    ],
+    "description": "Le Collège Anador Abobo est un établissement privé d'enseignement secondaire proposant des parcours généraux et techniques. Il accueille des élèves du premier cycle et du second cycle.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 63,
+    "name": "IIPEA Université",
+    "city": "Cocody",
+    "type": "Privé",
+    "diplomas": [
+      "BTS",
+      "Licence",
+      "Master",
+      "Licence professionnelle",
+      "Master professionnel"
+    ],
+    "programs": [
+      "Droit",
+      "Économie",
+      "Gestion et management",
+      "Communication",
+      "Technologie",
+      "Formations professionnelles"
+    ],
+    "price": null,
+    "address": "Cocody Riviera 2, route d'Attoban, près du Collège André Malraux, Abidjan",
+    "phone": "+225 07 08 08 87 87",
+    "admission": [
+      "Contacter le service des admissions pour connaître les conditions d'entrée",
+      "Préparer une copie du dernier diplôme obtenu",
+      "Demander la liste complète des documents à fournir",
+      "Vérifier les frais de scolarité selon la formation choisie"
+    ],
+    "description": "L'Institut International Polytechnique des Élites d'Abidjan (IIPEA) est un établissement privé d'enseignement supérieur proposant des formations universitaires et professionnelles. Il propose notamment des parcours en droit, économie, gestion, communication et technologie.",
+    "image": "images/iipea.jpg",
+    "feesByLevel": []
+  },
+  {
+    "id": 64,
+    "name": "ESATIC",
+    "city": "Treichville",
+    "type": "Public",
+    "diplomas": [
+      "Licence",
+      "Master",
+      "Diplôme d'ingénieur"
+    ],
+    "programs": [
+      "Réseaux et télécommunications",
+      "Cybersécurité",
+      "Informatique et technologies numériques",
+      "Intelligence artificielle",
+      "Data et systèmes d'information",
+      "Cycle ingénieur"
+    ],
+    "price": null,
+    "address": "Zone 3, boulevard de Marseille, Treichville, Abidjan",
+    "phone": "+225 27 21 21 81 00",
+    "admission": [
+      "L'admission se fait notamment par concours",
+      "Vérifier les conditions d'accès selon le parcours choisi",
+      "Consulter le site officiel pour les dates et les dossiers de candidature"
+    ],
+    "description": "L'École Supérieure Africaine des Technologies de l'Information et de la Communication (ESATIC) est un établissement public d'enseignement supérieur spécialisé dans les TIC, les réseaux, les télécommunications et la cybersécurité.",
+    "image": "images/esatic.jpg",
+    "feesByLevel": [
+      {
+        "level": "Licence 1 — étudiant ivoirien",
+        "tuitionFee": 0,
+        "period": "droits de scolarité affichés à 0 FCFA; frais d'inscription 120 000 FCFA distincts, année à confirmer",
+        "source": "https://esatic.ci/documents/",
+        "status": "Publié (détails à vérifier)",
+        "verified": null,
+        "notes": "Le site officiel donne des frais d'inscription de 120 000 FCFA pour les nouveaux étudiants et affiche 0 FCFA de droits de scolarité pour les Ivoiriens en Licence 1; vérifier les autres formations."
+      },
+      {
+        "level": "Licence 1 — étudiant non ivoirien",
+        "tuitionFee": null,
+        "period": "frais d'inscription affichés à 120 000 FCFA; frais de scolarité à vérifier selon statut/formation",
+        "source": "https://esatic.ci/documents/",
+        "status": "Publié (détails à vérifier)",
+        "verified": null,
+        "notes": "Le site officiel donne des frais d'inscription de 120 000 FCFA pour les nouveaux étudiants et affiche 0 FCFA de droits de scolarité pour les Ivoiriens en Licence 1; vérifier les autres formations."
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Lycée Classique et Moderne 1 de Bouaké",
+    "city": "Bouaké",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Premier cycle : 6e à 3e",
+      "Second cycle : 2nde à Terminale",
+      "Enseignement secondaire général"
+    ],
+    "price": null,
+    "address": "En face du CHU de Bouaké, Bouaké, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Vérifier les conditions d'affectation auprès du ministère de l'Éducation nationale",
+      "Se renseigner auprès du lycée pour les modalités d'inscription",
+      "Préparer les documents scolaires et administratifs demandés"
+    ],
+    "description": "Le Lycée Classique et Moderne 1 de Bouaké est un établissement public d'enseignement secondaire général situé en face du CHU de Bouaké.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 66,
+    "name": "Lycée Municipal Djibo Sounkalo de Bouaké",
+    "city": "Bouaké",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Premier cycle : 6e à 3e",
+      "Second cycle : 2nde à Terminale",
+      "Enseignement secondaire général"
+    ],
+    "price": null,
+    "address": "Ahougnansou, route de Béoumi, avant la SICOGI, Bouaké",
+    "phone": "+225 27 31 63 37 38",
+    "admission": [
+      "Vérifier les conditions d'affectation auprès du ministère de l'Éducation nationale",
+      "Contacter le lycée pour les modalités d'inscription",
+      "Préparer les documents scolaires et administratifs demandés"
+    ],
+    "description": "Le Lycée Municipal Djibo Sounkalo est un établissement public d'enseignement secondaire de Bouaké. Créé en 1963 comme collège municipal, il a ensuite été transformé en lycée avec l'ouverture du second cycle.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 67,
+    "name": "Collège Moderne Koko de Bouaké",
+    "city": "Bouaké",
+    "type": "Public",
+    "diplomas": [
+      "BEPC"
+    ],
+    "programs": [
+      "Premier cycle : 6e à 3e",
+      "Enseignement secondaire général"
+    ],
+    "price": null,
+    "address": "Quartier Koko/Kokokro, Bouaké, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Vérifier les conditions d'affectation auprès du ministère de l'Éducation nationale",
+      "Se renseigner auprès du collège pour les modalités d'inscription",
+      "Préparer les documents scolaires et administratifs demandés"
+    ],
+    "description": "Le Collège Moderne Koko de Bouaké est un établissement public d'enseignement secondaire général situé dans le secteur de Koko/Kokokro, à Bouaké.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 68,
+    "name": "Collège Adventiste de Bouaké",
+    "city": "Bouaké",
+    "type": "Privé",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Premier cycle : 6e à 3e",
+      "Second cycle : 2nde à Terminale",
+      "Enseignement secondaire général"
+    ],
+    "price": null,
+    "address": "Quartier Kennedy, rond-point Kennedy, route de M'Bahiakro, Bouaké",
+    "phone": "+225 27 31 63 24 70",
+    "admission": [
+      "Contacter l'établissement pour connaître les conditions d'inscription",
+      "Demander la liste des documents à fournir",
+      "Vérifier les frais de scolarité et les modalités de paiement"
+    ],
+    "description": "Le Collège Adventiste de Bouaké est un établissement privé d'enseignement secondaire situé au quartier Kennedy. Il propose un parcours secondaire et est également référencé sous le nom de Bouake Adventist Secondary School.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 69,
+    "name": "Collège Saint-Jacques de Bouaké",
+    "city": "Bouaké",
+    "type": "Privé",
+    "diplomas": [
+      "BEPC"
+    ],
+    "programs": [
+      "Premier cycle : 6e à 3e",
+      "Enseignement secondaire général"
+    ],
+    "price": null,
+    "address": "Quartier Dar-Es-Salam, route de Katiola, Bouaké",
+    "phone": "",
+    "admission": [
+      "Contacter l'établissement pour connaître les conditions d'inscription",
+      "Demander la liste des documents administratifs à fournir",
+      "Vérifier les frais de scolarité et les modalités de paiement"
+    ],
+    "description": "Le Collège Saint-Jacques de Bouaké est un établissement privé d'enseignement secondaire général situé dans le quartier Dar-Es-Salam, sur la route de Katiola.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 70,
+    "name": "Collège Privé Tussuamy de Bouaké",
+    "city": "Bouaké",
+    "type": "Privé",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Premier cycle : 6e à 3e",
+      "Second cycle : 2nde à Terminale",
+      "Enseignement secondaire général"
+    ],
+    "price": null,
+    "address": "Quartier Municipal, 04 BP 1642 Bouaké 04, Bouaké",
+    "phone": "+225 07 07 88 63 64",
+    "admission": [
+      "Contacter l'établissement pour connaître les conditions d'inscription",
+      "Demander la liste des documents à fournir",
+      "Vérifier les frais de scolarité et les modalités de paiement"
+    ],
+    "description": "Le Collège Privé Tussuamy est un établissement privé d'enseignement secondaire situé au quartier Municipal de Bouaké. Il propose un parcours secondaire général et prépare les élèves aux examens nationaux.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 71,
+    "name": "Université Internationale ICK de Bouaké",
+    "city": "Bouaké",
+    "type": "Privé",
+    "diplomas": [
+      "Licence",
+      "Master"
+    ],
+    "programs": [
+      "Droit",
+      "Économie et gestion",
+      "Communication",
+      "Lettres et sciences sociales",
+      "Formations professionnelles"
+    ],
+    "price": null,
+    "address": "Air France 3, corridor sud, route du Lac, Bouaké, Côte d'Ivoire",
+    "phone": "+225 01 52 10 73 36",
+    "admission": [
+      "Consulter le site officiel pour les formations disponibles",
+      "Contacter le service des admissions pour connaître les conditions d'accès",
+      "Demander les frais d'inscription et de scolarité",
+      "Préparer les diplômes et documents administratifs demandés"
+    ],
+    "description": "L'Université Internationale ICK de Bouaké (U2ICK) est un établissement privé d'enseignement supérieur appartenant au Groupe ICK. Elle propose des formations universitaires professionnalisantes.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 72,
+    "name": "Université de l’Atlantique – Campus de Bouaké",
+    "city": "Bouaké",
+    "type": "Privé",
+    "diplomas": [
+      "Licence",
+      "Master",
+      "Bachelor International"
+    ],
+    "programs": [
+      "Management et stratégie d’entreprise",
+      "Développement commercial",
+      "Gestion et finances",
+      "Ressources humaines",
+      "Communication"
+    ],
+    "price": null,
+    "address": "Quartier Kennedy, Bouaké, Côte d’Ivoire",
+    "phone": "",
+    "admission": [
+      "Contacter l’administration pour connaître les conditions d’admission et les frais de scolarité."
+    ],
+    "description": "Établissement privé d’enseignement supérieur disposant d’un campus à Bouaké et proposant plusieurs parcours de formation.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 73,
+    "name": "Institut National Polytechnique Félix Houphouët-Boigny (INP-HB)",
+    "city": "Yamoussoukro",
+    "type": "Public",
+    "diplomas": [
+      "Licence",
+      "Master",
+      "Diplôme d'ingénieur",
+      "Doctorat"
+    ],
+    "programs": [
+      "Agronomie",
+      "Industrie",
+      "Mines et géologie",
+      "Travaux publics",
+      "Commerce et administration des entreprises"
+    ],
+    "price": null,
+    "address": "Yamoussoukro, Côte d’Ivoire",
+    "phone": "+225 27 30 64 67 00",
+    "admission": [
+      "Les conditions d’admission varient selon l'école, la formation et le cycle choisis.",
+      "L'admission peut se faire par concours, selon la formation et la voie d'accès.",
+      "Pour une admission après le BAC ou le BT, vérifier les diplômes acceptés, les conditions d'âge et les critères du concours de la session concernée.",
+      "Consulter le site officiel pour les conditions détaillées et les dates d'inscription."
+    ],
+    "description": "Établissement public d’enseignement supérieur et de recherche regroupant plusieurs grandes écoles spécialisées.",
+    "image": "images/inphb-yamoussoukro.jpg",
+    "feesByLevel": []
+  },
+  {
+    "id": 74,
+    "name": "Lycée Scientifique de Yamoussoukro",
+    "city": "Yamoussoukro",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Mathématiques",
+      "Physique-Chimie",
+      "Sciences de la Vie et de la Terre (SVT)",
+      "Informatique"
+    ],
+    "price": null,
+    "address": "Yamoussoukro, Côte d’Ivoire",
+    "phone": "+225 27 30 64 07 88",
+    "admission": [
+      "Admission sélective en classe de 4e ou en Seconde, selon les procédures officielles.",
+      "Consulter le site officiel pour les conditions et le calendrier d’admission."
+    ],
+    "description": "Établissement public d’excellence spécialisé dans la formation scientifique, du collège au lycée.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 75,
+    "name": "Lycée Mamie Adjoua de Yamoussoukro",
+    "city": "Yamoussoukro",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Enseignement secondaire général"
+    ],
+    "price": null,
+    "address": "Secteur Assabou, près de la mairie, Yamoussoukro, Côte d’Ivoire",
+    "phone": "+225 30 64 01 12 / +225 30 64 02 57",
+    "admission": [
+      "Se renseigner auprès de l’administration ou des services d’orientation pour connaître les conditions d’admission."
+    ],
+    "description": "Établissement public secondaire pour jeunes filles, créé en 1962 et baptisé Lycée Mamie Adjoua en 1988.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 76,
+    "name": "Collège HELEIS de Yamoussoukro",
+    "city": "Yamoussoukro",
+    "type": "Privé",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat",
+      "BT"
+    ],
+    "programs": [
+      "Enseignement général",
+      "Comptabilité",
+      "Secrétariat",
+      "Électronique",
+      "Filières techniques G1, G2, AB et F2"
+    ],
+    "price": null,
+    "address": "220 Logements, route d’Abidjan, Yamoussoukro, Côte d’Ivoire",
+    "phone": "+225 30 64 77 33",
+    "admission": [
+      "Contacter l’administration pour connaître les conditions d’admission et les frais de scolarité."
+    ],
+    "description": "Établissement privé proposant un enseignement secondaire général et des formations techniques et professionnelles.",
+    "image": "images/inphb-yamoussoukro.jpg",
+    "feesByLevel": []
+  },
+  {
+    "id": 77,
+    "name": "Collège Le Pédagogue de Yamoussoukro",
+    "city": "Yamoussoukro",
+    "type": "Privé",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Enseignement secondaire général"
+    ],
+    "price": null,
+    "address": "Secteur Kokrenou, Yamoussoukro, Côte d’Ivoire",
+    "phone": "+225 30 64 05 49",
+    "admission": [
+      "Contacter l’administration pour connaître les niveaux disponibles, les conditions d’admission et les frais de scolarité."
+    ],
+    "description": "Établissement privé d’enseignement secondaire à Yamoussoukro.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 78,
+    "name": "Université Polytechnique de San Pedro (USP)",
+    "city": "San Pedro",
+    "type": "Public",
+    "diplomas": [
+      "Licence",
+      "Master",
+      "Doctorat",
+      "Diplôme d'ingénieur"
+    ],
+    "programs": [
+      "Sciences de la mer",
+      "Logistique et transport",
+      "Tourisme et hôtellerie-restauration",
+      "Agriculture et ressources halieutiques",
+      "Agro-industries",
+      "Génie civil",
+      "Construction navale"
+    ],
+    "price": null,
+    "address": "San Pedro, région du Bas-Sassandra, Côte d’Ivoire",
+    "phone": "+225 05 06 88 56 46",
+    "admission": [
+      "Les conditions d’admission varient selon la formation.",
+      "Consulter le site officiel pour les concours, les orientations et les inscriptions."
+    ],
+    "description": "Université publique d’enseignement supérieur et de recherche, spécialisée notamment dans les métiers de la mer, la logistique, l’agriculture et l’ingénierie.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 79,
+    "name": "Lycée Moderne Inagohi de San Pedro",
+    "city": "San Pedro",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Enseignement secondaire général"
+    ],
+    "price": null,
+    "address": "Quartier Nitro, 01 BP 317, San Pedro, Côte d’Ivoire",
+    "phone": "+225 27 34 71 23 08",
+    "admission": [
+      "Se renseigner auprès de l’administration pour connaître les conditions d’affectation et d’inscription."
+    ],
+    "description": "Établissement public d’enseignement secondaire général situé dans le quartier Nitro à San Pedro.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 80,
+    "name": "Lycée Moderne Lucien Yebarth 1 de San Pedro",
+    "city": "San Pedro",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Enseignement secondaire général"
+    ],
+    "price": null,
+    "address": "Route de Grand-Béréby, en face de l’usine SUTEC, San Pedro, Côte d’Ivoire",
+    "phone": "+225 07 47 70 18 18",
+    "admission": [
+      "Se renseigner auprès de l’administration pour connaître les conditions d’affectation et d’inscription."
+    ],
+    "description": "Établissement public mixte d’enseignement secondaire général à San Pedro.",
+    "image": "",
+    "feesByLevel": []
+  },
+  {
+    "id": 81,
+    "name": "Lycée Moderne Lucien Yebarth 2 de San Pedro",
+    "city": "San Pedro",
+    "type": "Public",
+    "diplomas": [
+      "BEPC",
+      "Baccalauréat"
+    ],
+    "programs": [
+      "Enseignement secondaire général",
+      "Filières techniques référencées pour certains examens"
+    ],
+    "price": null,
+    "address": "San Pedro, Côte d'Ivoire",
+    "phone": "",
+    "admission": [
+      "Se renseigner auprès de l'administration pour connaître les conditions d'affectation et d'inscription."
+    ],
+    "description": "Établissement public d'enseignement secondaire à San Pedro, distinct du Lycée Moderne Lucien Yebarth 1.",
+    "image": "",
+    "feesByLevel": []
+  }
+]

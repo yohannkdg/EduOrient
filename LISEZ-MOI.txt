@@ -1,0 +1,12 @@
+EduOrient CI — version préparée pour mobile
+
+Fichiers :
+- index.html : page du site (balises Markdown parasites retirées)
+- style.css : styles existants + améliorations responsive pour téléphones et tablettes
+- script.js : JavaScript d’origine conservé
+
+IMPORTANT : le JavaScript charge les données avec fetch("./school.json").
+Place ton vrai fichier school.json dans le même dossier que ces trois fichiers.
+Le fichier nommé school(1).json que tu avais envoyé contient du HTML, pas les données JSON des établissements ; il n’a donc pas été utilisé comme fichier de données.
+
+Pour tester localement, ouvre le dossier avec un serveur local (par exemple Live Server dans VS Code), car fetch() peut être bloqué si index.html est ouvert directement depuis le disque.
