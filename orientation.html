@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvre des pistes d'études adaptées à tes intérêts avec le questionnaire EduOrient.">
+  <meta name="theme-color" content="#14532d">
+  <title>Mon orientation — EduOrient</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="orientation.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo" aria-label="Retour à l'accueil EduOrient">
+      <span class="logo-icon">E</span>
+      <span>EduOrient <span class="orange">CI</span></span>
+    </a>
+    <nav>
+      <a href="index.html#accueil">Accueil</a>
+      <a href="index.html#ecoles">Les établissements</a>
+      <a href="orientation.html" aria-current="page">Mon orientation</a>
+    </nav>
+    <a href="index.html#ecoles" class="nav-button">Trouver une école</a>
+  </header>
+
+  <main class="orientation-main">
+    <section class="orientation-hero">
+      <span class="orientation-eyebrow">TON AVENIR COMMENCE ICI</span>
+      <h1>Construis ton <span>orientation</span></h1>
+      <p>Réponds à quelques questions pour découvrir des domaines d'études qui pourraient te correspondre.</p>
+      <div class="orientation-note">Ce questionnaire donne des pistes de réflexion, pas une décision définitive.</div>
+    </section>
+
+    <section class="orientation-card" aria-labelledby="orientation-title">
+      <div class="orientation-card-heading">
+        <span class="orientation-step">QUESTIONNAIRE</span>
+        <h2 id="orientation-title">Parlons de ton projet</h2>
+        <p>Il n'y a pas de mauvaise réponse. Choisis ce qui te correspond aujourd'hui.</p>
+      </div>
+      <form id="orientationForm">
+        <div class="orientation-field">
+          <label for="studyLevel">1. Quel est ton niveau d'études actuel ?</label>
+          <select id="studyLevel" name="studyLevel" required>
+            <option value="">Choisir mon niveau</option>
+            <option value="college">Collège</option>
+            <option value="lycee">Lycée</option>
+            <option value="bac">J'ai le baccalauréat</option>
+            <option value="superieur">Études supérieures</option>
+            <option value="reconversion">Je souhaite me réorienter</option>
+          </select>
+        </div>
+
+        <div class="orientation-field">
+          <label for="interest">2. Quels domaines t'intéressent le plus ?</label>
+          <select id="interest" name="interest" required>
+            <option value="">Choisir un domaine</option>
+            <option value="numerique">Informatique et numérique</option>
+            <option value="sante">Santé et sciences du vivant</option>
+            <option value="ingenierie">Sciences, technologie et ingénierie</option>
+            <option value="commerce">Commerce, gestion et entrepreneuriat</option>
+            <option value="droit">Droit, politique et relations internationales</option>
+            <option value="education">Éducation et accompagnement</option>
+            <option value="arts">Arts, communication et création</option>
+            <option value="environnement">Environnement et agriculture</option>
+            <option value="aucun">Je ne sais pas encore</option>
+          </select>
+        </div>
+
+        <div class="orientation-field">
+          <label for="studyCountry">3. Dans quel pays aimerais-tu étudier ?</label>
+          <select id="studyCountry" name="studyCountry" required>
+            <option value="">Choisir un pays</option>
+            <option value="Côte d’Ivoire">Côte d'Ivoire</option>
+            <option value="France">France</option>
+            <option value="Sénégal">Sénégal</option>
+            <option value="Maroc">Maroc</option>
+            <option value="Canada">Canada</option>
+            <option value="Autre pays">Un autre pays</option>
+            <option value="Pas encore décidé">Je ne sais pas encore</option>
+          </select>
+        </div>
+
+        <div class="orientation-field">
+          <label for="budget">4. Quel budget peux-tu envisager pour les études ?</label>
+          <select id="budget" name="budget" required>
+            <option value="">Choisir une réponse</option>
+            <option value="limite">Budget limité — je cherche surtout des options abordables</option>
+            <option value="modere">Budget modéré</option>
+            <option value="flexible">Budget flexible</option>
+            <option value="inconnu">Je ne sais pas encore</option>
+          </select>
+        </div>
+
+        <div class="orientation-actions">
+          <button class="orientation-submit" type="submit">Découvrir mes pistes <span aria-hidden="true">→</span></button>
+          <button class="orientation-reset" type="reset">Effacer mes réponses</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="orientationResults" class="orientation-results" aria-live="polite" hidden>
+      <span class="orientation-step">TES PREMIÈRES PISTES</span>
+      <h2>Voici des idées pour commencer</h2>
+      <p id="orientationSummary"></p>
+      <div id="orientationSuggestions" class="orientation-suggestions"></div>
+      <div class="orientation-results-note">
+        <strong>À retenir :</strong> ces pistes sont indicatives. Les conditions d'admission, les frais et les formations disponibles doivent être vérifiés auprès de chaque établissement.
+      </div>
+      <div class="orientation-actions">
+        <a class="orientation-submit orientation-link" href="index.html#ecoles">Explorer les établissements</a>
+        <button class="orientation-reset" id="editOrientation" type="button">Modifier mes réponses</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="orientation-footer">
+    <p>© 2026 EduOrient — T'aider à préparer la suite.</p>
+    <a href="index.html">Retour à l'accueil</a>
+  </footer>
+  <script src="orientation.js" defer></script>
+</body>
+</html>
