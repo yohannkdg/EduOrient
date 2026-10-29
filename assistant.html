@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f766e">
+  <title>Assistant IA - EduOrient CI</title>
+  <link rel="stylesheet" href="assistant.css">
+  <script src="assistant.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a href="index.html" class="back-link">← Retour au site</a>
+    <div class="brand">
+      <div class="brand-icon">E</div>
+      <div>
+        <h1>EduOrient CI</h1>
+        <p>Assistant d’orientation scolaire</p>
+      </div>
+    </div>
+    <div class="status">
+      <span class="status-dot"></span>
+      IA locale
+    </div>
+  </header>
+
+  <main class="chat-layout">
+    <section class="welcome">
+      <span class="eyebrow">TON GUIDE D’ORIENTATION</span>
+      <h2>Construisons ton avenir <span>ensemble.</span></h2>
+      <p>
+        Pose tes questions sur les études, les formations et les écoles.
+        Je t’aiderai à explorer tes possibilités.
+      </p>
+    </section>
+
+    <section class="chat-card" aria-label="Conversation avec l’assistant">
+      <div class="chat-heading">
+        <div class="avatar">E</div>
+        <div>
+          <h2>Assistant EduOrient</h2>
+          <p>Comment puis-je t’aider aujourd’hui ?</p>
+        </div>
+      </div>
+
+      <div id="messages" class="messages" aria-live="polite">
+        <article class="message assistant-message">
+          <div class="message-avatar">E</div>
+          <div class="message-content">
+            Bonjour ! Je suis l’assistant IA d’EduOrient CI.
+            Qu’aimerais-tu savoir sur ton orientation scolaire ?
+          </div>
+        </article>
+      </div>
+
+      <div id="suggestions" class="suggestions">
+        <button type="button" data-question="Comment choisir une formation adaptée à mes intérêts ?">
+          Choisir une formation
+        </button>
+        <button type="button" data-question="Quelles questions dois-je poser avant de choisir une école ?">
+          Bien choisir mon école
+        </button>
+        <button type="button" data-question="Comment préparer mon admission dans une école ?">
+          Préparer mon admission
+        </button>
+      </div>
+
+      <form id="chat-form" class="chat-form">
+        <label class="sr-only" for="message-input">Ton message</label>
+        <textarea
+          id="message-input"
+          placeholder="Écris ta question ici..."
+          rows="1"
+          maxlength="2000"
+          required
+        ></textarea>
+        <button id="send-button" type="submit" aria-label="Envoyer le message">
+          Envoyer ↑
+        </button>
+      </form>
+
+      <p class="disclaimer">
+        Les informations importantes sur les écoles et les admissions doivent être vérifiées auprès des établissements.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,102 @@
+
+const chatForm = document.getElementById("chat-form");
+const messageInput = document.getElementById("message-input");
+const messages = document.getElementById("messages");
+const sendButton = document.getElementById("send-button");
+const suggestions = document.getElementById("suggestions");
+
+const API_URL = "https://eduorient-ai.yohannkdg.workers.dev/api/chat";
+
+function addMessage(text, sender) {
+  const article = document.createElement("article");
+  article.className = `message ${
+    sender === "user" ? "user-message" : "assistant-message"
+  }`;
+
+  if (sender !== "user") {
+    const avatar = document.createElement("div");
+    avatar.className = "message-avatar";
+    avatar.textContent = "E";
+    article.appendChild(avatar);
+  }
+
+  const content = document.createElement("div");
+  content.className = "message-content";
+
+  // Affiche le texte sans interpréter du HTML.
+  content.textContent = text;
+
+  article.appendChild(content);
+  messages.appendChild(article);
+  messages.scrollTop = messages.scrollHeight;
+
+  return content;
+}
+
+async function sendMessage(text) {
+  const message = text.trim();
+
+  if (!message || sendButton.disabled) return;
+
+  addMessage(message, "user");
+  messageInput.value = "";
+  sendButton.disabled = true;
+  messageInput.disabled = true;
+  suggestions.hidden = true;
+
+  const loadingMessage = addMessage(
+    "Je réfléchis à ta question...",
+    "assistant"
+  );
+
+  try {
+    const response = await fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ message }),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(
+        data.error || "Une erreur est survenue pendant la demande."
+      );
+    }
+
+    loadingMessage.textContent =
+      data.reply || "Je n'ai pas reçu de réponse.";
+  } catch (error) {
+    console.error("Erreur de communication avec l'IA :", error);
+
+    loadingMessage.textContent =
+      "Je n'arrive pas à contacter l'assistant. Vérifie que le serveur EduOrient CI et Ollama sont démarrés, puis réessaie.";
+  } finally {
+    sendButton.disabled = false;
+    messageInput.disabled = false;
+    messageInput.focus();
+    messages.scrollTop = messages.scrollHeight;
+  }
+}
+
+chatForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  sendMessage(messageInput.value);
+});
+
+suggestions.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-question]");
+
+  if (button) {
+    sendMessage(button.dataset.question);
+  }
+});
+
+messageInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter" && !event.shiftKey) {
+    event.preventDefault();
+    chatForm.requestSubmit();
+  }
+});
