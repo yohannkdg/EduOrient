@@ -6,6 +6,8 @@ const sendButton = document.getElementById("send-button");
 const suggestions = document.getElementById("suggestions");
 
 const API_URL = "https://eduorient-ai.yohannkdg.workers.dev/api/chat";
+// Historique de la conversation en cours
+const conversationHistory = [];
 
 function addMessage(text, sender) {
   const article = document.createElement("article");
@@ -39,7 +41,8 @@ async function sendMessage(text) {
   if (!message || sendButton.disabled) return;
 
   addMessage(message, "user");
-  messageInput.value = "";
+
+messageInput.value = "";
   sendButton.disabled = true;
   messageInput.disabled = true;
   suggestions.hidden = true;
@@ -55,7 +58,10 @@ async function sendMessage(text) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ message }),
+      body: JSON.stringify({
+  message,
+  history: conversationHistory,
+}),
     });
 
     const data = await response.json();
@@ -67,6 +73,17 @@ async function sendMessage(text) {
     }
 
     loadingMessage.textContent = data.reply;
+    conversationHistory.push({
+  role: "user",
+  content: message,
+});
+
+conversationHistory.push({
+  role: "assistant",
+  content: data.reply,
+});
+
+conversationHistory.splice(0, conversationHistory.length - 12);
   } catch (error) {
     console.error("Erreur de communication avec l'IA :", error);
 
