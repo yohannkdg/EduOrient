@@ -1,12 +1,58 @@
 let schools = [];
 
 
+
 // ===============================
 // ÉLÉMENTS DE LA PAGE
 // ===============================
 
 const searchInput = document.querySelector("#search");
 const citySelect = document.querySelector("#city");
+const countrySelect = document.querySelector("#country");
+
+function getSchoolCurrency(school) {
+  const country = school?.country || "Côte d'Ivoire";
+  const currencies = {
+    "Côte d'Ivoire": "FCFA",
+    "Sénégal": "FCFA",
+    "Maroc": "MAD",
+    "France": "EUR",
+    "Canada": "CAD",
+    "Suisse": "CHF",
+    "États-Unis": "USD"
+  };
+  return currencies[country] || "—";
+}
+
+function updateCityOptions() {
+  const selectedCountry = countrySelect.value;
+
+  const cities = [...new Set(
+    schools
+      .filter(school =>
+        !selectedCountry ||
+        (school.country || "Côte d'Ivoire") === selectedCountry
+      )
+      .map(school => school.city)
+      .filter(Boolean)
+  )].sort();
+
+  const currentCity = citySelect.value;
+
+  citySelect.innerHTML = '<option value="">Toutes les villes</option>';
+
+  cities.forEach(city => {
+    const option = document.createElement("option");
+    option.value = city;
+    option.textContent = city;
+    citySelect.appendChild(option);
+  });
+
+  if (cities.includes(currentCity)) {
+    citySelect.value = currentCity;
+  }
+}
+
 const diplomaSelect = document.querySelector("#diploma");
 const typeSelect = document.querySelector("#type");
 const schoolList = document.querySelector("#school-list");
@@ -71,9 +117,113 @@ function toggleFavorite(schoolId) {
 // AFFICHER LES ÉTABLISSEMENTS
 // ===============================
 
+
+let compareIds = [];
+
+const compareButton = document.querySelector("#compare-button");
+const compareResults = document.querySelector("#compare-results");
+
+function updateCompareButton() {
+  if (!compareButton) return;
+  compareButton.textContent = `Comparer (${compareIds.length}/3)`;
+  compareButton.disabled = compareIds.length < 2;
+}
+
+function renderComparison() {
+  if (!compareResults) return;
+  const selected = compareIds
+    .map(id => schools.find(school => Number(school.id) === Number(id)))
+    .filter(Boolean);
+
+  if (selected.length < 2) {
+    compareResults.hidden = true;
+    compareResults.innerHTML = "";
+    return;
+  }
+
+  const cell = (value) => value == null || value === "" ? "Non renseigné" : value;
+  const feesText = (school) => {
+    const fees = Array.isArray(school.feesByLevel) ? school.feesByLevel : [];
+    if (!fees.length) return "Tarifs non renseignés";
+    return fees.map(fee => {
+      const currency = fee.currency || getSchoolCurrency(school);
+      const inscription = fee.registrationFee == null
+        ? "Non communiqué"
+        : `${Number(fee.registrationFee).toLocaleString("fr-FR")} ${currency}`;
+      const tuition = fee.tuitionFee == null
+        ? "Non communiqué"
+        : `${Number(fee.tuitionFee).toLocaleString("fr-FR")} ${currency}`;
+      const estimate = fee.registrationFeeEstimate || fee.tuitionFeeEstimate || fee.verified === false;
+      return `<div class="compare-fee">
+        <strong>${cell(fee.level)}</strong>
+        <p>Inscription : ${inscription}</p>
+        <p>Scolarité : ${tuition}</p>
+        <small>${estimate ? "Estimation indicative — à confirmer" : "Tarif publié / vérifié"}</small>
+      </div>`;
+    }).join("");
+  };
+
+  const rows = [
+    ["Pays / ville", s => `${cell(s.country || "Côte d'Ivoire")} / ${cell(s.city)}`],
+    ["Type", s => cell(s.type)],
+    ["Diplômes", s => (s.diplomas || []).join(", ") || "Non renseigné"],
+    ["Formations", s => (s.programs || []).join(", ") || "Non renseigné"],
+    ["Frais", feesText],
+    ["Site officiel", s => s.website
+      ? `<a href="${s.website}" target="_blank" rel="noopener noreferrer">Visiter le site</a>`
+      : "Non renseigné"],
+    ["Adresse", s => cell(s.address)],
+    ["Téléphone", s => cell(s.phone)]
+  ];
+
+  compareResults.innerHTML = `
+    <div class="compare-results-heading">
+      <h3>Résultat de la comparaison</h3>
+      <button type="button" id="close-comparison" class="reset-button">Fermer</button>
+    </div>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead><tr><th>Critères</th>${selected.map(s => `<th>${cell(s.name)}</th>`).join("")}</tr></thead>
+        <tbody>
+          ${rows.map(([label, getter]) => `
+            <tr><th>${label}</th>${selected.map(s => `<td>${getter(s)}</td>`).join("")}</tr>
+          `).join("")}
+        </tbody>
+      </table>
+    </div>
+    <p class="compare-note">Les estimations ne sont pas des tarifs officiels. Vérifie les informations auprès de chaque établissement.</p>
+  `;
+  compareResults.hidden = false;
+  document.querySelector("#close-comparison")?.addEventListener("click", () => {
+    compareResults.hidden = true;
+  });
+}
+
+if (schoolList) {
+  schoolList.addEventListener("change", (event) => {
+    const checkbox = event.target.closest(".compare-checkbox");
+    if (!checkbox) return;
+    const id = Number(checkbox.dataset.compareId);
+    if (checkbox.checked) {
+      if (compareIds.length >= 3) {
+        checkbox.checked = false;
+        alert("Tu peux comparer 3 établissements au maximum.");
+        return;
+      }
+      if (!compareIds.includes(id)) compareIds.push(id);
+    } else {
+      compareIds = compareIds.filter(value => value !== id);
+    }
+    updateCompareButton();
+  });
+}
+
+compareButton?.addEventListener("click", renderComparison);
+
 function renderSchools() {
   const query = searchInput.value.trim().toLowerCase();
   const city = citySelect.value;
+  const country = countrySelect.value;
   const diploma = diplomaSelect.value;
   const type = typeSelect.value;
   console.log("Nombre d'établissements chargés :", schools.length);
@@ -96,6 +246,10 @@ console.log("Favoris uniquement :", showOnlyFavorites);
 
     const matchesCity =
       !city || school.city === city;
+      const schoolCountry = school.country || "Côte d'Ivoire";
+
+const matchesCountry =
+  !country || schoolCountry === country;
 
     const matchesDiploma =
       !diploma || school.diplomas.includes(diploma);
@@ -107,13 +261,14 @@ console.log("Favoris uniquement :", showOnlyFavorites);
       !showOnlyFavorites ||
       favoriteIds.includes(school.id);
 
-    return (
-      matchesQuery &&
-      matchesCity &&
-      matchesDiploma &&
-      matchesType &&
-      matchesFavorite
-    );
+  return (
+  matchesQuery &&
+  matchesCity &&
+  matchesCountry &&
+  matchesDiploma &&
+  matchesType &&
+  matchesFavorite
+);
   });
 
 
@@ -182,6 +337,16 @@ ${school.image ? `
               ${school.type}
             </span>
 
+            <label class="compare-choice">
+              <input
+                type="checkbox"
+                class="compare-checkbox"
+                data-compare-id="${school.id}"
+                ${compareIds.includes(Number(school.id)) ? "checked" : ""}
+              >
+              Comparer
+            </label>
+
           </div>
 
 
@@ -191,7 +356,7 @@ ${school.image ? `
 
 
           <p class="school-city">
-            📍 ${school.city}, Côte d'Ivoire
+            📍 ${school.city}, ${school.country || "Côte d'Ivoire"}
           </p>
 
 
@@ -244,7 +409,7 @@ fees.length === 0
               ? "Frais de scolarité : à confirmer"
               : "Frais de scolarité : " +
                 Number(fee.tuitionFee).toLocaleString("fr-FR") +
-                " FCFA"
+                " " + (fee.currency || getSchoolCurrency(school))
           }
         </p>
 
@@ -252,7 +417,7 @@ fees.length === 0
           fee.registrationFee != null
             ? `<p>Frais d'inscription : ${
                 Number(fee.registrationFee).toLocaleString("fr-FR")
-              } FCFA</p>`
+              } ${fee.currency || getSchoolCurrency(school)}</p>`
             : ""
         }
 
@@ -260,7 +425,7 @@ fees.length === 0
           fee.totalPayable != null
             ? `<p>Total indiqué : ${
                 Number(fee.totalPayable).toLocaleString("fr-FR")
-              } FCFA</p>`
+              } ${fee.currency || getSchoolCurrency(school)}</p>`
             : ""
         }
 
@@ -322,6 +487,7 @@ function resetFilters() {
 
   searchInput.value = "";
   citySelect.value = "";
+  countrySelect.value = "";
   diplomaSelect.value = "";
   typeSelect.value = "";
 
@@ -338,6 +504,10 @@ citySelect.addEventListener(
   "change",
   renderSchools
 );
+countrySelect.addEventListener("change", () => {
+  updateCityOptions();
+  renderSchools();
+});
 
 diplomaSelect.addEventListener(
   "change",
@@ -353,6 +523,43 @@ resetButton.addEventListener(
   "click",
   resetFilters
 );
+
+
+function renderSchoolFees(school) {
+  const fees = Array.isArray(school.feesByLevel) ? school.feesByLevel : [];
+  if (!fees.length) {
+    return `<p>Tarifs non renseignés pour le moment. Contactez l'établissement pour obtenir une grille officielle.</p>`;
+  }
+
+  return fees.map((fee) => {
+    const currency = fee.currency || getSchoolCurrency(school);
+    const registration = fee.registrationFee == null
+      ? "Non communiqué"
+      : `${Number(fee.registrationFee).toLocaleString("fr-FR")} ${currency}`;
+    const tuition = fee.tuitionFee == null
+      ? "Non communiqué"
+      : `${Number(fee.tuitionFee).toLocaleString("fr-FR")} ${currency}`;
+    const estimated = fee.registrationFeeEstimate || fee.tuitionFeeEstimate || fee.verified === false;
+    const label = estimated
+      ? `<p class="fee-status fee-estimated">⚠️ Estimation indicative — à confirmer auprès de l'établissement.</p>`
+      : `<p class="fee-status fee-verified">✓ Tarif publié / vérifié</p>`;
+    const source = fee.source && /^https?:\/\//i.test(fee.source)
+      ? `<a href="${fee.source}" target="_blank" rel="noopener noreferrer">Consulter la source</a>`
+      : "";
+    return `
+      <div class="fee-card">
+        <h4>${fee.level || "Niveau non précisé"}</h4>
+        <p><strong>Année :</strong> ${fee.academicYear || "Non précisée"}</p>
+        <p><strong>Frais d'inscription :</strong> ${registration}</p>
+        <p><strong>Frais de scolarité :</strong> ${tuition}</p>
+        <p><strong>Période :</strong> ${fee.period || "À confirmer"}</p>
+        ${label}
+        ${fee.status ? `<p>${fee.status}</p>` : ""}
+        ${source}
+      </div>
+    `;
+  }).join("");
+}
 
 function openSchoolModal(schoolId) {
   const school = schools.find(
@@ -396,12 +603,8 @@ function openSchoolModal(schoolId) {
     </div>
 
     <div class="school-detail-section">
-      <h3>Frais de scolarité</h3>
-      <p>${
-        school.price == null
-          ? "Montant non renseigné : à vérifier auprès de l'établissement."
-          : Number(school.price).toLocaleString("fr-FR") + " FCFA"
-      }</p>
+      <h3>Frais d'inscription et de scolarité</h3>
+      ${renderSchoolFees(school)}
     </div>
 
     <div class="school-detail-section">
@@ -418,7 +621,7 @@ function openSchoolModal(schoolId) {
   ♡ Ajouter aux favoris
 </button>
       <a
-        href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent((school.address || school.city) + ', Côte d’Ivoire')}"
+        href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent((school.address || school.city) + ', ' + (school.country || "Côte d'Ivoire"))}"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -499,7 +702,7 @@ function showSchoolDetails(schoolId) {
       </h2>
 
       <p>
-        📍 ${school.city}, Côte d'Ivoire
+        📍 ${school.city}, ${school.country || "Côte d'Ivoire"}
       </p>
 
       <p class="detail-description">
@@ -581,7 +784,7 @@ function showSchoolDetails(schoolId) {
           school.price === null
             ? "Montant non renseigné : à confirmer auprès de l'établissement."
             : school.price.toLocaleString("fr-FR") +
-              " FCFA"
+              " " + getSchoolCurrency(school)
         }
 
       </p>
