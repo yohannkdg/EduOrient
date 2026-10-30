@@ -66,8 +66,7 @@ async function sendMessage(text) {
       );
     }
 
-    loadingMessage.textContent =
-  "Impossible de contacter l'assistant IA. Vérifie ta connexion Internet et réessaie.";
+    loadingMessage.textContent = data.reply;
   } catch (error) {
     console.error("Erreur de communication avec l'IA :", error);
 
