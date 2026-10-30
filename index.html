@@ -8,6 +8,44 @@
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="./manifest.webmanifest">
   <meta name="theme-color" content="#14532d">
+  
+<style>
+  .assistant-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px;
+    border-radius: 999px;
+    background: #155eef;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  }
+
+  .assistant-float:hover {
+    background: #104ac0;
+    transform: translateY(-2px);
+  }
+
+  .assistant-float-icon {
+    font-size: 20px;
+  }
+
+  @media (max-width: 480px) {
+    .assistant-float {
+      right: 12px;
+      bottom: 12px;
+      padding: 12px 16px;
+    }
+  }
+</style>
+
 </head>
 <body>
 
@@ -192,6 +230,11 @@
     </div>
   </div>
 </div>
+
+<a href="assistant.html" class="assistant-float" aria-label="Ouvrir l'assistant IA">
+  <span class="assistant-float-icon">💬</span>
+  <span>Assistant IA</span>
+</a>
 
 </body>
 </html>

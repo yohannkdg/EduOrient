@@ -67,12 +67,12 @@ async function sendMessage(text) {
     }
 
     loadingMessage.textContent =
-      data.reply || "Je n'ai pas reçu de réponse.";
+  "Impossible de contacter l'assistant IA. Vérifie ta connexion Internet et réessaie.";
   } catch (error) {
     console.error("Erreur de communication avec l'IA :", error);
 
     loadingMessage.textContent =
-      "Je n'arrive pas à contacter l'assistant. Vérifie que le serveur EduOrient CI et Ollama sont démarrés, puis réessaie.";
+      "Impossible de contacter l'assistant IA. Vérifie ta connexion Internet et réessaie.";
   } finally {
     sendButton.disabled = false;
     messageInput.disabled = false;
