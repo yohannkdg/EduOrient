@@ -1,145 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "Établissement de démonstration A",
-    "city": "Abidjan",
-    "type": "Privé",
-    "diplomas": [
-      "CEPE",
-      "BEPC"
-    ],
-    "programs": [
-      "Collège",
-      "Enseignement général"
-    ],
-    "price": null,
-    "address": "Adresse à vérifier",
-    "phone": "",
-    "admission": [
-      "Vérifier les conditions auprès de l'établissement",
-      "Confirmer les pièces du dossier d'inscription"
-    ],
-    "description": "Fiche exemple pour découvrir les informations d'un établissement.",
-    "image": "",
-    "feesByLevel": []
-  },
-  {
-    "id": 2,
-    "name": "Établissement de démonstration B",
-    "city": "Abidjan",
-    "type": "Public",
-    "diplomas": [
-      "BEPC"
-    ],
-    "programs": [
-      "Lycée",
-      "Enseignement général"
-    ],
-    "price": null,
-    "address": "Adresse à vérifier",
-    "phone": "",
-    "admission": [
-      "Vérifier les conditions d'affectation",
-      "Confirmer les modalités d'inscription"
-    ],
-    "description": "Exemple de fiche pour un établissement secondaire.",
-    "image": "",
-    "feesByLevel": []
-  },
-  {
-    "id": 3,
-    "name": "Établissement de démonstration C",
-    "city": "Yamoussoukro",
-    "type": "Privé",
-    "diplomas": [
-      "BAC"
-    ],
-    "programs": [
-      "Informatique",
-      "Gestion"
-    ],
-    "price": null,
-    "address": "Adresse à vérifier",
-    "phone": "",
-    "admission": [
-      "Confirmer les diplômes acceptés",
-      "Demander les frais et les conditions d'admission"
-    ],
-    "description": "Exemple de fiche pour une formation supérieure.",
-    "image": "",
-    "feesByLevel": []
-  },
-  {
-    "id": 4,
-    "name": "Établissement de démonstration D",
-    "city": "Bouaké",
-    "type": "Public",
-    "diplomas": [
-      "BAC"
-    ],
-    "programs": [
-      "Université",
-      "Sciences"
-    ],
-    "price": null,
-    "address": "Adresse à vérifier",
-    "phone": "",
-    "admission": [
-      "Vérifier les conditions d'accès à la formation",
-      "Confirmer la procédure d'inscription"
-    ],
-    "description": "Exemple de fiche pour une orientation universitaire.",
-    "image": "",
-    "feesByLevel": []
-  },
-  {
-    "id": 5,
-    "name": "Établissement de démonstration E",
-    "city": "San Pedro",
-    "type": "Privé",
-    "diplomas": [
-      "BEPC",
-      "BAC"
-    ],
-    "programs": [
-      "Gestion",
-      "Commerce"
-    ],
-    "price": null,
-    "address": "Adresse à vérifier",
-    "phone": "",
-    "admission": [
-      "Demander la liste des pièces du dossier",
-      "Vérifier les frais auprès de l'établissement"
-    ],
-    "description": "Exemple de fiche pour explorer plusieurs filières.",
-    "image": "",
-    "feesByLevel": []
-  },
-  {
-    "id": 6,
-    "name": "Établissement de démonstration F",
-    "city": "Abidjan",
-    "type": "Privé",
-    "diplomas": [
-      "BAC"
-    ],
-    "programs": [
-      "Informatique",
-      "Réseaux"
-    ],
-    "price": null,
-    "address": "Adresse à vérifier",
-    "phone": "",
-    "admission": [
-      "Confirmer les diplômes requis",
-      "Demander les modalités d'admission"
-    ],
-    "description": "Exemple de fiche pour une formation technique.",
-    "image": "",
-    "feesByLevel": []
-  },
-  {
     "id": 7,
     "name": "Bordeaux École de Management (BEM Abidjan)",
     "city": "Abidjan",
@@ -2704,5 +2564,151 @@
     "description": "Établissement public d'enseignement secondaire à San Pedro, distinct du Lycée Moderne Lucien Yebarth 1.",
     "image": "",
     "feesByLevel": []
+  },
+  {
+    "id": 82,
+    "name": "HEC Abidjan (Hautes Études Commerciales d'Abidjan)",
+    "city": "Abidjan",
+    "type": "Privé",
+    "diplomas": [
+      "BTS",
+      "Licence",
+      "Bachelor",
+      "Master",
+      "MBA",
+      "DBA"
+    ],
+    "programs": [
+      "Gestion des ressources humaines",
+      "Management et gestion des PME",
+      "Marketing",
+      "Marketing international",
+      "Marketing digital",
+      "Communication",
+      "Finance et comptabilité",
+      "Banque, assurance et gestion du patrimoine",
+      "Transport et logistique",
+      "Informatique, réseaux et sécurité",
+      "Développement logiciel",
+      "Environnement et développement durable",
+      "Droit des affaires"
+    ],
+    "price": null,
+    "address": "Cocody, boulevard François-Mitterrand, Abidjan, Côte d'Ivoire",
+    "phone": "+225 27 22 48 48 12",
+    "admission": [
+      "Choisir le parcours et la spécialité sur le formulaire de candidature de l'établissement.",
+      "Vérifier les conditions d'accès propres au diplôme et à la spécialité.",
+      "Demander à l'établissement le montant actualisé des frais de scolarité avant l'inscription."
+    ],
+    "description": "Établissement privé d'enseignement supérieur situé à Cocody, Abidjan. HEC Abidjan propose des formations francophones et anglophones dans les domaines du management, du commerce, de la finance, du numérique, de la logistique et des ressources humaines. Les diplômes et spécialités disponibles peuvent varier selon la rentrée.",
+    "image": "",
+    "feesByLevel": [
+      {
+        "level": "Frais d'inscription (référence MESRS)",
+        "academicYear": "À confirmer pour la rentrée concernée",
+        "registrationFee": 175000,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "status": "Le montant de 175 000 FCFA apparaît sur la plateforme officielle d'orientation du MESRS ; les frais de scolarité ne sont pas publiés dans les sources consultées. À reconfirmer auprès de HEC Abidjan.",
+        "source": "https://bac.mesrs-ci.net/offres/ets-prives",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Centre de Préparation aux Diplômes de l'Expertise Comptable (CPDEC - INP-HB)",
+    "city": "Abidjan",
+    "type": "Public",
+    "diplomas": [
+      "DGC",
+      "DSGC",
+      "Licence 3",
+      "Master"
+    ],
+    "programs": [
+      "Diplôme de Gestion et de Comptabilité (DGC)",
+      "Diplôme Supérieur de Gestion et de Comptabilité (DSGC)",
+      "Licence 3 Comptabilité, Contrôle, Audit (CCA)",
+      "Master Comptabilité, Contrôle, Audit (CCA)",
+      "Comptabilité",
+      "Audit",
+      "Finance",
+      "Contrôle de gestion"
+    ],
+    "price": null,
+    "address": "Cocody, Riviera 2 Bonoumin, Abidjan, Côte d'Ivoire",
+    "phone": "+225 07 09 54 21 05",
+    "admission": [
+      "DGC : accès notamment avec le baccalauréat ou un titre admis en équivalence.",
+      "DSGC : accès notamment avec le DGC, le DCG ou un diplôme équivalent.",
+      "Licence 3 CCA et Master CCA : consulter les conditions et la procédure de candidature propres à chaque parcours.",
+      "Vérifier le calendrier de candidature de l'année académique concernée sur le site officiel."
+    ],
+    "description": "Centre de préparation aux diplômes de l'expertise comptable de l'INP-HB, situé à Cocody, Riviera 2 Bonoumin. En partenariat avec l'INTEC du CNAM Paris, il propose des parcours en gestion et comptabilité, ainsi que des formations en comptabilité, contrôle et audit. Les tarifs ci-dessous sont ceux publiés pour 2026-2027.",
+    "image": "",
+    "feesByLevel": [
+      {
+        "level": "DGC 1",
+        "academicYear": "2026-2027",
+        "registrationFee": 75000,
+        "tuitionFee": 1040000,
+        "currency": "FCFA",
+        "status": "Total publié : 1 115 000 FCFA, comprenant 75 000 FCFA de frais d'inscription et 100 000 FCFA de supports de cours.",
+        "source": "https://www.cpdec.inphb.ci/",
+        "verified": true
+      },
+      {
+        "level": "DGC 2",
+        "academicYear": "2026-2027",
+        "registrationFee": 75000,
+        "tuitionFee": 1040000,
+        "currency": "FCFA",
+        "status": "Total publié : 1 115 000 FCFA, comprenant 75 000 FCFA de frais d'inscription et 100 000 FCFA de supports de cours.",
+        "source": "https://www.cpdec.inphb.ci/",
+        "verified": true
+      },
+      {
+        "level": "DGC 3",
+        "academicYear": "2026-2027",
+        "registrationFee": 75000,
+        "tuitionFee": 1345000,
+        "currency": "FCFA",
+        "status": "Total publié : 1 420 000 FCFA, comprenant 75 000 FCFA de frais d'inscription et 125 000 FCFA de supports de cours.",
+        "source": "https://www.cpdec.inphb.ci/",
+        "verified": true
+      },
+      {
+        "level": "DSGC 1",
+        "academicYear": "2026-2027",
+        "registrationFee": 100000,
+        "tuitionFee": 1160000,
+        "currency": "FCFA",
+        "status": "Total publié : 1 260 000 FCFA, comprenant 100 000 FCFA de frais d'inscription et 100 000 FCFA de supports de cours.",
+        "source": "https://www.cpdec.inphb.ci/",
+        "verified": true
+      },
+      {
+        "level": "DSGC 2",
+        "academicYear": "2026-2027",
+        "registrationFee": 100000,
+        "tuitionFee": 875000,
+        "currency": "FCFA",
+        "status": "Total publié : 975 000 FCFA, comprenant 100 000 FCFA de frais d'inscription et 75 000 FCFA de supports de cours.",
+        "source": "https://www.cpdec.inphb.ci/",
+        "verified": true
+      },
+      {
+        "level": "Licence 3 CCA / Master CCA",
+        "academicYear": "2026-2027",
+        "registrationFee": null,
+        "tuitionFee": null,
+        "currency": "FCFA",
+        "status": "Tarifs non confirmés dans les pages consultées ; contacter le CPDEC.",
+        "source": "https://www.cpdec.inphb.ci/",
+        "verified": false
+      }
+    ]
   }
 ]
