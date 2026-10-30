@@ -1314,3 +1314,210 @@ button, .nav-button, .primary-button, .details-button,
     padding: 14px;
   }
 }
+/* ===== Bouton mode sombre / mode clair ===== */
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--background);
+  color: var(--navy);
+  font-size: 21px;
+  cursor: pointer;
+  transition: 0.2s;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-2px);
+  border-color: var(--orange);
+}
+
+/* =====================================
+   MODE SOMBRE — EDUORIENT
+===================================== */
+
+html[data-theme="dark"] {
+  --navy: #e5edf7;
+  --blue: #80b8ed;
+  --background: #111827;
+  --muted: #aab8ca;
+  --border: #344256;
+  --white: #1e293b;
+  color-scheme: dark;
+}
+
+html[data-theme="dark"] body {
+  background: var(--background);
+  color: var(--navy);
+}
+
+html[data-theme="dark"] .navbar,
+html[data-theme="dark"] .hero,
+html[data-theme="dark"] .hero-card,
+html[data-theme="dark"] .filters,
+html[data-theme="dark"] .school-card,
+html[data-theme="dark"] .empty-state,
+html[data-theme="dark"] .details-page,
+html[data-theme="dark"] .school-modal-content {
+  background: #1e293b;
+  color: #e5edf7;
+}
+
+html[data-theme="dark"] .navbar nav {
+  color: #c0ccda;
+}
+
+html[data-theme="dark"] .about-section {
+  background: #172335;
+  color: #e5edf7;
+}
+
+html[data-theme="dark"] .field input,
+html[data-theme="dark"] .field select,
+html[data-theme="dark"] .reset-button,
+html[data-theme="dark"] .favorite-button,
+html[data-theme="dark"] .close-modal {
+  background: #263449;
+  color: #e5edf7;
+  border-color: #45566e;
+}
+
+html[data-theme="dark"] .school-icon,
+html[data-theme="dark"] .tag,
+html[data-theme="dark"] .school-detail-section {
+  background: #263449;
+  color: #e5edf7;
+}
+
+html[data-theme="dark"] .school-description,
+html[data-theme="dark"] .detail-list,
+html[data-theme="dark"] .school-detail-section p,
+html[data-theme="dark"] .school-detail-section li {
+  color: #c0ccda;
+}
+
+html[data-theme="dark"] .school-detail-title,
+html[data-theme="dark"] .school-detail-section h3 {
+  color: #e5edf7;
+}
+
+html[data-theme="dark"] .school-detail-section {
+  border-color: #45566e;
+}
+
+html[data-theme="dark"] .school-type {
+  background: #254536;
+  color: #a9e4bb;
+}
+
+html[data-theme="dark"] .hero-circle {
+  background: #344256;
+}
+
+html[data-theme="dark"] .theme-toggle {
+  background: #263449;
+  color: #ffffff;
+  border-color: #45566e;
+}
+/* Correction du contraste en mode sombre */
+
+html[data-theme="dark"] .nav-button,
+html[data-theme="dark"] .primary-button,
+html[data-theme="dark"] .details-button,
+html[data-theme="dark"] .detail-contact {
+  background: #174d7a;
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .logo-icon {
+  background: #174d7a;
+  color: #ffffff;
+}
+
+html[data-theme="dark"] footer {
+  background: #0b1422;
+  color: #ffffff;
+}
+
+html[data-theme="dark"] footer p {
+  color: #d0dbe6;
+}
+
+html[data-theme="dark"] .school-detail-actions a,
+html[data-theme="dark"] .school-detail-actions button {
+  background: #1769e0;
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .school-detail-badge {
+  background: #263f60;
+  color: #c8ddff;
+}
+
+html[data-theme="dark"] .detail-header,
+html[data-theme="dark"] .detail-section {
+  border-color: var(--border);
+}
+/* ===== Comparateur des établissements ===== */
+
+.compare-panel {
+  margin: 30px 0;
+  padding: 25px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  color: var(--navy);
+}
+
+.compare-panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.compare-panel-heading p {
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.compare-results {
+  margin-top: 25px;
+  overflow-x: auto;
+}
+
+.compare-results[hidden] {
+  display: none !important;
+}
+
+/* Mode sombre */
+
+html[data-theme="dark"] .compare-panel {
+  background: #1e293b;
+  color: #e5edf7;
+  border-color: #344256;
+}
+
+html[data-theme="dark"] .compare-panel-heading p {
+  color: #c0ccda;
+}
+
+html[data-theme="dark"] .compare-results {
+  color: #e5edf7;
+}
+
+@media (max-width: 560px) {
+  .compare-panel {
+    padding: 17px;
+  }
+
+  .compare-panel-heading {
+    align-items: stretch;
+  }
+}
