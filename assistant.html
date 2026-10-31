@@ -5,31 +5,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0f766e">
-  <title>Assistant IA - EduOrient CI</title>
+  <title>Assistant IA - EduOrient</title>
   <link rel="stylesheet" href="assistant.css">
+  <script src="language.js" defer></script>
   <script src="assistant.js" defer></script>
 </head>
 <body>
   <header class="topbar">
-    <a href="index.html" class="back-link">← Retour au site</a>
+    <a href="index.html" class="back-link" data-i18n="back">← Retour au site</a>
+
     <div class="brand">
       <div class="brand-icon">E</div>
       <div>
-        <h1>EduOrient CI</h1>
-        <p>Assistant d’orientation scolaire</p>
+        <h1>EduOrient</h1>
+        <p data-i18n="assistantSubtitle">Assistant d’orientation scolaire</p>
       </div>
     </div>
-    <div class="status">
-      <span class="status-dot"></span>
-      IA locale
+
+    <div class="header-actions">
+      <div class="status">
+        <span class="status-dot"></span>
+        <span data-i18n="localAI">IA locale</span>
+      </div>
+
+      <button
+  type="button"
+  id="language-toggle"
+  style="display: inline-block !important; visibility: visible !important; background: orange; color: white; padding: 12px 20px; border: 2px solid black; border-radius: 8px; font-weight: bold;"
+>
+  🇬🇧 EN
+</button>
     </div>
   </header>
 
   <main class="chat-layout">
     <section class="welcome">
-      <span class="eyebrow">TON GUIDE D’ORIENTATION</span>
-      <h2>Construisons ton avenir <span>ensemble.</span></h2>
-      <p>
+      <span class="eyebrow" data-i18n="guide">TON GUIDE D’ORIENTATION</span>
+      <h2 data-i18n="welcomeTitle">Construisons ton avenir ensemble.</h2>
+      <p data-i18n="welcomeText">
         Pose tes questions sur les études, les formations et les écoles.
         Je t’aiderai à explorer tes possibilités.
       </p>
@@ -39,29 +52,29 @@
       <div class="chat-heading">
         <div class="avatar">E</div>
         <div>
-          <h2>Assistant EduOrient</h2>
-          <p>Comment puis-je t’aider aujourd’hui ?</p>
+          <h2 data-i18n="assistantName">Assistant EduOrient</h2>
+          <p data-i18n="helpToday">Comment puis-je t’aider aujourd’hui ?</p>
         </div>
       </div>
 
       <div id="messages" class="messages" aria-live="polite">
         <article class="message assistant-message">
           <div class="message-avatar">E</div>
-          <div class="message-content">
-            Bonjour ! Je suis l’assistant IA d’EduOrient CI.
+          <div class="message-content" data-i18n="greeting">
+            Bonjour ! Je suis l’assistant IA d’EduOrient.
             Qu’aimerais-tu savoir sur ton orientation scolaire ?
           </div>
         </article>
       </div>
 
       <div id="suggestions" class="suggestions">
-        <button type="button" data-question="Comment choisir une formation adaptée à mes intérêts ?">
+        <button type="button" data-question-fr="Comment choisir une formation adaptée à mes intérêts ?" data-question-en="How can I choose a course that matches my interests?" data-i18n="suggestion1">
           Choisir une formation
         </button>
-        <button type="button" data-question="Quelles questions dois-je poser avant de choisir une école ?">
+        <button type="button" data-question-fr="Quelles questions dois-je poser avant de choisir une école ?" data-question-en="What questions should I ask before choosing a school?" data-i18n="suggestion2">
           Bien choisir mon école
         </button>
-        <button type="button" data-question="Comment préparer mon admission dans une école ?">
+        <button type="button" data-question-fr="Comment préparer mon admission dans une école ?" data-question-en="How can I prepare for admission to a school?" data-i18n="suggestion3">
           Préparer mon admission
         </button>
       </div>
@@ -70,17 +83,18 @@
         <label class="sr-only" for="message-input">Ton message</label>
         <textarea
           id="message-input"
+          data-i18n-placeholder="placeholder"
           placeholder="Écris ta question ici..."
           rows="1"
           maxlength="2000"
           required
         ></textarea>
-        <button id="send-button" type="submit" aria-label="Envoyer le message">
+        <button id="send-button" type="submit" aria-label="Envoyer le message" data-i18n="send">
           Envoyer ↑
         </button>
       </form>
 
-      <p class="disclaimer">
+      <p class="disclaimer" data-i18n="disclaimer">
         Les informations importantes sur les écoles et les admissions doivent être vérifiées auprès des établissements.
       </p>
     </section>

@@ -337,3 +337,51 @@ textarea {
 .chat-heading h2 {
   font-family: "Manrope", sans-serif;
 }
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.language-toggle {
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: white;
+  color: var(--primary);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.language-toggle:hover {
+  background: #f0f7f6;
+  border-color: var(--primary);
+}
+
+@media (max-width: 800px) {
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+/* Affichage du bouton de changement de langue */
+.topbar .header-actions {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+.topbar .language-toggle {
+  display: inline-flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  align-items: center;
+  justify-content: center;
+  min-width: 65px;
+  min-height: 40px;
+  position: relative;
+  z-index: 10;
+}

@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+  if (localStorage.getItem("eduorient-language")) {
+    document.documentElement.classList.add("language-already-selected");
+  }
+</script>
   <meta name="description" content="EduOrient CI vous aide à trouver un établissement scolaire adapté à votre diplôme et à votre budget en Côte d'Ivoire.">
     <title>EduOrient CI — Trouve ton école</title>
   <link rel="stylesheet" href="style.css">
@@ -65,125 +70,222 @@
 .compare-note { margin-top: 12px; font-size: 13px; }
 @media (max-width: 640px) { .compare-panel { padding: 14px; } .compare-table th, .compare-table td { padding: 9px; min-width: 140px; } }
 </style>
+<style>
+  .language-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #102c46, #155eef);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
 
+  .language-box {
+    width: 100%;
+    max-width: 430px;
+    padding: 35px 25px;
+    background: white;
+    color: #17334a;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.2);
+  }
+
+  .language-box h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .language-box p {
+    margin-bottom: 25px;
+  }
+
+  .language-choice {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    margin-top: 14px;
+    border: 0;
+    border-radius: 12px;
+    background: #155eef;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .language-choice:hover {
+    background: #104ac0;
+  }
+
+  body:not(.language-selected) > header,
+  body:not(.language-selected) > main,
+  body:not(.language-selected) > footer,
+  body:not(.language-selected) > .school-modal,
+  body:not(.language-selected) > .assistant-float {
+    display: none;
+  }
+
+  body.language-selected .language-screen {
+    display: none;
+  }
+</style>
 </head>
 <body>
+  <div class="language-screen" id="languageScreen">
+  <div class="language-box">
+    <h1>EduOrient</h1>
 
-  <header class="navbar">
-    <a href="#" class="logo">
-      <span class="logo-icon">E</span>
-      <span>EduOrient <span class="orange">CI</span></span>
+    <p data-i18n="languageWelcome">
+  Bienvenue ! Choisis ta langue.
+</p>
+
+    <button class="language-choice" onclick="chooseLanguage('fr')">
+      🇫🇷 Français
+    </button>
+
+    <button class="language-choice" onclick="chooseLanguage('en')">
+      🇬🇧 English
+    </button>
+  </div>
+</div>
+
+  
+<header class="navbar">
+  <a href="#" class="logo">
+    <span class="logo-icon">E</span>
+    <span>EduOrient</span>
+  </a>
+
+  <nav>
+    <a href="#accueil" data-i18n="navHome">Accueil</a>
+    <a href="#ecoles" data-i18n="navSchools">Les établissements</a>
+    <a href="#pays" data-i18n="navCountries">Les pays</a>
+    <a href="orientation.html" data-i18n="navOrientation">Mon orientation</a>
+    <a href="#apropos" data-i18n="navAbout">À propos</a>
+    <a href="assistant.html" data-i18n="navAI">Parler à l’IA</a>
+  </nav>
+
+  <div class="navbar-actions">
+    <button id="language-toggle" class="language-toggle" type="button">
+      🇬🇧 EN
+    </button>
+
+    <button id="theme-toggle" class="theme-toggle" type="button"
+      aria-label="Activer le mode sombre">
+      🌙
+    </button>
+
+    <a href="#ecoles" class="nav-button" data-i18n="navFindSchool">
+      Trouver une école
     </a>
+  </div>
+</header>
 
-    
-
-
-<nav>
-  <a href="#accueil">Accueil</a>
-  <a href="#ecoles">Les établissements</a>
-  <a href="#pays">Les pays</a>
-  <a href="orientation.html">Mon orientation</a>
-  <a href="#apropos">À propos</a>
-  <a href="assistant.html">Parler à l’IA</a>
-</nav>
-
-
-
-
-   <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Activer le mode sombre">
-  🌙
-</button>
-
-<a href="#ecoles" class="nav-button">Trouver une école</a>
-  </header>
 
   <main>
     <section class="hero" id="accueil">
       <div class="hero-content">
-        <span class="eyebrow">TON AVENIR COMMENCE ICI</span>
-        <h1>Trouve l'école qui correspond à <span>ton avenir.</span></h1>
-        <p>
+        <span class="eyebrow" data-i18n="heroEyebrow">TON AVENIR COMMENCE ICI</span>
+
+<h1>
+  <span data-i18n="heroTitle">Trouve l'école qui correspond à</span>
+  <span data-i18n="heroTitleEnd">ton avenir.</span>
+</h1>
+        <p data-i18n="heroDescription">
   Compare les établissements en Côte d'Ivoire et à l'international,
   découvre les formations et prépare ta prochaine rentrée
   en toute simplicité.
 </p>
-        <a href="#ecoles" class="primary-button">Découvrir les écoles →</a>
+        <a href="#ecoles" class="primary-button" data-i18n="heroButton">
+  Découvrir les écoles →
+</a>
 
         <div class="hero-stats">
-          <div>
-            <strong id="school-count">0</strong>
-            <span>établissements</span>
-          </div>
-          <div>
-            <strong>3</strong>
-            <span>diplômes ciblés</span>
-          </div>
-          <div>
-            <strong>🌍</strong>
-<span>Plusieurs destinations</span>
-          </div>
-        </div>
+  <div>
+    <strong id="school-count">0</strong>
+    <span data-i18n="statSchools">établissements</span>
+  </div>
+  <div>
+    <strong>3</strong>
+    <span data-i18n="statDiplomas">diplômes ciblés</span>
+  </div>
+  <div>
+    <strong>🌍</strong>
+    <span data-i18n="statDestinations">Plusieurs destinations</span>
+  </div>
+</div>
       </div>
 
       <div class="hero-visual">
         <div class="hero-circle"></div>
         <div class="hero-card">
           <div class="book-icon">🎓</div>
-          <span class="mini-label">TON PROCHAIN CHAPITRE</span>
-          <h2>Chaque réussite commence par un bon choix.</h2>
-          <p>CEPE · BEPC · BAC</p>
+          <span class="mini-label" data-i18n="cardLabel">TON PROCHAIN CHAPITRE</span>
+<h2 data-i18n="cardTitle">Chaque réussite commence par un bon choix.</h2>
+<p>CEPE · BEPC · BAC</p>
           <div class="hero-decoration">EduOrient CI</div>
         </div>
       </div>
     </section>
 
-    <section class="search-section" id="ecoles">
-      <div class="section-heading">
-        <span class="eyebrow">FAIS LE BON CHOIX</span>
-        <h2>Quel établissement recherches-tu ?</h2>
-        <p>Utilise les filtres pour trouver les établissements adaptés.</p>
-      </div>
+    
+<section class="search-section" id="ecoles">
+  <div class="section-heading">
+    <span class="eyebrow" data-i18n="searchEyebrow">FAIS LE BON CHOIX</span>
+    <h2 data-i18n="searchTitle">Quel établissement recherches-tu ?</h2>
+    <p data-i18n="searchDescription">Utilise les filtres pour trouver les établissements adaptés.</p>
+  </div>
 
-      <div class="filters">
-        <div class="field search-field">
-          <label for="search">Nom ou mot-clé</label>
-          <input id="search" type="search"
-            placeholder="Ex. informatique, lycée...">
-        </div>
-        <div class="field">
-  <label for="country">Pays</label>
-  <select id="country">
-    <option value="">Tous les pays</option>
-    <option value="Côte d'Ivoire">Côte d'Ivoire</option>
-    <option value="Maroc">Maroc</option>
-    <option value="Sénégal">Sénégal</option>
-    <option value="France">France</option>
-    <option value="Canada">Canada</option>
-    <option value="Suisse">Suisse</option>
-    <option value="États-Unis">États-Unis</option>
-  </select>
-</div>
+  <div class="filters">
+    <div class="field search-field">
+      <label for="search" data-i18n="searchLabel">Nom ou mot-clé</label>
+      <input id="search" type="search"
+        data-i18n-placeholder="searchPlaceholder"
+        placeholder="Ex. informatique, lycée...">
+    </div>
 
-        <div class="field">
-          <label for="city">Ville</label>
-          <select id="city">
-            <option value="">Toutes les villes</option>
-            <option value="Abidjan">Abidjan</option>
-            <option value="Yamoussoukro">Yamoussoukro</option>
-            <option value="Bouaké">Bouaké</option>
-            <option value="San Pedro">San Pedro</option>
-          </select>
-        </div>
+    <div class="field">
+      <label for="country" data-i18n="countryLabel">Pays</label>
+      <select id="country">
+        <option value="" data-i18n="allCountries">Tous les pays</option>
+        <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+        <option value="Maroc">Maroc</option>
+        <option value="Sénégal">Sénégal</option>
+        <option value="France">France</option>
+        <option value="Canada">Canada</option>
+        <option value="Suisse">Suisse</option>
+        <option value="États-Unis" data-i18n="unitedStates">États-Unis</option>
+      </select>
+    </div>
 
-        <div class="field">
-          <label for="diploma">Diplôme obtenu</label>
-          <select id="diploma">
-            <option value="">Tous les diplômes</option>
-            <option value="CEPE">CEPE</option>
-            <option value="BEPC">BEPC</option>
-            <option value="BAC">BAC</option>
-          </select>
-        </div>
+    <div class="field">
+      <label for="city" data-i18n="cityLabel">Ville</label>
+      <select id="city">
+        <option value="" data-i18n="allCities">Toutes les villes</option>
+        <option value="Abidjan">Abidjan</option>
+        <option value="Yamoussoukro">Yamoussoukro</option>
+        <option value="Bouaké">Bouaké</option>
+        <option value="San Pedro">San Pedro</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="diploma" data-i18n="diplomaLabel">Diplôme obtenu</label>
+      <select id="diploma">
+        <option value="" data-i18n="allDiplomas">Tous les diplômes</option>
+        <option value="CEPE">CEPE</option>
+        <option value="BEPC">BEPC</option>
+        <option value="BAC">BAC</option>
+      </select>
+    </div>
+  </div>
+</section>
+
 
         <div class="field">
           <label for="type">Établissement</label>
@@ -308,6 +410,7 @@
 
 <script src="script.js" defer></script>
 <script src="theme.js" defer></script>
+<script src="language.js" defer></script>
 
 
 
@@ -334,6 +437,13 @@
   <span class="assistant-float-icon">💬</span>
   <span>Assistant IA</span>
 </a>
-
+<script>
+  function chooseLanguage(language) {
+  if (window.EduOrientLanguage) {
+    window.EduOrientLanguage.setLanguage(language);
+    document.body.classList.add("language-selected");
+  }
+}
+</script>
 </body>
 </html>

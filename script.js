@@ -219,7 +219,140 @@ if (schoolList) {
 }
 
 compareButton?.addEventListener("click", renderComparison);
+// ===============================
+// FILTRES TRANSMIS PAR MON ORIENTATION
+// ===============================
 
+const orientationParams = new URLSearchParams(window.location.search);
+
+const orientationActive =
+  orientationParams.get("orientation") === "true";
+
+const orientationInterest = orientationParams.get("interest") || "";
+const orientationCountry = orientationParams.get("country") || "";
+const orientationLevel = orientationParams.get("level") || "";
+
+function normalizeOrientationText(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim();
+}
+
+const orientationKeywords = {
+  numerique: [
+    "informatique", "numerique", "digital", "developpement",
+    "programmation", "cybersecurite", "reseaux", "intelligence artificielle",
+    "data", "donnees", "logiciel", "systeme informatique", "web"
+  ],
+  sante: [
+    "medecine", "sante", "pharmacie", "infirmier", "biologie",
+    "sciences du vivant", "laboratoire", "dentaire", "soins"
+  ],
+  ingenierie: [
+    "ingenierie", "ingenieur", "genie", "electronique", "energie",
+    "mecanique", "informatique industrielle", "mathematiques",
+    "technologie", "construction"
+  ],
+  commerce: [
+    "commerce", "gestion", "management", "comptabilite", "marketing",
+    "finance", "entrepreneuriat", "ressources humaines", "logistique",
+    "business", "strategie digitale"
+  ],
+  droit: [
+    "droit", "juridique", "sciences politiques", "relations internationales",
+    "diplomatie", "administration publique"
+  ],
+  education: [
+    "education", "enseignement", "pedagogie", "formation",
+    "psychologie", "professorat"
+  ],
+  arts: [
+    "art", "design", "communication", "graphisme", "audiovisuel",
+    "cinema", "musique", "media", "creation"
+  ],
+  environnement: [
+    "environnement", "agriculture", "agronomie", "developpement durable",
+    "biodiversite", "eau", "foresterie", "ressources naturelles"
+  ]
+};
+
+function matchesOrientation(school) {
+  if (!orientationActive) return true;
+
+  const params = new URLSearchParams(window.location.search);
+  const schoolIds = params.get("schoolIds");
+
+  if (schoolIds !== null) {
+    const selectedIds = schoolIds
+      .split(",")
+      .map(id => id.trim());
+
+    return selectedIds.includes(String(school.id));
+  }
+
+  // Vérifier le domaine choisi
+  const keywords = orientationKeywords[orientationInterest] || [];
+
+  const schoolText = normalizeOrientationText([
+    school.name || "",
+    school.description || "",
+    ...(school.programs || []),
+    ...(school.diplomas || [])
+  ].join(" "));
+
+  const matchesInterest =
+    orientationInterest === "aucun" ||
+    keywords.some(keyword =>
+      schoolText.includes(normalizeOrientationText(keyword))
+    );
+
+  // Vérifier le pays choisi
+  const selectedCountry = normalizeOrientationText(orientationCountry);
+  const schoolCountry = normalizeOrientationText(
+    `${school.country || ""} ${school.address || ""}`
+  );
+
+  const matchesOrientationCountry =
+    !selectedCountry ||
+    selectedCountry === "pas encore decide" ||
+    selectedCountry === "autre pays" ||
+    schoolCountry.includes(selectedCountry);
+
+  // Vérifier le niveau d'études
+  const diplomas = normalizeOrientationText(
+    (school.diplomas || []).join(" ")
+  );
+
+  const programs = normalizeOrientationText(
+    (school.programs || []).join(" ")
+  );
+
+  let matchesOrientationLevel = true;
+
+  if (orientationLevel === "bac") {
+    matchesOrientationLevel =
+      diplomas.includes("bac") ||
+      diplomas.includes("baccalaureat") ||
+      programs.includes("bachelor") ||
+      programs.includes("licence");
+  }
+
+  if (orientationLevel === "superieur") {
+    matchesOrientationLevel =
+      programs.includes("master") ||
+      programs.includes("doctorat") ||
+      programs.includes("bac+") ||
+      programs.includes("licence");
+  }
+
+  return (
+    matchesInterest &&
+    matchesOrientationCountry &&
+    matchesOrientationLevel
+  );
+}
 function renderSchools() {
   const query = searchInput.value.trim().toLowerCase();
   const city = citySelect.value;
@@ -260,14 +393,17 @@ const matchesCountry =
     const matchesFavorite =
       !showOnlyFavorites ||
       favoriteIds.includes(school.id);
+      const matchesOrientationCriteria =
+  matchesOrientation(school);
 
-  return (
+ return (
   matchesQuery &&
   matchesCity &&
   matchesCountry &&
   matchesDiploma &&
   matchesType &&
-  matchesFavorite
+  matchesFavorite &&
+  matchesOrientationCriteria
 );
   });
 

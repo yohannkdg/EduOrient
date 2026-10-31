@@ -10,113 +10,153 @@
   <link rel="stylesheet" href="orientation.css">
 </head>
 <body>
-  <header class="navbar">
-    <a href="index.html" class="logo" aria-label="Retour à l'accueil EduOrient">
-      <span class="logo-icon">E</span>
-      <span>EduOrient <span class="orange">CI</span></span>
-    </a>
-    <nav>
-      <a href="index.html#accueil">Accueil</a>
-      <a href="index.html#ecoles">Les établissements</a>
-      <a href="orientation.html" aria-current="page">Mon orientation</a>
-    </nav>
-    <a href="index.html#ecoles" class="nav-button">Trouver une école</a>
-  </header>
+  
+<header class="navbar">
+  <a href="index.html" class="logo" aria-label="Back to EduOrient home">
+    <span class="logo-icon">E</span>
+    <span>EduOrient</span>
+  </a>
+
+  <nav>
+    <a href="index.html#accueil" data-i18n="navHome">Accueil</a>
+    <a href="index.html#ecoles" data-i18n="navSchools">Les établissements</a>
+    <a href="orientation.html" aria-current="page" data-i18n="navOrientation">Mon orientation</a>
+  </nav>
+
+  <a href="index.html#ecoles" class="nav-button" data-i18n="navFindSchool">
+    Trouver une école
+  </a>
+
+  <button id="language-toggle" type="button" aria-label="Change language">
+    🇬🇧 EN
+  </button>
+</header>
+
 
   <main class="orientation-main">
-    <section class="orientation-hero">
-      <span class="orientation-eyebrow">TON AVENIR COMMENCE ICI</span>
-      <h1>Construis ton <span>orientation</span></h1>
-      <p>Réponds à quelques questions pour découvrir des domaines d'études qui pourraient te correspondre.</p>
-      <div class="orientation-note">Ce questionnaire donne des pistes de réflexion, pas une décision définitive.</div>
-    </section>
+    
+<section class="orientation-hero">
+  <span class="orientation-eyebrow" data-i18n="orientationEyebrow">
+    TON AVENIR COMMENCE ICI
+  </span>
+
+  <h1>
+    <span data-i18n="orientationTitleStart">Construis ton</span>
+    <span data-i18n="orientationTitleEnd">orientation</span>
+  </h1>
+
+  <p data-i18n="orientationDescription">
+    Réponds à quelques questions pour découvrir des domaines d'études qui pourraient te correspondre.
+  </p>
+
+  <div class="orientation-note" data-i18n="orientationNote">
+    Ce questionnaire donne des pistes de réflexion, pas une décision définitive.
+  </div>
+</section>
+
 
     <section class="orientation-card" aria-labelledby="orientation-title">
       <div class="orientation-card-heading">
-        <span class="orientation-step">QUESTIONNAIRE</span>
-        <h2 id="orientation-title">Parlons de ton projet</h2>
-        <p>Il n'y a pas de mauvaise réponse. Choisis ce qui te correspond aujourd'hui.</p>
-      </div>
+  <span class="orientation-step" data-i18n="orientationQuestionnaire">QUESTIONNAIRE</span>
+  <h2 id="orientation-title" data-i18n="orientationCardTitle">Parlons de ton projet</h2>
+  <p data-i18n="orientationCardDescription">Il n'y a pas de mauvaise réponse. Choisis ce qui te correspond aujourd'hui.</p>
+</div>
       <form id="orientationForm">
         <div class="orientation-field">
-          <label for="studyLevel">1. Quel est ton niveau d'études actuel ?</label>
+          <label for="studyLevel" data-i18n="orientationStudyLevel">
+  1. Quel est ton niveau d'études actuel ?
+</label>
           <select id="studyLevel" name="studyLevel" required>
-            <option value="">Choisir mon niveau</option>
-            <option value="college">Collège</option>
-            <option value="lycee">Lycée</option>
-            <option value="bac">J'ai le baccalauréat</option>
-            <option value="superieur">Études supérieures</option>
-            <option value="reconversion">Je souhaite me réorienter</option>
+            <option value="college" data-i18n="orientationCollege">Collège</option>
+<option value="lycee" data-i18n="orientationHighSchool">Lycée</option>
+<option value="bac" data-i18n="orientationBaccalaureate">J'ai le baccalauréat</option>
+<option value="superieur" data-i18n="orientationHigherEducation">Études supérieures</option>
+<option value="reconversion" data-i18n="orientationRetraining">Je souhaite me réorienter</option>
           </select>
         </div>
 
         <div class="orientation-field">
-          <label for="interest">2. Quels domaines t'intéressent le plus ?</label>
+          <label for="interest" data-i18n="orientationInterest">
+  2. Quels domaines t'intéressent le plus ?
+</label>
           <select id="interest" name="interest" required>
-            <option value="">Choisir un domaine</option>
-            <option value="numerique">Informatique et numérique</option>
-            <option value="sante">Santé et sciences du vivant</option>
-            <option value="ingenierie">Sciences, technologie et ingénierie</option>
-            <option value="commerce">Commerce, gestion et entrepreneuriat</option>
-            <option value="droit">Droit, politique et relations internationales</option>
-            <option value="education">Éducation et accompagnement</option>
-            <option value="arts">Arts, communication et création</option>
-            <option value="environnement">Environnement et agriculture</option>
-            <option value="aucun">Je ne sais pas encore</option>
+           <option value="" data-i18n="orientationChooseInterest">Choisir un domaine</option>
+<option value="numerique" data-i18n="orientationDigital">Informatique et numérique</option>
+<option value="sante" data-i18n="orientationHealth">Santé et sciences du vivant</option>
+<option value="ingenierie" data-i18n="orientationEngineering">Sciences, technologie et ingénierie</option>
+<option value="commerce" data-i18n="orientationBusiness">Commerce, gestion et entrepreneuriat</option>
+<option value="droit" data-i18n="orientationLaw">Droit, politique et relations internationales</option>
+<option value="education" data-i18n="orientationEducation">Éducation et accompagnement</option>
+<option value="arts" data-i18n="orientationArts">Arts, communication et création</option>
+<option value="environnement" data-i18n="orientationEnvironment">Environnement et agriculture</option>
+<option value="aucun" data-i18n="orientationUndecided">Je ne sais pas encore</option>
           </select>
         </div>
 
         <div class="orientation-field">
-          <label for="studyCountry">3. Dans quel pays aimerais-tu étudier ?</label>
+          <label for="studyCountry" data-i18n="orientationCountry">
+  3. Dans quel pays aimerais-tu étudier ?
+</label>
           <select id="studyCountry" name="studyCountry" required>
-            <option value="">Choisir un pays</option>
-            <option value="Côte d’Ivoire">Côte d'Ivoire</option>
-            <option value="France">France</option>
-            <option value="Sénégal">Sénégal</option>
-            <option value="Maroc">Maroc</option>
-            <option value="Canada">Canada</option>
-            <option value="Autre pays">Un autre pays</option>
-            <option value="Pas encore décidé">Je ne sais pas encore</option>
-          </select>
+  <option value="" data-i18n="orientationChooseCountry">Choisir un pays</option>
+  <option value="Côte d’Ivoire" data-i18n="countryIvoryCoast">Côte d'Ivoire</option>
+  <option value="France" data-i18n="countryFrance">France</option>
+  <option value="Sénégal" data-i18n="countrySenegal">Sénégal</option>
+  <option value="Maroc" data-i18n="countryMorocco">Maroc</option>
+  <option value="Canada" data-i18n="countryCanada">Canada</option>
+  <option value="Autre pays" data-i18n="countryOther">Un autre pays</option>
+  <option value="Pas encore décidé" data-i18n="countryUndecided">Je ne sais pas encore</option>
+</select>
         </div>
 
         <div class="orientation-field">
-          <label for="budget">4. Quel budget peux-tu envisager pour les études ?</label>
-          <select id="budget" name="budget" required>
-            <option value="">Choisir une réponse</option>
-            <option value="limite">Budget limité — je cherche surtout des options abordables</option>
-            <option value="modere">Budget modéré</option>
-            <option value="flexible">Budget flexible</option>
-            <option value="inconnu">Je ne sais pas encore</option>
-          </select>
+          <label for="budget"><label for="budget" data-i18n="orientationBudget">
+  4. Quel budget peux-tu envisager pour les études ?
+</label>
+
+<select id="budget" name="budget" required>
+  <option value="" data-i18n="orientationChooseBudget">Choisir une réponse</option>
+  <option value="limite" data-i18n="orientationBudgetLimited">Budget limité — je cherche surtout des options abordables</option>
+  <option value="modere" data-i18n="orientationBudgetModerate">Budget modéré</option>
+  <option value="flexible" data-i18n="orientationBudgetFlexible">Budget flexible</option>
+  <option value="inconnu" data-i18n="orientationBudgetUnknown">Je ne sais pas encore</option>
+</select>
         </div>
 
         <div class="orientation-actions">
-          <button class="orientation-submit" type="submit">Découvrir mes pistes <span aria-hidden="true">→</span></button>
-          <button class="orientation-reset" type="reset">Effacer mes réponses</button>
-        </div>
+  <button class="orientation-submit" type="submit">
+    <span data-i18n="orientationDiscover">Découvrir mes pistes</span>
+    <span aria-hidden="true">→</span>
+  </button>
+  <button class="orientation-reset" type="reset" data-i18n="orientationClear">
+    Effacer mes réponses
+  </button>
+</div>
       </form>
     </section>
 
     <section id="orientationResults" class="orientation-results" aria-live="polite" hidden>
-      <span class="orientation-step">TES PREMIÈRES PISTES</span>
-      <h2>Voici des idées pour commencer</h2>
-      <p id="orientationSummary"></p>
-      <div id="orientationSuggestions" class="orientation-suggestions"></div>
-      <div class="orientation-results-note">
-        <strong>À retenir :</strong> ces pistes sont indicatives. Les conditions d'admission, les frais et les formations disponibles doivent être vérifiés auprès de chaque établissement.
-      </div>
-      <div class="orientation-actions">
-        <a class="orientation-submit orientation-link" href="index.html#ecoles">Explorer les établissements</a>
-        <button class="orientation-reset" id="editOrientation" type="button">Modifier mes réponses</button>
-      </div>
-    </section>
+  <span class="orientation-step" data-i18n="orientationFirstSuggestions">TES PREMIÈRES PISTES</span>
+  <h2 data-i18n="orientationResultsTitle">Voici des idées pour commencer</h2>
+  <p id="orientationSummary"></p>
+  <div id="orientationSuggestions" class="orientation-suggestions"></div>
+  <div class="orientation-results-note">
+    <strong data-i18n="orientationRemember">À retenir :</strong>
+    <span data-i18n="orientationResultsNote">Ces pistes sont indicatives. Les conditions d'admission, les frais et les formations disponibles doivent être vérifiés auprès de chaque établissement.</span>
+  </div>
+  <div class="orientation-actions">
+    <a class="orientation-submit orientation-link" href="index.html#ecoles" data-i18n="orientationExploreSchools">Explorer les établissements</a>
+    <button class="orientation-reset" id="editOrientation" type="button" data-i18n="orientationEditAnswers">Modifier mes réponses</button>
+  </div>
+</section>
   </main>
 
   <footer class="orientation-footer">
     <p>© 2026 EduOrient — T'aider à préparer la suite.</p>
     <a href="index.html">Retour à l'accueil</a>
   </footer>
-  <script src="orientation.js" defer></script>
+ <script src="theme.js"></script>
+<script src="language.js"></script>
+<script src="orientation.js"></script>
 </body>
 </html>

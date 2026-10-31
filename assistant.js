@@ -6,8 +6,17 @@ const sendButton = document.getElementById("send-button");
 const suggestions = document.getElementById("suggestions");
 
 const API_URL = "https://eduorient-ai.yohannkdg.workers.dev/api/chat";
-// Historique de la conversation en cours
 const conversationHistory = [];
+
+const languageAPI = window.EduOrientLanguage;
+
+function getCurrentLanguage() {
+  return languageAPI?.getLanguage() || "fr";
+}
+
+function translate(key, fallback) {
+  return languageAPI?.t(key) || fallback;
+}
 
 function addMessage(text, sender) {
   const article = document.createElement("article");
@@ -24,8 +33,6 @@ function addMessage(text, sender) {
 
   const content = document.createElement("div");
   content.className = "message-content";
-
-  // Affiche le texte sans interpréter du HTML.
   content.textContent = text;
 
   article.appendChild(content);
@@ -40,15 +47,17 @@ async function sendMessage(text) {
 
   if (!message || sendButton.disabled) return;
 
+  const language = getCurrentLanguage();
+
   addMessage(message, "user");
 
-messageInput.value = "";
+  messageInput.value = "";
   sendButton.disabled = true;
   messageInput.disabled = true;
   suggestions.hidden = true;
 
   const loadingMessage = addMessage(
-    "Je réfléchis à ta question...",
+    translate("thinking", "Je réfléchis à ta question..."),
     "assistant"
   );
 
@@ -59,36 +68,44 @@ messageInput.value = "";
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-  message,
-  history: conversationHistory,
-}),
+        message,
+        history: conversationHistory,
+        language,
+      }),
     });
 
     const data = await response.json();
 
     if (!response.ok) {
       throw new Error(
-        data.error || "Une erreur est survenue pendant la demande."
+        data.error ||
+          translate("error", "Une erreur est survenue pendant la demande.")
       );
     }
 
     loadingMessage.textContent = data.reply;
+
     conversationHistory.push({
-  role: "user",
-  content: message,
-});
+      role: "user",
+      content: message,
+    });
 
-conversationHistory.push({
-  role: "assistant",
-  content: data.reply,
-});
+    conversationHistory.push({
+      role: "assistant",
+      content: data.reply,
+    });
 
-conversationHistory.splice(0, conversationHistory.length - 12);
+    conversationHistory.splice(
+      0,
+      conversationHistory.length - 12
+    );
   } catch (error) {
     console.error("Erreur de communication avec l'IA :", error);
 
-    loadingMessage.textContent =
-      "Impossible de contacter l'assistant IA. Vérifie ta connexion Internet et réessaie.";
+    loadingMessage.textContent = translate(
+      "connectionError",
+      "Impossible de contacter l'assistant IA. Vérifie ta connexion Internet et réessaie."
+    );
   } finally {
     sendButton.disabled = false;
     messageInput.disabled = false;
@@ -103,10 +120,21 @@ chatForm.addEventListener("submit", (event) => {
 });
 
 suggestions.addEventListener("click", (event) => {
-  const button = event.target.closest("button[data-question]");
+  const button = event.target.closest(
+    "button[data-question-fr], button[data-question-en]"
+  );
 
-  if (button) {
-    sendMessage(button.dataset.question);
+  if (!button) return;
+
+  const language = getCurrentLanguage();
+
+  const question =
+    language === "en"
+      ? button.dataset.questionEn
+      : button.dataset.questionFr;
+
+  if (question) {
+    sendMessage(question);
   }
 });
 

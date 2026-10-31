@@ -29,3 +29,97 @@
 .orientation-footer { display: flex; flex-wrap: wrap; gap: 10px 20px; justify-content: space-between; align-items: center; padding: 22px max(16px, calc((100% - 980px) / 2)); border-top: 1px solid #e1e9e3; color: #657169; }
 .orientation-footer a { color: #17683d; font-weight: 700; }
 @media (max-width: 640px) { .orientation-main { padding-top: 22px; } .orientation-hero { padding-top: 14px; } .orientation-actions { align-items: stretch; flex-direction: column; } .orientation-submit, .orientation-reset { width: 100%; box-sizing: border-box; } .orientation-footer { padding: 20px 16px; } }
+
+/* =====================================
+   MODE SOMBRE — PAGE MON ORIENTATION
+===================================== */
+
+html[data-theme="dark"] .orientation-hero h1,
+html[data-theme="dark"] .orientation-card h2,
+html[data-theme="dark"] .orientation-results h2 {
+  color: #f1f5f9;
+}
+
+html[data-theme="dark"] .orientation-hero p,
+html[data-theme="dark"] .orientation-card-heading p,
+html[data-theme="dark"] .orientation-results > p {
+  color: #cbd5e1;
+}
+
+html[data-theme="dark"] .orientation-eyebrow,
+html[data-theme="dark"] .orientation-step {
+  color: #4ade80;
+}
+
+html[data-theme="dark"] .orientation-note {
+  background: #193b2b;
+  color: #bbf7d0;
+}
+
+html[data-theme="dark"] .orientation-card,
+html[data-theme="dark"] .orientation-results {
+  background: #17212b;
+  border-color: #334155;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, .2);
+}
+
+html[data-theme="dark"] .orientation-field label {
+  color: #e2e8f0;
+}
+
+html[data-theme="dark"] .orientation-field select {
+  background: #1e293b;
+  border-color: #475569;
+  color: #f1f5f9;
+}
+
+html[data-theme="dark"] .orientation-field select option {
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+html[data-theme="dark"] .orientation-field select:focus {
+  outline-color: rgba(74, 222, 128, .25);
+  border-color: #4ade80;
+}
+
+html[data-theme="dark"] .orientation-submit {
+  background: #15803d;
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .orientation-submit:hover {
+  background: #166534;
+}
+
+html[data-theme="dark"] .orientation-reset {
+  background: #334155;
+  color: #f1f5f9;
+}
+
+html[data-theme="dark"] .orientation-suggestion {
+  background: #1e293b;
+  border-color: #475569;
+}
+
+html[data-theme="dark"] .orientation-suggestion h3 {
+  color: #4ade80;
+}
+
+html[data-theme="dark"] .orientation-suggestion p {
+  color: #cbd5e1;
+}
+
+html[data-theme="dark"] .orientation-results-note {
+  background: #3b321e;
+  color: #fde68a;
+}
+
+html[data-theme="dark"] .orientation-footer {
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+html[data-theme="dark"] .orientation-footer a {
+  color: #4ade80;
+}

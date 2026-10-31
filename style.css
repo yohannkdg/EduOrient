@@ -1521,3 +1521,47 @@ html[data-theme="dark"] .compare-results {
     align-items: stretch;
   }
 }
+/* Écran de sélection de langue */
+.language-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 20px;
+}
+
+.language-box {
+  width: 100%;
+  max-width: 420px;
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.12);
+}
+
+.language-choice {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #f28c28;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Masquer l'écran après le choix */
+body.language-selected .language-screen {
+  display: none;
+}
+/* Évite le clignotement de l'écran de choix de langue */
+html.language-already-selected .language-screen {
+  display: none !important;
+}
