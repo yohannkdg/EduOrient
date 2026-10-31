@@ -1565,3 +1565,152 @@ body.language-selected .language-screen {
 html.language-already-selected .language-screen {
   display: none !important;
 }
+
+/* ===== Navigation rapide fixe ===== */
+.quick-nav {
+  position: fixed;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8px;
+  width: min(720px, calc(100% - 32px));
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 8px 28px rgba(16, 43, 70, 0.16);
+  backdrop-filter: blur(12px);
+}
+
+.quick-nav-item {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 5px 3px;
+  border-radius: 10px;
+  color: var(--navy);
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.quick-nav-item span {
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.quick-nav-item small {
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.quick-nav-item:hover,
+.quick-nav-item:focus-visible {
+  background: #f0f4f9;
+  color: var(--blue);
+}
+
+/* ===== Bouton retour en haut ===== */
+.back-to-top {
+  position: fixed;
+  right: 22px;
+  bottom: 150px;
+  z-index: 950;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--navy);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Espacement pour ne pas cacher le contenu */
+body.language-selected {
+  padding-bottom: 100px;
+}
+
+/* Masquer les éléments avant le choix de langue */
+body:not(.language-selected) .quick-nav,
+body:not(.language-selected) .back-to-top {
+  display: none !important;
+}
+
+/* Garder l'assistant IA au-dessus de la navigation */
+body.language-selected .assistant-float {
+  bottom: 90px !important;
+}
+
+/* ===== Mode sombre ===== */
+html[data-theme="dark"] .quick-nav {
+  background: rgba(30, 41, 59, 0.96);
+  border-color: var(--border);
+}
+
+html[data-theme="dark"] .quick-nav-item {
+  color: #e5edf7;
+}
+
+html[data-theme="dark"] .quick-nav-item:hover,
+html[data-theme="dark"] .quick-nav-item:focus-visible {
+  background: #263449;
+  color: white;
+}
+
+html[data-theme="dark"] .back-to-top {
+  background: #1769e0;
+  color: white;
+}
+
+/* ===== Adaptation aux téléphones ===== */
+@media (max-width: 560px) {
+  .quick-nav {
+    bottom: max(8px, env(safe-area-inset-bottom));
+    width: calc(100% - 16px);
+    gap: 2px;
+    padding: 8px 5px;
+    border-radius: 15px;
+  }
+
+  .quick-nav-item {
+    padding: 5px 1px;
+    gap: 2px;
+  }
+
+  .quick-nav-item span {
+    font-size: 18px;
+  }
+
+  .quick-nav-item small {
+    font-size: 9px;
+  }
+
+  .back-to-top {
+    right: 16px;
+    bottom: 150px;
+  }
+
+  body.language-selected {
+    padding-bottom: 95px;
+  }
+}

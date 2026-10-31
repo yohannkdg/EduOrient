@@ -1118,3 +1118,28 @@ if ("serviceWorker" in navigator) {
   });
 }
 
+// ===============================
+// BOUTON RETOUR EN HAUT
+// ===============================
+
+const backToTopButton = document.querySelector("#back-to-top");
+
+if (backToTopButton) {
+  const updateBackToTopVisibility = () => {
+    backToTopButton.classList.toggle("visible", window.scrollY > 300);
+  };
+
+  window.addEventListener("scroll", updateBackToTopVisibility, {
+    passive: true
+  });
+
+  updateBackToTopVisibility();
+
+  backToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
+
