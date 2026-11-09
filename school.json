@@ -13344,9 +13344,9 @@
       "À vérifier auprès de l'établissement."
     ],
     "description": "",
-    "displayImage": "images/provisional-school.svg",
-    "imageStatus": "manquante — Fichier image manquant (images/school-219-official.jpg absent). Image Actualités retirée — recherche photo campus réelle requise.",
-    "imageSource": "Aucune photo officielle récupérée et vérifiée automatiquement",
+    "displayImage": "images/school-219-official.jpg",
+    "imageStatus": "présente (site officiel — image publique; vérification visuelle humaine requise; droits de réutilisation à confirmer)",
+    "imageSource": "Site officiel: https://cerap-inades.org/ | image: https://cerap-inades.org/images/CERAP/slides/UJ_gcaroussel_couv3_1.jpg | droits: à confirmer auprès de l'établissement/source",
     "website": "https://cerap-inades.org/",
     "feesByLevel": [
       {
@@ -13372,7 +13372,7 @@
       "image": {
         "verified": false,
         "lastChecked": "2026-11-09",
-        "note": "Fichier image manquant (images/school-219-official.jpg absent). Image Actualités retirée — recherche photo campus réelle requise."
+        "note": "Image officielle publique intégrée. Vérification visuelle humaine + droits requis avant validation définitive."
       }
     },
     "dataSource": [
@@ -13383,11 +13383,13 @@
       }
     ],
     "imageResearch": {
-      "status": "recherche_en_cours",
-      "lastChecked": "2026-11-08",
-      "note": "Image issue d’un site public/officiel lié à la fiche. Vérifier visuellement bâtiment/campus/locaux du bon établissement et droits/licence avant publication."
+      "status": "image_trouvée_à_vérifier",
+      "lastChecked": "2026-11-09",
+      "source": "site officiel",
+      "note": "Image du carrousel officiel CERAP/Université Jésuite (fichier UJ_gcaroussel_couv3_1.jpg). Vérification visuelle humaine requise: confirmer représentation CERAP/UJ Abidjan et droits."
     },
-    "ambiguousImageFile": "images/school-219-official.jpg"
+    "ambiguousImageFile": "images/school-219-official.jpg",
+    "image": "images/school-219-official.jpg"
   },
   {
     "id": 220,
@@ -14886,10 +14888,10 @@
       "À vérifier auprès de l'établissement."
     ],
     "description": "",
-    "image": "",
-    "displayImage": "images/provisional-school.svg",
-    "imageStatus": "manquante — recherche photo réelle requise (aucune image provisoire définitive)",
-    "imageSource": "Aucune photo officielle récupérée et vérifiée automatiquement dans cette session ; image provisoire clairement identifiée.",
+    "image": "images/school-240-official.jpg",
+    "displayImage": "images/school-240-official.jpg",
+    "imageStatus": "présente (site officiel — image publique; vérification visuelle humaine requise; droits de réutilisation à confirmer)",
+    "imageSource": "Site officiel: https://ena.sn/ | image: https://www.ena.sn/wp-content/uploads/2023/03/0.jpg | droits: à confirmer auprès de l'établissement/source",
     "website": "https://ena.sn/",
     "feesByLevel": [
       {
@@ -14914,8 +14916,8 @@
       "note": "Entrée d'établissement réel connue ; détails académiques/tarifs/admissions à revérifier sur les pages officielles avant publication.",
       "image": {
         "verified": false,
-        "lastChecked": "2026-11-08",
-        "note": "Photo réelle manquante ou non confirmée."
+        "lastChecked": "2026-11-09",
+        "note": "Image officielle publique intégrée. Vérification visuelle humaine + droits requis avant validation définitive."
       }
     },
     "dataSource": [
@@ -14926,30 +14928,10 @@
       }
     ],
     "imageResearch": {
-      "status": "researched-no-image",
+      "status": "image_trouvée_à_vérifier",
       "lastChecked": "2026-11-09",
-      "priority": "haute",
-      "queries": [
-        "École Nationale d'Administration (ENA Sénégal) Dakar Sénégal bâtiment campus",
-        "École Nationale d'Administration (ENA Sénégal) site officiel photo",
-        "École Nationale d'Administration (ENA Sénégal) Sénégal établissement scolaire photo"
-      ],
-      "candidateSources": [
-        "Google Images (source d’origine publique à vérifier)",
-        "Wikimedia Commons",
-        "site officiel",
-        "presse/actualités",
-        "annuaires éducatifs",
-        "réseaux sociaux publics"
-      ],
-      "constraints": [
-        "privilégier bâtiment/campus/locaux",
-        "ne jamais associer la photo d’un autre établissement",
-        "vérifier correspondance visuelle",
-        "respecter licences/réutilisation",
-        "enregistrer source"
-      ],
-      "note": "Aucune image libre trouvée (2026-11-09): Commons renvoie rallye Dakar / mont Ena Japon / Strasbourg (faux match). ena.sn inaccessible."
+      "source": "site officiel",
+      "note": "Image OG du site officiel ENA Sénégal. Nom de fichier non descriptif — vérification visuelle humaine obligatoire (bon établissement) et droits à confirmer."
     }
   },
   {
@@ -18614,34 +18596,15 @@
       }
     ],
     "id": 294,
-    "image": "",
-    "displayImage": "images/provisional-school.svg",
-    "imageStatus": "manquante — recherche photo réelle requise",
-    "imageSource": "",
+    "image": "images/school-294-official.jpg",
+    "displayImage": "images/school-294-official.jpg",
+    "imageStatus": "présente (site officiel — image publique; vérification visuelle humaine requise; droits de réutilisation à confirmer)",
+    "imageSource": "Site officiel: https://univ-lome.tg/ | image: https://univ-lome.tg/wp-content/uploads/2024/04/Univ-Lome.jpg | droits: à confirmer auprès de l'établissement/source",
     "imageResearch": {
-      "status": "recherche_en_cours",
-      "lastChecked": "2026-11-08",
-      "priority": "haute",
-      "queries": [
-        "Université de Lomé Lomé Togo campus bâtiment",
-        "\"Université de Lomé\" site officiel photo"
-      ],
-      "candidateSources": [
-        "site officiel",
-        "Wikimedia Commons",
-        "presse/actualités",
-        "annuaires éducatifs",
-        "pages publiques réseaux sociaux (si réutilisation/licence claire)",
-        "Google/Bing Images → identifier source d’origine publique à vérifier"
-      ],
-      "constraints": [
-        "photo réelle du bâtiment/campus/locaux",
-        "ne jamais associer la photo d’un autre établissement",
-        "vérifier correspondance visuelle",
-        "respecter licences/réutilisation",
-        "enregistrer source"
-      ],
-      "note": "Photo réelle non confirmée automatiquement dans cette session; recherche source publique + validation visuelle/licence requise."
+      "status": "image_trouvée_à_vérifier",
+      "lastChecked": "2026-11-09",
+      "source": "site officiel",
+      "note": "Image OG du site officiel Université de Lomé (fichier Univ-Lome.jpg). Vérification visuelle humaine requise: confirmer bâtiment/campus UL et droits de réutilisation."
     },
     "verification": {
       "lastChecked": "2026-11-08",
@@ -18650,8 +18613,8 @@
       "note": "Fiche ajoutée à vérifier sur la source officielle.",
       "image": {
         "verified": false,
-        "lastChecked": "2026-11-08",
-        "note": "Photo réelle manquante."
+        "lastChecked": "2026-11-09",
+        "note": "Image officielle publique intégrée. Vérification visuelle humaine + droits requis avant validation définitive."
       }
     }
   },

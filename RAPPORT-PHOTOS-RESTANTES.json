@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-09T10:03:27.818Z",
+  "generatedAt": "2026-11-09T10:14:26.456Z",
   "total": 247,
-  "has": 169,
-  "provisional": 78,
+  "has": 172,
+  "provisional": 75,
   "items": [
     {
       "id": 9,
@@ -425,13 +425,6 @@
       "website": "https://agitel.ci/"
     },
     {
-      "id": 219,
-      "name": "CERAP / Université Jésuite (UJ)",
-      "city": "Abidjan",
-      "country": "Côte d'Ivoire",
-      "website": "https://cerap-inades.org/"
-    },
-    {
       "id": 220,
       "name": "Institut Supérieur de Technologie de Côte d'Ivoire (ISTCI)",
       "city": "Abidjan",
@@ -451,13 +444,6 @@
       "city": "Casablanca",
       "country": "Maroc",
       "website": "https://www.encgcasa.ma/"
-    },
-    {
-      "id": 240,
-      "name": "École Nationale d'Administration (ENA Sénégal)",
-      "city": "Dakar",
-      "country": "Sénégal",
-      "website": "https://ena.sn/"
     },
     {
       "id": 245,
@@ -521,13 +507,6 @@
       "city": "Sfax",
       "country": "Tunisie",
       "website": "https://www.uss.rnu.tn/"
-    },
-    {
-      "id": 294,
-      "name": "Université de Lomé",
-      "city": "Lomé",
-      "country": "Togo",
-      "website": "https://univ-lome.tg/"
     },
     {
       "id": 295,

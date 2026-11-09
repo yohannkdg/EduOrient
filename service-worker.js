@@ -1,5 +1,5 @@
 
-const CACHE_NAME = "eduorient-v5";
+const CACHE_NAME = "eduorient-v6";
 
 const FILES_TO_CACHE = [
   "./",
