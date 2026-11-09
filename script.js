@@ -218,32 +218,44 @@ const orientationActive = orientationParams.get("orientation") === "true";
 const orientationInterest = orientationParams.get("interest") || "";
 const orientationSpecialty = orientationParams.get("specialty") || "";
 const orientationCountry = orientationParams.get("country") || "";
-const orientationLevel = orientationParams.get("level") || "";
+const orientationDiplomaGoal = orientationParams.get("diplomaGoal") || "";
+const orientationType = orientationParams.get("type") || "";
 const orientationIds = (orientationParams.get("schoolIds") || "").split(",").map(v=>v.trim()).filter(Boolean);
 
+function orientationUndecided(v){
+  const n = normalize(v);
+  return !n || ["pas encore decide","je ne sais pas encore","autre pays","aucun","explorer","public ou prive je ne sais pas","tous","all","other","undecided"].includes(n);
+}
 function matchesOrientation(school) {
   if (!orientationActive) return true;
   if (orientationIds.length) return orientationIds.includes(String(school.id));
   const t = schoolSearchText(school);
-  if (orientationCountry && !["pas encore décidé","autre pays"].includes(normalize(orientationCountry))) {
+  if (orientationCountry && !orientationUndecided(orientationCountry)) {
     if (!normalize(school.country).includes(normalize(orientationCountry)) && !normalize(school.address).includes(normalize(orientationCountry))) return false;
   }
+  if (orientationType && !orientationUndecided(orientationType) && normalize(school.type) !== normalize(orientationType)) return false;
   if (orientationSpecialty) {
     const spec = normalize(orientationSpecialty);
     if (spec.length >= 3 && !t.includes(spec)) return false;
   }
-  if (orientationInterest && orientationInterest !== "aucun") {
+  if (orientationDiplomaGoal && !orientationUndecided(orientationDiplomaGoal)) {
+    const goal = normalize(orientationDiplomaGoal);
+    if (goal.length >= 3 && !t.includes(goal)) return false;
+  }
+  if (orientationInterest && !orientationUndecided(orientationInterest) && orientationInterest !== "aucun") {
     const map = {
-      numerique:["informatique","numerique","digital","logiciel","cybersecurite","reseau","data","web","intelligence artificielle"],
-      sante:["medecine","sante","pharmacie","infirm","biologie","dentaire","sage-femme"],
-      ingenierie:["ingenieur","genie","mecanique","electrique","civil","btp","energie","industriel"],
-      commerce:["commerce","gestion","management","marketing","finance","comptabilite","audit","business"],
-      droit:["droit","juridique","science politique","relation internationale"],
-      education:["education","enseignement","pedagogie"],
-      arts:["art","design","communication","journal","audiovisuel","architecture"],
-      environnement:["environnement","agriculture","agronom","ecolog","durable"],
-      tourisme:["tourisme","hotellerie","restauration"], transport:["transport","logistique","supply chain"],
-      sciences:["mathematique","physique","chimie","science"], langues:["lettre","langue","traduction"],
+      numerique:["informatique","numerique","digital","logiciel","cybersecurite","reseau","data","web","intelligence artificielle","developpement","programmation"],
+      sante:["medecine","sante","pharmacie","infirm","biologie","dentaire","sage-femme","sage femme","soin"],
+      ingenierie:["ingenieur","genie","mecanique","electrique","civil","btp","energie","industriel","maintenance"],
+      commerce:["commerce","gestion","management","marketing","finance","comptabilite","audit","business","economie"],
+      droit:["droit","juridique","science politique","relation internationale","justice"],
+      education:["education","enseignement","pedagogie","formation"],
+      arts:["art","design","communication","journal","audiovisuel","architecture","media"],
+      environnement:["environnement","agriculture","agronom","ecolog","durable","agro"],
+      tourisme:["tourisme","hotellerie","restauration"],
+      transport:["transport","logistique","supply chain"],
+      sciences:["mathematique","physique","chimie","science","statistique"],
+      langues:["lettre","langue","traduction","linguistique"],
       social:["sociolog","psycholog","histoire","geograph","sciences humaines","social"]
     };
     const terms = map[orientationInterest] || [];

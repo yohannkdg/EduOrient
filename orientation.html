@@ -3,174 +3,240 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Découvre des pistes d'études adaptées à tes intérêts avec le questionnaire EduOrient.">
+  <meta name="description" content="Questionnaire d'orientation, définitions des diplômes, métiers et suggestions d'établissements EduOrient.">
   <meta name="theme-color" content="#14532d">
   <title>Mon orientation — EduOrient</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="orientation.css">
 </head>
 <body>
-  
 <header class="navbar">
-  <a href="index.html" class="logo" aria-label="Back to EduOrient home">
+  <a href="index.html" class="logo" aria-label="Retour à l'accueil EduOrient">
     <span class="logo-icon">E</span>
     <span>EduOrient</span>
   </a>
-
   <nav>
     <a href="index.html#accueil" data-i18n="navHome">Accueil</a>
     <a href="index.html#ecoles" data-i18n="navSchools">Les établissements</a>
     <a href="orientation.html" aria-current="page" data-i18n="navOrientation">Mon orientation</a>
   </nav>
-
-  <a href="index.html#ecoles" class="nav-button" data-i18n="navFindSchool">
-    Trouver une école
-  </a>
-
-  <button id="language-toggle" type="button" aria-label="Change language">
-    🇬🇧 EN
-  </button>
+  <a href="index.html#ecoles" class="nav-button" data-i18n="navFindSchool">Trouver une école</a>
+  <button id="language-toggle" type="button" aria-label="Changer la langue">🇬🇧 EN</button>
 </header>
 
+<main class="orientation-main" id="main">
+  <section class="orientation-hero">
+    <span class="orientation-eyebrow">TON AVENIR COMMENCE ICI</span>
+    <h1>Construis ton <span>orientation</span></h1>
+    <p>Réponds à quelques questions pour mieux te connaître, comprendre les études et les métiers, puis découvrir des pistes d’établissements. Les résultats sont indicatifs : les admissions, diplômes, équivalences et tarifs doivent être vérifiés auprès des établissements et autorités compétentes.</p>
+    <div class="orientation-note">EduOrient ne montre une photo d’établissement que lorsqu’elle est fiable et traçable. Si l’information manque, nous indiquons « À vérifier » plutôt que d’inventer.</div>
+  </section>
 
-  <main class="orientation-main">
-    
-<section class="orientation-hero">
-  <span class="orientation-eyebrow" data-i18n="orientationEyebrow">
-    TON AVENIR COMMENCE ICI
-  </span>
-
-  <h1>
-    <span data-i18n="orientationTitleStart">Construis ton</span>
-    <span data-i18n="orientationTitleEnd">orientation</span>
-  </h1>
-
-  <p data-i18n="orientationDescription">
-    Réponds à quelques questions pour découvrir des domaines d'études qui pourraient te correspondre.
-  </p>
-
-  <div class="orientation-note" data-i18n="orientationNote">
-    Ce moteur cherche dans la base de données des établissements proposant réellement la formation demandée. Les conditions d'admission et les tarifs doivent être vérifiés auprès de chaque établissement.
-  </div>
-</section>
-
-
-    <section class="orientation-card" aria-labelledby="orientation-title">
+  <section class="orientation-panels" aria-label="Parcours d'orientation">
+    <article class="orientation-card" aria-labelledby="orientation-title">
       <div class="orientation-card-heading">
-  <span class="orientation-step" data-i18n="orientationQuestionnaire">QUESTIONNAIRE</span>
-  <h2 id="orientation-title" data-i18n="orientationCardTitle">Parlons de ton projet</h2>
-  <p data-i18n="orientationCardDescription">Il n'y a pas de mauvaise réponse. Choisis ce qui te correspond aujourd'hui.</p>
-</div>
-      <form id="orientationForm">
-        <div class="orientation-field">
-          <label for="studyLevel">1. Niveau d'études actuel</label>
-          <select id="studyLevel" name="studyLevel" required>
-            <option value="">Choisir un niveau</option>
-            <option value="college">Collège</option>
-            <option value="lycee">Lycée</option>
-            <option value="bac">Baccalauréat / en préparation</option>
-            <option value="superieur">Études supérieures</option>
-            <option value="reconversion">Réorientation / formation continue</option>
-          </select>
-        </div>
+        <span class="orientation-step">QUESTIONNAIRE</span>
+        <h2 id="orientation-title">Parlons de ton projet</h2>
+        <p>Il n’y a pas de mauvaise réponse. Tous les champs importants peuvent rester sur « Je ne sais pas encore ».</p>
+      </div>
+      <form id="orientationForm" novalidate>
+        <div class="orientation-form-grid">
+          <div class="orientation-field">
+            <label for="studyLevel">1. Niveau d’études actuel</label>
+            <select id="studyLevel" name="studyLevel">
+              <option value="">Je ne sais pas encore</option>
+              <option value="college">Collège</option>
+              <option value="lycee">Lycée</option>
+              <option value="bac">Baccalauréat / en préparation</option>
+              <option value="bac1">Bac+1 / début d’études supérieures</option>
+              <option value="bac2">Bac+2 / BTS / DUT / BUT ou équivalent</option>
+              <option value="licence">Licence / bachelor / Bac+3</option>
+              <option value="master">Master / Bac+4/5</option>
+              <option value="pro">Déjà dans la vie active / formation professionnelle</option>
+              <option value="reconversion">Réorientation / reprise d’études</option>
+            </select>
+            <p class="field-help">Aide : choisis le niveau le plus proche. Si tu hésites, laisse « Je ne sais pas encore ».</p>
+          </div>
 
-        <div class="orientation-field">
-          <label for="interest">2. Domaine d'études recherché</label>
-          <select id="interest" name="interest" required>
-            <option value="">Choisir un domaine</option>
-            <option value="numerique">Informatique, numérique et cybersécurité</option>
-            <option value="sante">Médecine, santé et sciences du vivant</option>
-            <option value="ingenierie">Ingénierie, BTP, énergie et industrie</option>
-            <option value="commerce">Commerce, gestion, finance et comptabilité</option>
-            <option value="droit">Droit, politique et relations internationales</option>
-            <option value="education">Éducation et enseignement</option>
-            <option value="arts">Arts, design, communication et journalisme</option>
-            <option value="environnement">Agriculture, environnement et agronomie</option>
-            <option value="tourisme">Tourisme, hôtellerie et restauration</option>
-            <option value="transport">Transport et logistique</option>
-            <option value="sciences">Sciences et mathématiques</option>
-            <option value="langues">Lettres, langues et traduction</option>
-            <option value="social">Sciences humaines et sociales</option>
-            <option value="aucun">Je ne sais pas encore / explorer</option>
-          </select>
-        </div>
+          <div class="orientation-field">
+            <label for="interest">2. Domaine qui t’attire</label>
+            <select id="interest" name="interest">
+              <option value="">Je ne sais pas encore</option>
+              <option value="numerique">Informatique, numérique et cybersécurité</option>
+              <option value="sante">Médecine, santé et sciences du vivant</option>
+              <option value="ingenierie">Ingénierie, BTP, énergie et industrie</option>
+              <option value="commerce">Commerce, gestion, finance et comptabilité</option>
+              <option value="droit">Droit, politique et relations internationales</option>
+              <option value="education">Éducation et enseignement</option>
+              <option value="arts">Arts, design, communication et journalisme</option>
+              <option value="environnement">Agriculture, environnement et agronomie</option>
+              <option value="tourisme">Tourisme, hôtellerie et restauration</option>
+              <option value="transport">Transport et logistique</option>
+              <option value="sciences">Sciences et mathématiques</option>
+              <option value="langues">Lettres, langues et traduction</option>
+              <option value="social">Sciences humaines et sociales</option>
+              <option value="aucun">Je veux explorer plusieurs domaines</option>
+            </select>
+          </div>
 
-        <div class="orientation-field">
-          <label for="specialty">3. Spécialité ou formation précise (optionnel)</label>
-          <input id="specialty" name="specialty" type="text" placeholder="Ex. cybersécurité, comptabilité, génie civil, sage-femme, data science..." autocomplete="off">
-          <p class="field-help">Le moteur cherchera cette spécialité dans les formations réellement enregistrées. S'il n'y a pas de correspondance explicite, l'établissement ne sera pas recommandé.</p>
-        </div>
+          <div class="orientation-field">
+            <label for="specialty">3. Filière, spécialité ou formation précise (optionnel)</label>
+            <input id="specialty" name="specialty" type="text" placeholder="Ex. cybersécurité, comptabilité, génie civil, sage-femme, data science" autocomplete="off">
+            <p class="field-help">Le moteur cherchera cette spécialité dans les formations réellement enregistrées dans EduOrient. Sans correspondance explicite, il ne l’inventera pas.</p>
+          </div>
 
-        <div class="orientation-field">
-          <label for="studyCountry">4. Pays d'études souhaité</label>
-          <select id="studyCountry" name="studyCountry" required>
-            <option value="">Choisir un pays</option>
-            <option value="Côte d'Ivoire">Côte d'Ivoire</option>
-            <option value="France">France</option>
-            <option value="Sénégal">Sénégal</option>
-            <option value="Maroc">Maroc</option>
-            <option value="Canada">Canada</option>
-            <option value="Suisse">Suisse</option>
-            <option value="États-Unis">États-Unis</option>
-            <option value="Autre pays">Autre pays</option>
-            <option value="Pas encore décidé">Je ne sais pas encore</option>
-          </select>
-        </div>
+          <div class="orientation-field">
+            <label for="diplomaGoal">4. Diplôme visé / type de formation (optionnel)</label>
+            <select id="diplomaGoal" name="diplomaGoal">
+              <option value="">Je ne sais pas encore</option>
+              <option value="Baccalauréat">Baccalauréat</option>
+              <option value="BTS">BTS</option>
+              <option value="BUT/DUT">BUT / DUT</option>
+              <option value="Licence">Licence</option>
+              <option value="Bachelor">Bachelor</option>
+              <option value="Licence professionnelle">Licence professionnelle</option>
+              <option value="Master">Master</option>
+              <option value="MBA">MBA</option>
+              <option value="Doctorat">Doctorat</option>
+              <option value="Ingénieur">Diplôme d’ingénieur</option>
+              <option value="Formation professionnelle">Formation professionnelle / technique</option>
+              <option value="Alternance">Formation en alternance</option>
+            </select>
+            <p class="field-help">Les appellations et équivalences varient selon les pays et les établissements.</p>
+          </div>
 
-        <div class="orientation-field">
-          <label for="institutionType">5. Type d'établissement (optionnel)</label>
-          <select id="institutionType" name="institutionType">
-            <option value="">Public ou privé</option>
-            <option value="Public">Public</option>
-            <option value="Privé">Privé</option>
-          </select>
-        </div>
+          <div class="orientation-field">
+            <label for="subjects">5. Matières que tu aimes (optionnel)</label>
+            <input id="subjects" name="subjects" type="text" placeholder="Ex. mathématiques, biologie, français, informatique, économie" autocomplete="off">
+          </div>
 
-        <div class="orientation-field">
-          <label for="budget">6. Budget annuel estimé pour la scolarité</label>
-          <select id="budget" name="budget">
-            <option value="inconnu">Je ne sais pas encore</option>
-            <option value="limite">Budget limité — privilégier les options abordables</option>
-            <option value="modere">Budget modéré</option>
-            <option value="flexible">Budget flexible</option>
-            <option value="known">Afficher en priorité les tarifs publiés/vérifiés</option>
-          </select>
-          <p class="field-help">Les montants affichés comme estimations ne sont pas des tarifs officiels.</p>
+          <div class="orientation-field">
+            <label for="careerGoal">6. Métier qui t’intéresse (optionnel)</label>
+            <input id="careerGoal" name="careerGoal" type="text" placeholder="Ex. développeur, infirmier, avocat, comptable, architecte" autocomplete="off">
+            <p class="field-help">Tu peux aussi choisir un métier dans la rubrique « Métiers » plus bas.</p>
+          </div>
+
+          <div class="orientation-field">
+            <label for="studyCountry">7. Pays d’études souhaité</label>
+            <select id="studyCountry" name="studyCountry">
+              <option value="">Je ne sais pas encore</option>
+              <option value="Côte d'Ivoire">Côte d’Ivoire</option>
+              <option value="France">France</option>
+              <option value="Sénégal">Sénégal</option>
+              <option value="Maroc">Maroc</option>
+              <option value="Canada">Canada</option>
+              <option value="Suisse">Suisse</option>
+              <option value="États-Unis">États-Unis</option>
+              <option value="Autre pays">Autre pays</option>
+            </select>
+          </div>
+
+          <div class="orientation-field">
+            <label for="institutionType">8. Type d’établissement (optionnel)</label>
+            <select id="institutionType" name="institutionType">
+              <option value="">Public ou privé / Je ne sais pas</option>
+              <option value="Public">Public</option>
+              <option value="Privé">Privé</option>
+            </select>
+          </div>
+
+          <div class="orientation-field">
+            <label for="budget">9. Budget annuel estimé pour la scolarité</label>
+            <select id="budget" name="budget">
+              <option value="inconnu">Je ne sais pas encore</option>
+              <option value="limite">Budget limité — privilégier les options abordables</option>
+              <option value="modere">Budget modéré</option>
+              <option value="flexible">Budget flexible</option>
+              <option value="known">Afficher en priorité les tarifs publiés/vérifiés</option>
+            </select>
+            <p class="field-help">Les montants affichés comme estimations ne sont pas des tarifs officiels.</p>
+          </div>
+
+          <div class="orientation-field">
+            <label for="studyMode">10. Préférence pratique (optionnel)</label>
+            <select id="studyMode" name="studyMode">
+              <option value="">Je ne sais pas encore</option>
+              <option value="presentiel">Présentiel</option>
+              <option value="alternance">Alternance / professionnalisant</option>
+              <option value="international">Parcours international</option>
+              <option value="proche">Proche de chez moi / même pays</option>
+            </select>
+            <p class="field-help">Cette préférence sert d’indication ; vérifie la modalité réelle auprès de l’établissement.</p>
+          </div>
         </div>
 
         <div class="orientation-actions">
-          <button class="orientation-submit" type="submit">
-            <span>Trouver des établissements adaptés</span>
+          <button class="orientation-submit" type="submit" id="orientationSubmit">
+            <span>Trouver des pistes et établissements adaptés</span>
             <span aria-hidden="true">→</span>
           </button>
           <button class="orientation-reset" type="reset">Effacer mes réponses</button>
+          <button class="orientation-reset" type="button" id="startExplore">Je ne sais pas encore : m’aider à choisir</button>
         </div>
+        <p id="orientationStatus" class="field-help" aria-live="polite"></p>
       </form>
-    </section>
+    </article>
 
     <section id="orientationResults" class="orientation-results" aria-live="polite" hidden>
-  <span class="orientation-step" data-i18n="orientationFirstSuggestions">TES PREMIÈRES PISTES</span>
-  <h2 data-i18n="orientationResultsTitle">Voici des idées pour commencer</h2>
-  <p id="orientationSummary"></p>
-  <div id="orientationSuggestions" class="orientation-suggestions"></div>
-  <div class="orientation-results-note">
-    <strong data-i18n="orientationRemember">À retenir :</strong>
-    <span data-i18n="orientationResultsNote">Ces pistes sont indicatives. Les conditions d'admission, les frais et les formations disponibles doivent être vérifiés auprès de chaque établissement.</span>
-  </div>
-  <div class="orientation-actions">
-    <a class="orientation-submit orientation-link" href="index.html#ecoles" data-i18n="orientationExploreSchools">Explorer les établissements</a>
-    <button class="orientation-reset" id="editOrientation" type="button" data-i18n="orientationEditAnswers">Modifier mes réponses</button>
-  </div>
-</section>
-  </main>
+      <span class="orientation-step">TES PISTES</span>
+      <h2>Suggestions personnalisées</h2>
+      <p id="orientationSummary"></p>
+      <div id="orientationPath" class="ori-path" hidden></div>
+      <div id="orientationSuggestions" class="orientation-suggestions"></div>
+      <div class="orientation-results-note">
+        <strong>À retenir :</strong> ces pistes sont indicatives. Les conditions d’admission, reconnaissances de diplômes, équivalences et frais varient selon les pays et doivent être vérifiés auprès de chaque établissement.
+      </div>
+      <div class="orientation-actions">
+        <a class="orientation-submit orientation-link" href="index.html#ecoles">Explorer les établissements</a>
+        <button class="orientation-reset" id="editOrientation" type="button">Modifier mes réponses</button>
+      </div>
+    </section>
 
-  <footer class="orientation-footer">
-    <p>© 2026 EduOrient — T'aider à préparer la suite.</p>
-    <a href="index.html">Retour à l'accueil</a>
-  </footer>
- <script src="theme.js"></script>
+    <section class="orientation-panel" id="guidedPanel" aria-labelledby="guided-title">
+      <span class="orientation-step">SI TU HÉSITES</span>
+      <h2 id="guided-title">Parcours guidé</h2>
+      <p>Tu n’as pas besoin de tout savoir maintenant. Commence par ce que tu aimes, découvre des métiers, puis regarde les études et les établissements qui y correspondent.</p>
+      <div class="ori-path">
+        <div class="ori-path-step"><strong>1. Te connaître</strong>Note ce que tu aimes : matières, activités, environnements de travail.</div>
+        <div class="ori-path-step"><strong>2. Explorer des métiers</strong>Regarde les missions, compétences et formations possibles, sans te limiter trop vite.</div>
+        <div class="ori-path-step"><strong>3. Comprendre les études</strong>Identifie les diplômes/formations utiles et leurs prérequis selon le pays.</div>
+        <div class="ori-path-step"><strong>4. Comparer des établissements</strong>Vérifie les formations réellement proposées, l’admission, les frais et la reconnaissance.</div>
+      </div>
+      <p class="ori-muted">Conseil : une orientation se construit par étapes. Tu peux commencer large, puis affiner.</p>
+    </section>
+
+    <section class="orientation-panel" id="definitions" aria-labelledby="defs-title">
+      <span class="orientation-step">COMPRENDRE</span>
+      <h2 id="defs-title">Comprendre les études et les diplômes</h2>
+      <p>Définitions simples et générales. Les noms, durées, admissions et reconnaissances peuvent varier selon les pays.</p>
+      <div class="orientation-tabs" role="tablist" aria-label="Catégories de définitions">
+        <button class="ori-tab is-active" type="button" data-def-tab="diplomas" role="tab" aria-selected="true">Diplômes & formations</button>
+        <button class="ori-tab" type="button" data-def-tab="institutions" role="tab" aria-selected="false">Établissements</button>
+        <button class="ori-tab" type="button" data-def-tab="terms" role="tab" aria-selected="false">Termes utiles</button>
+      </div>
+      <div id="definitionsGrid" class="ori-grid"></div>
+    </section>
+
+    <section class="orientation-panel" id="careers" aria-labelledby="careers-title">
+      <span class="orientation-step">MÉTIERS</span>
+      <h2 id="careers-title">Découvrir les métiers</h2>
+      <p>Chaque fiche métier relie le métier à des études possibles et à des établissements enregistrés dans EduOrient, uniquement lorsque la formation correspondante est présente ou vérifiable dans la base.</p>
+      <div class="ori-chips" id="careerFilters" aria-label="Filtrer les métiers"></div>
+      <div id="careersGrid" class="ori-grid"></div>
+      <div id="careerDetail" class="ori-detail" hidden></div>
+    </section>
+  </section>
+</main>
+
+<footer class="orientation-footer">
+  <p>© 2026 EduOrient — Orientation indicative, informations à vérifier.</p>
+  <a href="index.html">Retour à l’accueil</a>
+</footer>
+
+<script src="theme.js"></script>
 <script src="language.js"></script>
 <script src="eduorient-core.js"></script>
+<script src="orientation-data.js"></script>
 <script src="orientation.js"></script>
 </body>
 </html>

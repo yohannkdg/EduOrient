@@ -1,129 +1,82 @@
 /* Styles de la page Mon orientation */
-.orientation-main { width: min(100% - 32px, 980px); margin: 0 auto; padding: 42px 0 64px; }
-.orientation-hero { text-align: center; padding: 24px 10px 34px; }
+.orientation-main { width: min(100% - 32px, 1100px); margin: 0 auto; padding: 42px 0 64px; }
+.orientation-hero { text-align: center; padding: 24px 10px 28px; }
 .orientation-eyebrow, .orientation-step { display: inline-block; color: #16804a; font-size: .76rem; font-weight: 800; letter-spacing: .12em; }
 .orientation-hero h1 { margin: 12px 0; font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.12; color: #163b2b; }
 .orientation-hero h1 span { color: #e58b32; }
-.orientation-hero p { max-width: 650px; margin: 0 auto; color: #58665e; line-height: 1.7; }
-.orientation-note { margin: 20px auto 0; max-width: 650px; background: #edf7f0; border-radius: 12px; padding: 12px 16px; color: #245c3e; font-size: .92rem; }
-.orientation-card, .orientation-results { background: #fff; border: 1px solid #e1e9e3; border-radius: 20px; padding: clamp(20px, 4vw, 36px); box-shadow: 0 12px 36px rgba(20, 65, 40, .07); }
-.orientation-card-heading { margin-bottom: 26px; }
-.orientation-card h2, .orientation-results h2 { color: #173d2c; margin: 8px 0; font-size: clamp(1.4rem, 3vw, 2rem); }
-.orientation-card-heading p, .orientation-results > p { color: #657169; line-height: 1.6; }
-.orientation-field { margin: 22px 0; }
-.orientation-field label { display: block; font-weight: 700; color: #263d30; margin-bottom: 9px; }
-.orientation-field select { display: block; width: 100%; min-height: 48px; border: 1px solid #cbd8ce; border-radius: 10px; background: #fff; padding: 11px 13px; color: #26352b; font: inherit; }
-.orientation-field select:focus { outline: 3px solid rgba(22,128,74,.18); border-color: #16804a; }
-.orientation-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 28px; }
+.orientation-hero p { max-width: 720px; margin: 0 auto; color: #58665e; line-height: 1.7; }
+.orientation-note { margin: 20px auto 0; max-width: 760px; background: #edf7f0; border-radius: 12px; padding: 12px 16px; color: #245c3e; font-size: .92rem; line-height:1.55; }
+.orientation-card, .orientation-results, .orientation-panel { background: #fff; border: 1px solid #e1e9e3; border-radius: 20px; padding: clamp(20px, 4vw, 32px); box-shadow: 0 12px 36px rgba(20, 65, 40, .07); }
+.orientation-card-heading { margin-bottom: 18px; }
+.orientation-card h2, .orientation-results h2, .orientation-panel h2 { color: #173d2c; margin: 8px 0; font-size: clamp(1.35rem, 3vw, 1.9rem); }
+.orientation-card-heading p, .orientation-results > p, .orientation-panel > p { color: #657169; line-height: 1.6; }
+.orientation-form-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px 16px; }
+.orientation-field { margin: 0; }
+.orientation-field-wide { grid-column: 1 / -1; }
+.orientation-field label { display: block; font-weight: 700; color: #263d30; margin-bottom: 8px; font-size:.95rem; }
+.orientation-field select, .orientation-field input[type=text] { display: block; width: 100%; min-height: 48px; box-sizing:border-box; border: 1px solid #cbd8ce; border-radius: 10px; background: #fff; padding: 11px 13px; color: #26352b; font: inherit; }
+.orientation-field select:focus, .orientation-field input[type=text]:focus { outline: 3px solid rgba(22,128,74,.18); border-color: #16804a; }
+.field-help { font-size:.84rem; color:#657169; margin:8px 0 0; line-height:1.45; }
+.orientation-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 22px; }
 .orientation-submit, .orientation-reset { border: 0; border-radius: 10px; padding: 13px 18px; font: inherit; font-weight: 750; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 10px; }
 .orientation-submit { background: #17683d; color: #fff; }
 .orientation-submit:hover { background: #10552f; }
 .orientation-reset { background: #f0f4f1; color: #294536; }
 .orientation-link { min-height: 22px; }
 .orientation-results { margin-top: 28px; }
-.orientation-suggestions { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 14px; margin: 22px 0; }
-.orientation-suggestion { border: 1px solid #dce8df; border-radius: 14px; padding: 18px; background: #f9fcfa; }
-.orientation-suggestion h3 { margin: 0 0 8px; color: #17683d; font-size: 1.05rem; }
-.orientation-suggestion p { margin: 0; color: #59675e; line-height: 1.55; font-size: .95rem; }
-.orientation-results-note { background: #fff8e9; border-radius: 12px; padding: 15px; color: #6b552a; line-height: 1.6; }
-.orientation-footer { display: flex; flex-wrap: wrap; gap: 10px 20px; justify-content: space-between; align-items: center; padding: 22px max(16px, calc((100% - 980px) / 2)); border-top: 1px solid #e1e9e3; color: #657169; }
+.orientation-suggestions { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 14px; margin: 20px 0; }
+.orientation-guide, .orientation-specialty-note, .orientation-results-note { border-radius: 12px; padding: 14px 16px; line-height: 1.6; }
+.orientation-guide { background:#f4faf6; border:1px solid #d7e8dc; color:#294536; }
+.orientation-guide h3 { margin:0 0 6px; color:#17683d; }
+.orientation-specialty-note { background:#f8fafc; border:1px solid #dce4ea; color:#334155; margin-bottom:14px; }
+.orientation-results-note { background: #fff8e9; color: #6b552a; }
+.orientation-school-card .school-card-body { padding:16px; }
+.orientation-school-card h3 { margin:0 0 6px; color:#173d2c; font-size:1.05rem; }
+.school-meta,.school-programs,.school-fee-summary,.school-reason { margin:6px 0; color:#4b5c51; font-size:.93rem; line-height:1.5; }
+.school-card-actions { margin-top:10px; display:flex; gap:10px; flex-wrap:wrap; }
+.mini-link, .inline-link { color:#17683d; font-weight:700; text-decoration:none; background:none; border:0; padding:0; font:inherit; cursor:pointer; }
+.mini-link:hover, .inline-link:hover { text-decoration:underline; }
+.school-card-image { width:100%; height:180px; object-fit:cover; border-radius:14px 14px 0 0; background:#eef3f8; display:block; }
+.school-card.no-image .school-card-body, .orientation-school-card.no-image .school-card-body { padding-top:18px; }
+.orientation-panels { display:grid; gap:22px; margin-top:28px; }
+.orientation-tabs { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0; }
+.ori-tab { border:1px solid #cfe0d4; background:#f7fbf8; color:#245c3e; border-radius:999px; padding:8px 13px; font:inherit; font-weight:700; cursor:pointer; }
+.ori-tab.is-active { background:#17683d; color:#fff; border-color:#17683d; }
+.ori-chips { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 16px; }
+.ori-chip { border:1px solid #d6e2da; background:#fff; color:#294536; border-radius:999px; padding:7px 12px; font:inherit; cursor:pointer; }
+.ori-chip.is-active { background:#edf7f0; border-color:#16804a; color:#14532d; font-weight:700; }
+.ori-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr)); gap:12px; }
+.ori-card { border:1px solid #dce8df; border-radius:14px; padding:16px; background:#fbfdfb; }
+.ori-card h3, .ori-card h4 { margin:0 0 8px; color:#17683d; }
+.ori-card p, .ori-card li { color:#526058; line-height:1.55; font-size:.94rem; }
+.ori-card ul { margin:8px 0 0 18px; padding:0; }
+.ori-detail { margin-top:14px; border:1px solid #d7e8dc; border-radius:14px; padding:16px; background:#f8fcf9; }
+.ori-detail h3 { margin:0 0 8px; color:#173d2c; }
+.ori-meta { display:grid; gap:6px; margin:10px 0; }
+.ori-path { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin:16px 0; }
+.ori-path-step { border:1px solid #dce8df; border-radius:12px; padding:12px; background:#fff; }
+.ori-path-step strong { display:block; color:#17683d; margin-bottom:4px; }
+.ori-muted { color:#657169; font-size:.9rem; }
+.orientation-footer { display: flex; flex-wrap: wrap; gap: 10px 20px; justify-content: space-between; align-items: center; padding: 22px max(16px, calc((100% - 1100px) / 2)); border-top: 1px solid #e1e9e3; color: #657169; }
 .orientation-footer a { color: #17683d; font-weight: 700; }
+@media (max-width: 760px) { .orientation-form-grid { grid-template-columns:1fr; } }
 @media (max-width: 640px) { .orientation-main { padding-top: 22px; } .orientation-hero { padding-top: 14px; } .orientation-actions { align-items: stretch; flex-direction: column; } .orientation-submit, .orientation-reset { width: 100%; box-sizing: border-box; } .orientation-footer { padding: 20px 16px; } }
 
-/* =====================================
-   MODE SOMBRE — PAGE MON ORIENTATION
-===================================== */
-
-html[data-theme="dark"] .orientation-hero h1,
-html[data-theme="dark"] .orientation-card h2,
-html[data-theme="dark"] .orientation-results h2 {
-  color: #f1f5f9;
-}
-
-html[data-theme="dark"] .orientation-hero p,
-html[data-theme="dark"] .orientation-card-heading p,
-html[data-theme="dark"] .orientation-results > p {
-  color: #cbd5e1;
-}
-
-html[data-theme="dark"] .orientation-eyebrow,
-html[data-theme="dark"] .orientation-step {
-  color: #4ade80;
-}
-
-html[data-theme="dark"] .orientation-note {
-  background: #193b2b;
-  color: #bbf7d0;
-}
-
-html[data-theme="dark"] .orientation-card,
-html[data-theme="dark"] .orientation-results {
-  background: #17212b;
-  border-color: #334155;
-  box-shadow: 0 12px 36px rgba(0, 0, 0, .2);
-}
-
-html[data-theme="dark"] .orientation-field label {
-  color: #e2e8f0;
-}
-
-html[data-theme="dark"] .orientation-field select {
-  background: #1e293b;
-  border-color: #475569;
-  color: #f1f5f9;
-}
-
-html[data-theme="dark"] .orientation-field select option {
-  background: #1e293b;
-  color: #f1f5f9;
-}
-
-html[data-theme="dark"] .orientation-field select:focus {
-  outline-color: rgba(74, 222, 128, .25);
-  border-color: #4ade80;
-}
-
-html[data-theme="dark"] .orientation-submit {
-  background: #15803d;
-  color: #ffffff;
-}
-
-html[data-theme="dark"] .orientation-submit:hover {
-  background: #166534;
-}
-
-html[data-theme="dark"] .orientation-reset {
-  background: #334155;
-  color: #f1f5f9;
-}
-
-html[data-theme="dark"] .orientation-suggestion {
-  background: #1e293b;
-  border-color: #475569;
-}
-
-html[data-theme="dark"] .orientation-suggestion h3 {
-  color: #4ade80;
-}
-
-html[data-theme="dark"] .orientation-suggestion p {
-  color: #cbd5e1;
-}
-
-html[data-theme="dark"] .orientation-results-note {
-  background: #3b321e;
-  color: #fde68a;
-}
-
-html[data-theme="dark"] .orientation-footer {
-  border-color: #334155;
-  color: #cbd5e1;
-}
-
-html[data-theme="dark"] .orientation-footer a {
-  color: #4ade80;
-}
-
-.orientation-field input[type=text]{display:block;width:100%;min-height:48px;border:1px solid #cbd8ce;border-radius:10px;background:#fff;padding:11px 13px;color:#26352b;font:inherit;}
-.field-help{font-size:.85rem;color:#657169;margin-top:8px;line-height:1.45;}
-.school-card-image{width:100%;height:180px;object-fit:cover;border-radius:12px;background:#eef3f8;display:block;}
+/* Dark mode */
+html[data-theme="dark"] .orientation-hero h1, html[data-theme="dark"] .orientation-card h2, html[data-theme="dark"] .orientation-results h2, html[data-theme="dark"] .orientation-panel h2, html[data-theme="dark"] .orientation-school-card h3, html[data-theme="dark"] .ori-detail h3 { color:#f1f5f9; }
+html[data-theme="dark"] .orientation-hero p, html[data-theme="dark"] .orientation-card-heading p, html[data-theme="dark"] .orientation-results > p, html[data-theme="dark"] .orientation-panel > p, html[data-theme="dark"] .school-meta, html[data-theme="dark"] .school-programs, html[data-theme="dark"] .school-fee-summary, html[data-theme="dark"] .school-reason, html[data-theme="dark"] .ori-card p, html[data-theme="dark"] .ori-card li, html[data-theme="dark"] .ori-muted, html[data-theme="dark"] .field-help { color:#cbd5e1; }
+html[data-theme="dark"] .orientation-eyebrow, html[data-theme="dark"] .orientation-step, html[data-theme="dark"] .orientation-suggestion h3, html[data-theme="dark"] .ori-card h3, html[data-theme="dark"] .ori-card h4, html[data-theme="dark"] .ori-path-step strong, html[data-theme="dark"] .mini-link, html[data-theme="dark"] .inline-link, html[data-theme="dark"] .orientation-footer a { color:#4ade80; }
+html[data-theme="dark"] .orientation-note { background:#193b2b; color:#bbf7d0; }
+html[data-theme="dark"] .orientation-card, html[data-theme="dark"] .orientation-results, html[data-theme="dark"] .orientation-panel { background:#17212b; border-color:#334155; box-shadow:0 12px 36px rgba(0,0,0,.2); }
+html[data-theme="dark"] .orientation-field label { color:#e2e8f0; }
+html[data-theme="dark"] .orientation-field select, html[data-theme="dark"] .orientation-field input[type=text] { background:#1e293b; border-color:#475569; color:#f1f5f9; }
+html[data-theme="dark"] .orientation-field select option { background:#1e293b; color:#f1f5f9; }
+html[data-theme="dark"] .orientation-submit { background:#15803d; color:#fff; }
+html[data-theme="dark"] .orientation-reset { background:#334155; color:#f1f5f9; }
+html[data-theme="dark"] .orientation-results-note { background:#3b321e; color:#fde68a; }
+html[data-theme="dark"] .orientation-guide, html[data-theme="dark"] .ori-detail, html[data-theme="dark"] .ori-card, html[data-theme="dark"] .ori-path-step, html[data-theme="dark"] .orientation-specialty-note { background:#1e293b; border-color:#475569; color:#cbd5e1; }
+html[data-theme="dark"] .ori-tab { background:#1e293b; border-color:#475569; color:#cbd5e1; }
+html[data-theme="dark"] .ori-tab.is-active { background:#15803d; border-color:#15803d; color:#fff; }
+html[data-theme="dark"] .ori-chip { background:#17212b; border-color:#475569; color:#cbd5e1; }
+html[data-theme="dark"] .ori-chip.is-active { background:#193b2b; border-color:#4ade80; color:#bbf7d0; }
+html[data-theme="dark"] .orientation-footer { border-color:#334155; color:#cbd5e1; }
