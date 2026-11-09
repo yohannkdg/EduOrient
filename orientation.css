@@ -105,3 +105,19 @@ html[data-theme="dark"] .ori-result-card h3{color:#f1f5f9}
 html[data-theme="dark"] .ori-result-card h4,html[data-theme="dark"] .ori-details summary{color:#4ade80}
 html[data-theme="dark"] .ori-details-body,html[data-theme="dark"] .ori-advice{color:#cbd5e1}
 @media (max-width:640px){.ori-result-card{padding:13px}}
+
+/* Definitions group (must appear immediately before recommended schools) */
+.ori-definitions-group{background:#f4f8f5;border:1px solid #d3e3d8;border-radius:16px;padding:16px;margin:16px 0}
+.ori-group-intro h2{margin:6px 0 8px;color:#173d2c;font-size:1.25rem}
+.ori-group-intro p{margin:0 0 8px;color:#526058}
+.ori-def-list{margin:8px 0 0 18px;color:#526058;line-height:1.55}
+.ori-def-list li{margin:4px 0}
+.ori-def-card{background:#fff;border:1px solid #e2ece5;border-radius:12px;padding:12px;margin:10px 0}
+.ori-def-card h4{margin:0 0 6px;color:#17683d}
+.ori-def-card p{margin:4px 0;color:#526058;line-height:1.5}
+.ori-career-def{border-left:3px solid #2d8a57}
+html[data-theme="dark"] .ori-definitions-group{background:#0f172a;border-color:#334155}
+html[data-theme="dark"] .ori-group-intro h2{color:#f1f5f9}
+html[data-theme="dark"] .ori-group-intro p,html[data-theme="dark"] .ori-def-list,html[data-theme="dark"] .ori-def-card p{color:#cbd5e1}
+html[data-theme="dark"] .ori-def-card{background:#1e293b;border-color:#475569}
+html[data-theme="dark"] .ori-def-card h4{color:#4ade80}

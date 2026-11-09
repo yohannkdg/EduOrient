@@ -189,6 +189,14 @@
     }).filter(Boolean).sort(function (a, b) { return b.score - a.score; }).slice(0, 4);
   }
 
+  function defCard(d, open) {
+    var inner = '<p>' + esc(d.def) + '</p>' +
+      (d.ex ? '<p><strong>Exemple :</strong> ' + esc(d.ex) + '</p>' : '') +
+      (d.use ? '<p><strong>À quoi ça sert / pourquoi c’est utile :</strong> ' + esc(d.use) + '</p>' : '') +
+      '<p class="ori-muted"><strong>À vérifier :</strong> ' + esc(d.note || 'Les intitulés, durées, admissions et reconnaissances varient selon les pays et les établissements.') + '</p>';
+    return details(esc(d.term), inner, !!open);
+  }
+
   function renderProfile(ctx, lp) {
     var rows = [
       ["Niveau actuel", lp.label || "À préciser"],
@@ -202,58 +210,77 @@
       ["Budget", ctx.budget && ctx.budget !== "inconnu" ? ctx.budget : "À préciser"],
       ["Préférence pratique", ctx.studyMode || "À préciser"]
     ];
-    return '<section class="ori-result-card"><h3>1. Résumé de ton profil</h3><div class="ori-meta">' + rows.map(function(r){ return '<p><strong>' + esc(r[0]) + ' :</strong> ' + esc(r[1]) + '</p>'; }).join('') + '</div><p class="ori-muted">' + esc(lp.note) + '</p></section>';
+    return '<section class="ori-result-card" id="sec-profile"><h3>1. Mon profil</h3><div class="ori-meta">' + rows.map(function(r){ return '<p><strong>' + esc(r[0]) + ' :</strong> ' + esc(r[1]) + '</p>'; }).join('') + '</div><p class="ori-muted">' + esc(lp.note) + '</p></section>';
   }
 
   function renderField(guides, ctx) {
-    if (!guides.length) return '<section class="ori-result-card"><h3>2. Filière ou domaine recommandé</h3><p>Aucun domaine précis n’a été identifié. Utilise les pistes ci-dessous pour explorer plusieurs options.</p></section>';
+    if (!guides.length) return '<section class="ori-result-card" id="sec-field"><h3>2. Ma filière</h3><p>Aucun domaine précis n’a été identifié. Indique un domaine, une matière ou un métier pour obtenir une filière recommandée ; en attendant, les définitions ci-dessous te proposent des pistes.</p></section>';
+    var note = (isUndecided(ctx.interest) || ctx.interest === "aucun") ? '<p class="ori-muted">Tu n’as pas choisi de domaine précis : EduOrient te propose plusieurs pistes de filières à comparer.</p>' : '';
     var body = guides.map(function(g){
-      return '<div class="ori-subcard"><h4>' + esc(g.label) + '</h4><p>' + esc(g.def) + '</p>' + details('Ce qu’on y apprend', '<ul>' + (g.learn||[]).map(function(x){return '<li>'+esc(x)+'</li>';}).join('') + '</ul>', true) + details('Compétences développées', '<p>' + esc((g.skills||[]).join(' · ')) + '</p>') + details('Secteurs utiles', '<p>' + esc((g.sectors||[]).join(' · ')) + '</p>') + '</div>';
+      return '<div class="ori-subcard"><h4>' + esc(g.label) + '</h4><p>' + esc(g.def) + '</p><p><strong>Pourquoi ce domaine peut te correspondre :</strong> ' + esc((g.sectors||[]).slice(0,4).join(' · ') || 'à préciser selon ton projet') + '.</p></div>';
     }).join('');
-    var note = (isUndecided(ctx.interest) || ctx.interest === "aucun") ? '<p class="ori-muted">Tu n’as pas choisi de domaine précis : EduOrient te propose plusieurs pistes à comparer.</p>' : '';
-    return '<section class="ori-result-card"><h3>2. Filière ou domaine recommandé</h3><h3 style="margin-top:-4px">Comprendre la filière qui t’intéresse</h3>' + note + body + '</section>';
+    return '<section class="ori-result-card" id="sec-field"><h3>2. Ma filière</h3>' + note + body + '<p class="ori-muted">La définition complète de la filière, les matières et les spécialisations se trouvent juste après, dans la partie « Définitions ».</p></section>';
   }
 
-  function renderSubjects(guides) {
-    if (!guides.length) return '';
+  function renderFieldDefinition(guides) {
+    if (!guides.length) return '<section class="ori-result-card" id="sec-field-def"><h3>3. Définition de la filière</h3><p>Aucune filière précise à définir pour le moment. Choisis un domaine ou un métier pour obtenir une explication complète.</p></section>';
     var body = guides.map(function(g){
-      return '<div class="ori-subcard"><h4>' + esc(g.label) + '</h4><p><strong>Matières principales :</strong> ' + esc((g.subjects||[]).join(' · ') || 'À préciser selon le programme.') + '</p><p><strong>Spécialisations possibles :</strong> ' + esc((g.specs||[]).join(' · ') || 'À vérifier selon les établissements.') + '</p></div>';
+      return '<article class="ori-def-card"><h4>' + esc(g.label) + '</h4>' +
+        '<p><strong>Définition :</strong> ' + esc(g.def) + '</p>' +
+        '<p><strong>Ce qu’on y apprend :</strong></p><ul class="ori-def-list">' + (g.learn||[]).map(function(x){return '<li>'+esc(x)+'</li>';}).join('') + '</ul>' +
+        '<p><strong>Matières principales :</strong> ' + esc((g.subjects||[]).join(' · ') || 'À préciser selon le programme.') + '</p>' +
+        '<p><strong>Spécialisations possibles :</strong> ' + esc((g.specs||[]).join(' · ') || 'À vérifier selon les établissements.') + '</p>' +
+        '<p><strong>Compétences développées :</strong> ' + esc((g.skills||[]).join(' · ')) + '</p>' +
+        '<p><strong>Secteurs utiles :</strong> ' + esc((g.sectors||[]).join(' · ')) + '</p>' +
+        '<p><strong>Formations/studies possibles :</strong> ' + esc((g.studies||[]).join(' · ')) + '</p>' +
+        '<p class="ori-muted"><strong>À vérifier :</strong> le contenu exact, les prérequis et les débouchés varient selon le pays et l’établissement.</p></article>';
     }).join('');
-    return '<section class="ori-result-card"><h3>4. Matières et spécialisations</h3>' + body + '</section>';
+    return '<section class="ori-result-card" id="sec-field-def"><h3>3. Définition de la filière</h3>' + body + '</section>';
   }
 
-  function renderDegrees(guides, ctx) {
-    if (!guides.length) return '';
-    var body = guides.map(function(g){
-      return '<div class="ori-subcard"><h4>' + esc(g.label) + '</h4><p><strong>Diplômes accessibles / souvent associés :</strong> ' + esc((g.degrees||[]).join(' · ')) + '</p><p><strong>Niveaux d’études :</strong> ' + esc((g.levels||[]).join(' · ')) + '</p><p><strong>Formations/studies possibles :</strong> ' + esc((g.studies||[]).join(' · ')) + '</p></div>';
-    }).join('');
+  function renderDegreesDefinitions(guides, ctx) {
+    var defs = (OD().definitions && OD().definitions.diplomas) || [];
+    var keep = {};
+    (guides||[]).forEach(function(g){ (g.degrees||[]).forEach(function(d){ var n=normalize(d); ['bts','but dut','licence','bachelor','licence professionnelle','master','mba','doctorat','ingenieur','formation professionnelle','alternance'].forEach(function(k){ if(n.indexOf(normalize(k).split(' ')[0])>=0 || normalize(k).indexOf(n.split(' ')[0])>=0) keep[normalize(k)]=true; }); if(/bac(?!\+)/.test(n)) keep['baccalaureat']=true; }); });
+    if (ctx.diplomaGoal) { var dg=normalize(ctx.diplomaGoal); defs.forEach(function(d){ if(normalize(d.term).indexOf(dg)>=0 || dg.indexOf(normalize(d.term).split(' ')[0])>=0) keep[normalize(d.term)]=true; }); }
+    var prioritized = [], rest = [];
+    defs.forEach(function(d){ (keep[normalize(d.term)] ? prioritized : rest).push(d); });
+    var list = prioritized.concat(rest);
     var extra = ctx.diplomaGoal ? '<p><strong>Diplôme visé indiqué :</strong> ' + esc(ctx.diplomaGoal) + ' — l’accès dépend du pays, des prérequis et de la reconnaissance du diplôme.</p>' : '';
-    return '<section class="ori-result-card"><h3>5. Diplômes et niveaux d’études</h3>' + extra + body + '<p class="ori-muted">Les intitulés (BTS, BUT, licence, bachelor, master, ingénieur…) et leurs équivalences varient selon les pays.</p></section>';
+    var levels = guides && guides.length ? '<div class="ori-subcard"><h4>Niveaux d’études généralement associés à ta filière</h4><p>' + esc((guides[0].levels||[]).join(' · ') || 'Variable selon le pays.') + '</p><p><strong>Formations possibles :</strong> ' + esc((guides[0].studies||[]).join(' · ')) + '</p></div>' : '';
+    var body = list.map(function(d,i){ return defCard(d, i < 4); }).join('');
+    return '<section class="ori-result-card" id="sec-degrees"><h3>4. Diplômes et formations</h3><p>Définitions des diplômes, niveaux et durées indicatives (les appellations et équivalences varient selon les pays).</p>' + extra + levels + body + '</section>';
   }
 
-  function renderCareersBlock(careers) {
-    if (!careers.length) return '<section class="ori-result-card"><h3>6. Métiers et débouchés possibles</h3><p>Aucune fiche métier précise n’a pu être associée. Essaie d’indiquer un domaine, une matière ou un métier pour obtenir des suggestions plus ciblées.</p></section>';
-    var body = careers.map(function(c){
-      var inner = '<p>' + esc(c.def) + '</p>' +
+  function renderCareersDefinitions(careers) {
+    if (!careers.length) return '<section class="ori-result-card" id="sec-careers"><h3>5. Métiers et débouchés</h3><p>Aucun métier précis n’a pu être associé. Indique un domaine, une matière ou un métier pour obtenir des définitions de métiers adaptées.</p></section>';
+    var body = careers.map(function(c, i){
+      var matches = findSchoolsForCareer(c);
+      var matchesHtml = matches.length ? '<p><strong>Établissements potentiellement liés (base EduOrient) :</strong> ' + matches.map(function(m){ return esc(m.school.name) + ' (' + esc([m.school.city,m.school.country].filter(Boolean).join(', ')) + ')'; }).join(' ; ') + '. <span class="ori-muted">Correspondance indicative, à vérifier.</span></p>' : '<p class="ori-muted">Aucun établissement explicitement associé dans la base pour ce métier précis ; consulte les fiches établissements recommandées ci-dessous.</p>';
+      var inner = '<p><strong>Définition :</strong> ' + esc(c.def) + '</p>' +
         '<p><strong>Missions principales :</strong> ' + esc((c.missions||[]).join(' · ')) + '</p>' +
         '<p><strong>Compétences nécessaires :</strong> ' + esc((c.skills||[]).join(' · ')) + '</p>' +
-        '<p><strong>Formations/diplômes généralement associés :</strong> ' + esc((c.studies||[]).join(' · ')) + (c.degrees && c.degrees.length ? ' — ' + esc(c.degrees.join(' · ')) : '') + '</p>' +
-        '<p><strong>Secteurs d’activité :</strong> ' + esc((c.workplaces||[]).join(' · ')) + '</p>' +
-        '<p><strong>Évolution professionnelle :</strong> ' + esc(c.evolution || 'Variable selon le parcours et le pays.') + '</p>' +
-        (c.caution ? '<p class="ori-muted"><strong>Attention :</strong> ' + esc(c.caution) + '</p>' : '');
-      return details(c.name, inner, careers.length <= 2);
+        '<p><strong>Études nécessaires / formations possibles :</strong> ' + esc((c.studies||[]).join(' · ')) + '</p>' +
+        '<p><strong>Diplômes généralement associés :</strong> ' + esc((c.degrees||[]).join(' · ') || 'Selon le pays et le niveau.') + '</p>' +
+        '<p><strong>Secteurs d’activité / où travailler :</strong> ' + esc((c.workplaces||[]).join(' · ')) + '</p>' +
+        '<p><strong>Évolution professionnelle :</strong> ' + esc(c.evolution || 'Variable selon le parcours, l’expérience et le pays.') + '</p>' +
+        matchesHtml +
+        (c.caution ? '<p class="ori-muted"><strong>Attention :</strong> ' + esc(c.caution) + '</p>' : '<p class="ori-muted"><strong>À vérifier :</strong> accès au métier, reconnaissance et réglementation varient selon le pays.</p>');
+      return '<div class="ori-career-def">' + details(c.name, inner, i < 2) + '</div>';
     }).join('');
-    return '<section class="ori-result-card"><h3>6. Métiers et débouchés possibles</h3><p>Métiers associés aux réponses du questionnaire (à adapter selon le pays et le niveau d’études) :</p>' + body + '</section>';
+    return '<section class="ori-result-card" id="sec-careers"><h3>5. Métiers et débouchés</h3><p>Définitions des métiers liés à ta filière : missions, compétences, études nécessaires et évolutions professionnelles.</p>' + body + '</section>';
   }
 
-  function renderPathways(careers) {
-    if (!careers.length) return '';
-    var body = careers.slice(0,5).map(function(c){
-      var matches = findSchoolsForCareer(c);
-      var mHtml = matches.length ? '<p><strong>Établissements potentiellement liés (base EduOrient) :</strong> ' + matches.map(function(m){ return esc(m.school.name) + ' (' + esc([m.school.city,m.school.country].filter(Boolean).join(', ')) + ')'; }).join(' ; ') + '. <span class="ori-muted">Correspondance indicative, à vérifier.</span></p>' : '<p class="ori-muted">Aucun établissement explicitement associé dans la base pour ce métier précis ; élargis ta recherche ou vérifie les formations des fiches établissements.</p>';
-      return '<div class="ori-subcard"><h4>' + esc(c.name) + '</h4><p><strong>Formations d’accès possibles :</strong> ' + esc((c.studies||[]).join(' · ')) + '</p>' + mHtml + '</div>';
-    }).join('');
-    return '<section class="ori-result-card"><h3>7. Formations permettant d’accéder à ces métiers</h3>' + body + '</section>';
+  function renderInstitutionsDefinitions() {
+    var defs = (OD().definitions && OD().definitions.institutions) || [];
+    var body = defs.map(function(d,i){ return defCard(d, i < 3); }).join('');
+    return '<section class="ori-result-card" id="sec-institutions"><h3>6. Types d’établissements</h3><p>Explications sur les universités, grandes écoles, instituts, écoles spécialisées et autres structures de formation.</p>' + body + '</section>';
+  }
+
+  function renderVocabulary() {
+    var defs = (OD().definitions && OD().definitions.terms) || [];
+    var body = defs.map(function(d,i){ return defCard(d, i < 2); }).join('');
+    return '<section class="ori-result-card" id="sec-vocabulary"><h3>7. Vocabulaire utile</h3><p>Définitions des termes importants liés à l’orientation, aux études et aux admissions.</p>' + body + '</section>';
   }
 
   function renderSchoolsBlock(scored, wantedSpec, exactSpec, close) {
@@ -261,10 +288,10 @@
     var msg = '';
     if (wantedSpec && !exactSpec.length && close.length) msg = '<div class="orientation-specialty-note"><strong>Spécialité non trouvée explicitement :</strong> suggestions liées au domaine général. Vérifie les formations exactes auprès de chaque établissement.</div>';
     if (!list.length) msg += '<div class="empty-state"><p>Aucune correspondance précise dans la base actuelle. Élargis le pays, choisis un domaine plus large, retire la spécialité ou consulte les fiches établissements. Les informations manquantes doivent être vérifiées.</p></div>';
-    return '<section class="ori-result-card"><h3>8. Établissements adaptés au profil</h3><div id="orientationSummary"></div>' + msg + '<div id="orientationPath" class="ori-path" hidden></div><div id="orientationSuggestions" class="orientation-suggestions"></div></section>';
+    return '<section class="ori-result-card" id="sec-schools"><h3>8. Établissements recommandés</h3><div id="orientationSummary"></div>' + msg + '<div id="orientationPath" class="ori-path" hidden></div><div id="orientationSuggestions" class="orientation-suggestions"></div></section>';
   }
 
-  function renderAdvice(ctx, scored) {
+  function renderAdvice(ctx) {
     var tips = [];
     tips.push("Compare plusieurs établissements : formations réelles, admissions, coûts, reconnaissance du diplôme et localisation.");
     tips.push("Contacte les établissements (site officiel, service admissions) pour confirmer les programmes, dates, prérequis et frais.");
@@ -272,8 +299,7 @@
     if (ctx.careerGoal) tips.push("Pour le métier visé (« " + ctx.careerGoal + " »), vérifie si la profession est réglementée dans le pays concerné.");
     if (ctx.specialty) tips.push("La spécialité recherchée doit être confirmée dans le programme officiel de l’établissement (contenu, diplôme, stage/alternance).");
     if (!isUndecided(ctx.country)) tips.push("Étudier à l’étranger peut demander des équivalences, visas, assurance et preuves de langue : vérifie tôt.");
-    tips.push("Utilise les fiches métiers et la rubrique « Comprendre les études » sur cette page pour approfondir.");
-    return '<section class="ori-result-card"><h3>9. Conseils personnalisés</h3><ul class="ori-advice">' + tips.map(function(t){ return '<li>' + esc(t) + '</li>'; }).join('') + '</ul></section>';
+    return '<section class="ori-result-card"><h3>Conseils personnalisés</h3><ul class="ori-advice">' + tips.map(function(t){ return '<li>' + esc(t) + '</li>'; }).join('') + '</ul></section>';
   }
 
   function renderResults(ctx) {
@@ -294,14 +320,16 @@
       var guides = resolveGuides(ctx);
       var careers = resolveCareers(ctx, guides);
 
+      // Order: 1 Profil, 2 Ma filière, [definitions group starts in HTML] 3 Définition filière, 4 Diplômes/formations, 5 Métiers/débouchés, 6 Types établissements, 7 Vocabulaire, [group ends] 8 Établissements recommandés, Conseils
       setBlock('orientationProfile', renderProfile(ctx, lp));
       setBlock('orientationField', renderField(guides, ctx));
-      setBlock('orientationSubjects', renderSubjects(guides));
-      setBlock('orientationDegrees', renderDegrees(guides, ctx));
-      setBlock('orientationCareers', renderCareersBlock(careers));
-      setBlock('orientationPathways', renderPathways(careers));
+      setBlock('orientationFieldDefinition', renderFieldDefinition(guides));
+      setBlock('orientationDegrees', renderDegreesDefinitions(guides, ctx));
+      setBlock('orientationCareers', renderCareersDefinitions(careers));
+      setBlock('orientationInstitutions', renderInstitutionsDefinitions());
+      setBlock('orientationVocabulary', renderVocabulary());
       setBlock('orientationSchools', renderSchoolsBlock(scored, wantedSpec, exactSpec, close));
-      setBlock('orientationAdvice', renderAdvice(ctx, scored));
+      setBlock('orientationAdvice', renderAdvice(ctx));
 
       var summary = document.getElementById('orientationSummary');
       var suggestions = document.getElementById('orientationSuggestions');
@@ -404,8 +432,7 @@
     var form = document.getElementById("orientationForm"), results = document.getElementById("orientationResults"), edit = document.getElementById("editOrientation"), explore = document.getElementById("startExplore");
     if (!form) return;
     await loadSchools(); populateCountries();
-    form.addEventListener("reset", function () { if (results) results.hidden = true; ['orientationProfile','orientationField','orientationSubjects','orientationDegrees','orientationCareers','orientationPathways','orientationSchools','orientationAdvice'].forEach(function(id){ setBlock(id,''); }); });
-    if (edit) edit.addEventListener("click", function () { if (results) results.hidden = true; form.scrollIntoView({ behavior: "smooth", block: "start" }); });
+    form.addEventListener("reset", function () { if (results) results.hidden = true; ['orientationProfile','orientationField','orientationFieldDefinition','orientationDegrees','orientationCareers','orientationInstitutions','orientationVocabulary','orientationSchools','orientationAdvice'].forEach(function(id){ setBlock(id,''); }); });    if (edit) edit.addEventListener("click", function () { if (results) results.hidden = true; form.scrollIntoView({ behavior: "smooth", block: "start" }); });
     if (explore) explore.addEventListener("click", function () { var i = document.getElementById("interest"); if (i) i.value = "aucun"; renderResults(formContext()); });
     form.addEventListener("submit", function (e) { e.preventDefault(); renderResults(formContext()); });
   });
