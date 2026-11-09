@@ -1,5 +1,5 @@
 
-const CACHE_NAME = "eduorient-v2";
+const CACHE_NAME = "eduorient-v3";
 
 const FILES_TO_CACHE = [
   "./",
@@ -9,6 +9,11 @@ const FILES_TO_CACHE = [
   "./language.js",
   "./theme.js",
   "./manifest.webmanifest",
+  "./orientation.html",
+  "./orientation.css",
+  "./orientation.js",
+  "./school.json",
+  "./images/provisional-school.svg",
   "./icons/icon-192.png",
   "./icons/icon-512.png"
 ];

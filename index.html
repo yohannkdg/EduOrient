@@ -197,9 +197,7 @@
   <span data-i18n="heroTitleEnd">ton avenir.</span>
 </h1>
         <p data-i18n="heroDescription">
-  Compare les établissements en Côte d'Ivoire et à l'international,
-  découvre les formations et prépare ta prochaine rentrée
-  en toute simplicité.
+  Compare les établissements, vérifie les formations proposées et utilise le moteur d'orientation pour trouver des pistes adaptées à ton projet. Les tarifs et conditions affichés doivent être vérifiés auprès des établissements.
 </p>
         <a href="#ecoles" class="primary-button" data-i18n="heroButton">
   Découvrir les écoles →
@@ -227,7 +225,7 @@
           <div class="book-icon">🎓</div>
           <span class="mini-label" data-i18n="cardLabel">TON PROCHAIN CHAPITRE</span>
 <h2 data-i18n="cardTitle">Chaque réussite commence par un bon choix.</h2>
-<p>CEPE · BEPC · BAC</p>
+<p>Orientation · Formations · Vérification des sources</p>
           <div class="hero-decoration">EduOrient CI</div>
         </div>
       </div>
@@ -241,79 +239,59 @@
     <p data-i18n="searchDescription">Utilise les filtres pour trouver les établissements adaptés.</p>
   </div>
 
-  <div class="filters">
+  <div class="filters" role="search" aria-label="Filtres des établissements">
     <div class="field search-field">
-      <label for="search" data-i18n="searchLabel">Nom ou mot-clé</label>
-      <input id="search" type="search"
-        data-i18n-placeholder="searchPlaceholder"
-        placeholder="Ex. informatique, lycée...">
+      <label for="search">Nom, filière ou mot-clé</label>
+      <input id="search" type="search" placeholder="Ex. informatique, médecine, droit, Abidjan..." autocomplete="off">
     </div>
-
     <div class="field">
-      <label for="country" data-i18n="countryLabel">Pays</label>
-      <select id="country">
-        <option value="" data-i18n="allCountries">Tous les pays</option>
-        <option value="Côte d'Ivoire">Côte d'Ivoire</option>
-        <option value="Maroc">Maroc</option>
-        <option value="Sénégal">Sénégal</option>
-        <option value="France">France</option>
-        <option value="Canada">Canada</option>
-        <option value="Suisse">Suisse</option>
-        <option value="États-Unis" data-i18n="unitedStates">États-Unis</option>
+      <label for="country">Pays</label>
+      <select id="country"><option value="">Tous les pays</option></select>
+    </div>
+    <div class="field">
+      <label for="city">Ville</label>
+      <select id="city"><option value="">Toutes les villes</option></select>
+    </div>
+    <div class="field">
+      <label for="fieldFilter">Filière / spécialité</label>
+      <input id="fieldFilter" type="search" placeholder="Ex. cybersécurité, comptabilité, agronomie..." autocomplete="off">
+    </div>
+    <div class="field">
+      <label for="diploma">Diplôme visé</label>
+      <select id="diploma"><option value="">Tous les diplômes</option></select>
+    </div>
+    <div class="field">
+      <label for="type">Type</label>
+      <select id="type">
+        <option value="">Public et privé</option>
+        <option value="Public">Public</option>
+        <option value="Privé">Privé</option>
       </select>
     </div>
-
     <div class="field">
-      <label for="city" data-i18n="cityLabel">Ville</label>
-      <select id="city">
-        <option value="" data-i18n="allCities">Toutes les villes</option>
-        <option value="Abidjan">Abidjan</option>
-        <option value="Yamoussoukro">Yamoussoukro</option>
-        <option value="Bouaké">Bouaké</option>
-        <option value="San Pedro">San Pedro</option>
-      </select>
-    </div>
-
-    <div class="field">
-      <label for="diploma" data-i18n="diplomaLabel">Diplôme obtenu</label>
-      <select id="diploma">
-        <option value="" data-i18n="allDiplomas">Tous les diplômes</option>
-        <option value="CEPE">CEPE</option>
-        <option value="BEPC">BEPC</option>
-        <option value="BAC">BAC</option>
+      <label for="budgetFilter">Budget annuel (scolarité)</label>
+      <select id="budgetFilter">
+        <option value="">Tous les budgets</option>
+        <option value="known">Tarifs publiés/vérifiés uniquement</option>
+        <option value="500000">≤ 500 000</option>
+        <option value="1500000">≤ 1 500 000</option>
+        <option value="5000000">≤ 5 000 000</option>
+        <option value="20000000">≤ 20 000 000</option>
       </select>
     </div>
   </div>
 </section>
-
-
-        <div class="field">
-          <label for="type">Établissement</label>
-          <select id="type">
-            <option value="">Tous les types</option>
-            <option value="Public">Public</option>
-            <option value="Privé">Privé</option>
-          </select>
-        </div>
-      </div>
 
 <div class="results-heading">
   <div>
     <h3 id="list-title">Les établissements</h3>
     <p id="results-count">Chargement...</p>
   </div>
-
   <div class="results-actions">
-    <button id="show-favorites" class="favorites-toggle">
-      ❤️ Mes favoris (<span id="favorites-count">0</span>)
-    </button>
-
-    <button id="reset" class="reset-button">
-      Réinitialiser les filtres
-    </button>
+    <button id="show-favorites" class="favorites-toggle" type="button">❤️ Mes favoris (<span id="favorites-count">0</span>)</button>
+    <button id="reset" class="reset-button" type="button">Réinitialiser les filtres</button>
   </div>
 </div>
-
 
       <section id="compare-panel" class="compare-panel" aria-labelledby="compare-title">
         <div class="compare-panel-heading">

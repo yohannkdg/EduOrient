@@ -50,7 +50,7 @@
   </p>
 
   <div class="orientation-note" data-i18n="orientationNote">
-    Ce questionnaire donne des pistes de réflexion, pas une décision définitive.
+    Ce moteur cherche dans la base de données des établissements proposant réellement la formation demandée. Les conditions d'admission et les tarifs doivent être vérifiés auprès de chaque établissement.
   </div>
 </section>
 
@@ -63,75 +63,88 @@
 </div>
       <form id="orientationForm">
         <div class="orientation-field">
-          <label for="studyLevel" data-i18n="orientationStudyLevel">
-  1. Quel est ton niveau d'études actuel ?
-</label>
+          <label for="studyLevel">1. Niveau d'études actuel</label>
           <select id="studyLevel" name="studyLevel" required>
-            <option value="college" data-i18n="orientationCollege">Collège</option>
-<option value="lycee" data-i18n="orientationHighSchool">Lycée</option>
-<option value="bac" data-i18n="orientationBaccalaureate">J'ai le baccalauréat</option>
-<option value="superieur" data-i18n="orientationHigherEducation">Études supérieures</option>
-<option value="reconversion" data-i18n="orientationRetraining">Je souhaite me réorienter</option>
+            <option value="">Choisir un niveau</option>
+            <option value="college">Collège</option>
+            <option value="lycee">Lycée</option>
+            <option value="bac">Baccalauréat / en préparation</option>
+            <option value="superieur">Études supérieures</option>
+            <option value="reconversion">Réorientation / formation continue</option>
           </select>
         </div>
 
         <div class="orientation-field">
-          <label for="interest" data-i18n="orientationInterest">
-  2. Quels domaines t'intéressent le plus ?
-</label>
+          <label for="interest">2. Domaine d'études recherché</label>
           <select id="interest" name="interest" required>
-           <option value="" data-i18n="orientationChooseInterest">Choisir un domaine</option>
-<option value="numerique" data-i18n="orientationDigital">Informatique et numérique</option>
-<option value="sante" data-i18n="orientationHealth">Santé et sciences du vivant</option>
-<option value="ingenierie" data-i18n="orientationEngineering">Sciences, technologie et ingénierie</option>
-<option value="commerce" data-i18n="orientationBusiness">Commerce, gestion et entrepreneuriat</option>
-<option value="droit" data-i18n="orientationLaw">Droit, politique et relations internationales</option>
-<option value="education" data-i18n="orientationEducation">Éducation et accompagnement</option>
-<option value="arts" data-i18n="orientationArts">Arts, communication et création</option>
-<option value="environnement" data-i18n="orientationEnvironment">Environnement et agriculture</option>
-<option value="aucun" data-i18n="orientationUndecided">Je ne sais pas encore</option>
+            <option value="">Choisir un domaine</option>
+            <option value="numerique">Informatique, numérique et cybersécurité</option>
+            <option value="sante">Médecine, santé et sciences du vivant</option>
+            <option value="ingenierie">Ingénierie, BTP, énergie et industrie</option>
+            <option value="commerce">Commerce, gestion, finance et comptabilité</option>
+            <option value="droit">Droit, politique et relations internationales</option>
+            <option value="education">Éducation et enseignement</option>
+            <option value="arts">Arts, design, communication et journalisme</option>
+            <option value="environnement">Agriculture, environnement et agronomie</option>
+            <option value="tourisme">Tourisme, hôtellerie et restauration</option>
+            <option value="transport">Transport et logistique</option>
+            <option value="sciences">Sciences et mathématiques</option>
+            <option value="langues">Lettres, langues et traduction</option>
+            <option value="social">Sciences humaines et sociales</option>
+            <option value="aucun">Je ne sais pas encore / explorer</option>
           </select>
         </div>
 
         <div class="orientation-field">
-          <label for="studyCountry" data-i18n="orientationCountry">
-  3. Dans quel pays aimerais-tu étudier ?
-</label>
-          <select id="studyCountry" name="studyCountry" required>
-  <option value="" data-i18n="orientationChooseCountry">Choisir un pays</option>
-  <option value="Côte d’Ivoire" data-i18n="countryIvoryCoast">Côte d'Ivoire</option>
-  <option value="France" data-i18n="countryFrance">France</option>
-  <option value="Sénégal" data-i18n="countrySenegal">Sénégal</option>
-  <option value="Maroc" data-i18n="countryMorocco">Maroc</option>
-  <option value="Canada" data-i18n="countryCanada">Canada</option>
-  <option value="Autre pays" data-i18n="countryOther">Un autre pays</option>
-  <option value="Pas encore décidé" data-i18n="countryUndecided">Je ne sais pas encore</option>
-</select>
+          <label for="specialty">3. Spécialité ou formation précise (optionnel)</label>
+          <input id="specialty" name="specialty" type="text" placeholder="Ex. cybersécurité, comptabilité, génie civil, sage-femme, data science..." autocomplete="off">
+          <p class="field-help">Le moteur cherchera cette spécialité dans les formations réellement enregistrées. S'il n'y a pas de correspondance explicite, l'établissement ne sera pas recommandé.</p>
         </div>
 
         <div class="orientation-field">
-          <label for="budget"><label for="budget" data-i18n="orientationBudget">
-  4. Quel budget peux-tu envisager pour les études ?
-</label>
+          <label for="studyCountry">4. Pays d'études souhaité</label>
+          <select id="studyCountry" name="studyCountry" required>
+            <option value="">Choisir un pays</option>
+            <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+            <option value="France">France</option>
+            <option value="Sénégal">Sénégal</option>
+            <option value="Maroc">Maroc</option>
+            <option value="Canada">Canada</option>
+            <option value="Suisse">Suisse</option>
+            <option value="États-Unis">États-Unis</option>
+            <option value="Autre pays">Autre pays</option>
+            <option value="Pas encore décidé">Je ne sais pas encore</option>
+          </select>
+        </div>
 
-<select id="budget" name="budget" required>
-  <option value="" data-i18n="orientationChooseBudget">Choisir une réponse</option>
-  <option value="limite" data-i18n="orientationBudgetLimited">Budget limité — je cherche surtout des options abordables</option>
-  <option value="modere" data-i18n="orientationBudgetModerate">Budget modéré</option>
-  <option value="flexible" data-i18n="orientationBudgetFlexible">Budget flexible</option>
-  <option value="inconnu" data-i18n="orientationBudgetUnknown">Je ne sais pas encore</option>
-</select>
+        <div class="orientation-field">
+          <label for="institutionType">5. Type d'établissement (optionnel)</label>
+          <select id="institutionType" name="institutionType">
+            <option value="">Public ou privé</option>
+            <option value="Public">Public</option>
+            <option value="Privé">Privé</option>
+          </select>
+        </div>
+
+        <div class="orientation-field">
+          <label for="budget">6. Budget annuel estimé pour la scolarité</label>
+          <select id="budget" name="budget">
+            <option value="inconnu">Je ne sais pas encore</option>
+            <option value="limite">Budget limité — privilégier les options abordables</option>
+            <option value="modere">Budget modéré</option>
+            <option value="flexible">Budget flexible</option>
+            <option value="known">Afficher en priorité les tarifs publiés/vérifiés</option>
+          </select>
+          <p class="field-help">Les montants affichés comme estimations ne sont pas des tarifs officiels.</p>
         </div>
 
         <div class="orientation-actions">
-  <button class="orientation-submit" type="submit">
-    <span data-i18n="orientationDiscover">Découvrir mes pistes</span>
-    <span aria-hidden="true">→</span>
-  </button>
-  <button class="orientation-reset" type="reset" data-i18n="orientationClear">
-    Effacer mes réponses
-  </button>
-</div>
+          <button class="orientation-submit" type="submit">
+            <span>Trouver des établissements adaptés</span>
+            <span aria-hidden="true">→</span>
+          </button>
+          <button class="orientation-reset" type="reset">Effacer mes réponses</button>
+        </div>
       </form>
     </section>
 

@@ -1714,3 +1714,10 @@ html[data-theme="dark"] .back-to-top {
     padding-bottom: 95px;
   }
 }
+
+.school-detail-image{width:100%;max-height:320px;object-fit:cover;border-radius:14px;margin-bottom:14px;background:#eef3f8;}
+.image-note{font-size:12px;color:var(--muted,#5b6573);margin:6px 0 10px;}
+.orientation-school-card .school-card-body{display:flex;flex-direction:column;gap:8px;}
+.orientation-school-card .school-meta,.orientation-school-card .school-programs,.orientation-school-card .school-fee-summary,.orientation-school-card .school-reason{margin:0;font-size:14px;line-height:1.45;}
+.orientation-guide,.orientation-specialty-note{background:#f8fafc;border:1px solid #d9e2ec;border-radius:12px;padding:14px;margin:12px 0;}
+.field-help{font-size:12px;color:var(--muted,#5b6573);margin-top:6px;}
