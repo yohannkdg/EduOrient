@@ -380,7 +380,7 @@ function resetFilters() {
   renderSchools();
 }
 
-[searchInput, fieldInput].forEach(el => el?.addEventListener("input", renderSchools));
+[searchInput, fieldInput].forEach(el => el?.addEventListener("input", function(){ renderSchools(); if(typeof renderSearchSuggestions==="function") renderSearchSuggestions(); }));
 [countrySelect, citySelect, diplomaSelect, typeSelect, budgetSelect].forEach(el => el?.addEventListener("change", () => {
   if (el === countrySelect) refreshFilterOptions();
   renderSchools();
@@ -445,6 +445,6 @@ if (backToTopButton) {
     box.hidden=false; searchInput.setAttribute('aria-expanded','true');
     box.querySelectorAll('[data-id]').forEach(function(btn){btn.addEventListener('click',function(){ if(typeof openSchoolModal==='function') openSchoolModal(btn.dataset.id); box.hidden=true; });});
   }
-  if(typeof searchInput!=='undefined' && searchInput) searchInput.addEventListener('input', renderSearchSuggestions);
+  // merged search suggestion listener
   document.addEventListener('click', function(e){ var box=document.querySelector('#search-suggestions'); if(box && !e.target.closest('.search-field')) box.hidden=true; });
 })();
