@@ -89,3 +89,19 @@ html[data-theme='dark'] .image-status-unverified{background:#3b2f12;color:#fde68
 html[data-theme='dark'] .image-status-missing{background:#1f2937;color:#d1d5db;border-color:#374151;}
 .orientation-school-card .image-status{margin:0 0 6px;}
 
+
+/* Result blocks (post-submit) */
+.ori-result-block{margin:14px 0}
+.ori-result-card{background:#fbfdfb;border:1px solid #dce8df;border-radius:14px;padding:16px;margin:14px 0}
+.ori-result-card h3{margin:0 0 10px;color:#173d2c;font-size:1.15rem}
+.ori-result-card h4{margin:10px 0 6px;color:#17683d}
+.ori-subcard{background:#fff;border:1px solid #e6efe8;border-radius:12px;padding:12px;margin:10px 0}
+.ori-details{border:1px solid #e1ebe4;border-radius:10px;padding:8px 10px;margin:8px 0;background:#fff}
+.ori-details summary{cursor:pointer;font-weight:700;color:#245c3e}
+.ori-details-body{padding-top:8px;color:#526058;line-height:1.55}
+.ori-advice{margin:8px 0 0 18px;color:#526058;line-height:1.6}
+html[data-theme="dark"] .ori-result-card,html[data-theme="dark"] .ori-subcard,html[data-theme="dark"] .ori-details{background:#1e293b;border-color:#475569;color:#cbd5e1}
+html[data-theme="dark"] .ori-result-card h3{color:#f1f5f9}
+html[data-theme="dark"] .ori-result-card h4,html[data-theme="dark"] .ori-details summary{color:#4ade80}
+html[data-theme="dark"] .ori-details-body,html[data-theme="dark"] .ori-advice{color:#cbd5e1}
+@media (max-width:640px){.ori-result-card{padding:13px}}

@@ -42,12 +42,12 @@
     const txt = ((s.imageStatus||'')+' '+JSON.stringify(s.imageResearch||{})+' '+JSON.stringify((s.verification&&s.verification.image)||{})).toLowerCase();
     const unverified = /non vérifiée|non verifiee|à vérifier|a verifier|droits|licence|source à confirmer|catalogue existant|correspondance/i.test(txt) || s.imageVerified===false;
     const historical = !!s.imageHistorical;
-    if (unverified || historical) return {displayed:true, label:'Photo non vérifiée', className:'image-status-unverified', unverified:true, historical};
+    if (unverified || historical) return {displayed:true, label:'', className:'image-status-unverified', unverified:true, historical};
     return {displayed:true, label:'Photo', className:'image-status-ok', unverified:false, historical};
   };
   CORE.imageStatusHtml = function(s){
     const st = CORE.imageStatus(s);
-    if (!st.displayed) return '';
+    if (!st.displayed || !st.label) return '';
     return '<p class="image-status '+CORE.escapeAttr(st.className)+'" title="'+CORE.escapeAttr(String((s&&s.imageSource)||'Photo historique — source ou droits à vérifier'))+'">'+CORE.escapeHtml(st.label)+'</p>';
   };
 

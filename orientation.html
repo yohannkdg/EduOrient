@@ -29,7 +29,7 @@
     <span class="orientation-eyebrow">TON AVENIR COMMENCE ICI</span>
     <h1>Construis ton <span>orientation</span></h1>
     <p>Réponds à quelques questions pour mieux te connaître, comprendre les études et les métiers, puis découvrir des pistes d’établissements. Les résultats sont indicatifs : les admissions, diplômes, équivalences et tarifs doivent être vérifiés auprès des établissements et autorités compétentes.</p>
-    <div class="orientation-note">EduOrient ne montre une photo d’établissement que lorsqu’elle est fiable et traçable. Si l’information manque, nous indiquons « À vérifier » plutôt que d’inventer.</div>
+    <div class="orientation-note">Réponds aux questions pour obtenir des pistes d’études, des définitions de filières, des métiers associés et des établissements adaptés. Les informations sont indicatives : vérifie admissions, équivalences, diplômes et frais auprès des sources officielles.</div>
   </section>
 
   <section class="orientation-panels" aria-label="Parcours d'orientation">
@@ -180,12 +180,15 @@
     <section id="orientationResults" class="orientation-results" aria-live="polite" hidden>
       <span class="orientation-step">TES PISTES</span>
       <h2>Suggestions personnalisées</h2>
-      <p id="orientationSummary"></p>
-      <div id="orientationPath" class="ori-path" hidden></div>
-      <div id="orientationSuggestions" class="orientation-suggestions"></div>
-      <div class="orientation-results-note">
-        <strong>À retenir :</strong> ces pistes sont indicatives. Les conditions d’admission, reconnaissances de diplômes, équivalences et frais varient selon les pays et doivent être vérifiés auprès de chaque établissement.
-      </div>
+      <div id="orientationProfile" class="ori-result-block"></div>
+      <div id="orientationField" class="ori-result-block"></div>
+      <div id="orientationSubjects" class="ori-result-block"></div>
+      <div id="orientationDegrees" class="ori-result-block"></div>
+      <div id="orientationCareers" class="ori-result-block"></div>
+      <div id="orientationPathways" class="ori-result-block"></div>
+      <div id="orientationSchools" class="ori-result-block"><div id="orientationSummary"></div><div id="orientationPath" class="ori-path" hidden></div><h3>Établissements adaptés au profil</h3><div id="orientationSuggestions" class="orientation-suggestions"></div></div>
+      <div id="orientationAdvice" class="ori-result-block"></div>
+      <div class="orientation-results-note"><strong>À retenir :</strong> informations indicatives. Vérifie admissions, diplômes, équivalences, métiers réglementés et frais auprès des établissements et autorités compétentes.</div>
       <div class="orientation-actions">
         <a class="orientation-submit orientation-link" href="index.html#ecoles">Explorer les établissements</a>
         <button class="orientation-reset" id="editOrientation" type="button">Modifier mes réponses</button>
