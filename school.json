@@ -2683,8 +2683,8 @@
     ],
     "website": "https://uici.edu.ci/admission/frais",
     "country": "Côte d'Ivoire",
-    "imageStatus": "manquante — Fichier image manquant (images/school-38-official.png absent). Image OG retirée — recherche photo bâtiment/campus réelle requise.",
-    "imageSource": "Aucune photo officielle récupérée et vérifiée automatiquement",
+    "imageStatus": "présente (site officiel — image publique; vérification visuelle humaine requise; droits de réutilisation à confirmer)",
+    "imageSource": "Site officiel: https://uici.edu.ci/admission/frais | image: https://uici.edu.ci/opengraph-image?1f56ac8813f2c9a4 | page titre: Frais de scolarité | UICI | droits: à confirmer auprès de l'établissement/source",
     "verification": {
       "lastChecked": "2026-11-08",
       "source": "https://uici.edu.ci/admission/frais",
@@ -2693,15 +2693,17 @@
       "image": {
         "verified": false,
         "lastChecked": "2026-11-09",
-        "note": "Fichier image manquant (images/school-38-official.png absent). Image OG retirée — recherche photo bâtiment/campus réelle requise."
+        "note": "Site officiel: vérification visuelle + droits à confirmer."
       }
     },
-    "displayImage": "images/provisional-school.svg",
+    "displayImage": "images/school-38-official.jpg",
     "imageResearch": {
-      "status": "recherche_en_cours",
-      "lastChecked": "2026-11-08",
-      "note": "Remplacer par une photo identifiable du bâtiment/campus/locaux d’UICI si une image réutilisable est trouvée."
-    }
+      "status": "image_trouvée_à_vérifier",
+      "lastChecked": "2026-11-09",
+      "source": "site officiel (og:image)",
+      "note": "Image publique récupérée depuis le site officiel. Confirmer visuellement le bon établissement et les droits de réutilisation avant validation définitive."
+    },
+    "image": "images/school-38-official.jpg"
   },
   {
     "id": 39,
@@ -5412,7 +5414,7 @@
       "Contacter l’administration pour connaître les conditions d’admission et les frais de scolarité."
     ],
     "description": "Établissement privé proposant un enseignement secondaire général et des formations techniques et professionnelles.",
-    "image": "images/inphb-yamoussoukro.jpg",
+    "image": "",
     "feesByLevel": [
       {
         "level": "Secondaire — estimation générale",
@@ -5431,8 +5433,8 @@
     ],
     "website": "",
     "country": "Côte d'Ivoire",
-    "imageStatus": "présente (à vérifier)",
-    "imageSource": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+    "imageStatus": "manquante — image précédente retirée (ne correspondait pas à cet établissement)",
+    "imageSource": "",
     "verification": {
       "lastChecked": "2026-11-08",
       "source": "catalogue existant",
@@ -5440,11 +5442,16 @@
       "note": "Données du catalogue existant à vérifier.",
       "image": {
         "verified": false,
-        "lastChecked": "2026-11-08",
-        "note": "Image présente: vérifier visuellement le bon établissement (bâtiment/campus/locaux) et confirmer source/licence/droits de réutilisation."
+        "lastChecked": "2026-11-09",
+        "note": "Aucune photo validée."
       }
     },
-    "displayImage": "images/inphb-yamoussoukro.jpg"
+    "displayImage": "images/provisional-school.svg",
+    "imageResearch": {
+      "status": "à_rechercher",
+      "lastChecked": "2026-11-09",
+      "note": "Image INP-HB retirée: ne correspond pas au Collège HELEIS. Rechercher une photo réelle du bon établissement."
+    }
   },
   {
     "id": 77,
@@ -8544,7 +8551,7 @@
       "Consulter les programmes et les conditions d'admission."
     ],
     "description": "Université privée chrétienne sans but lucratif située à Winnipeg.",
-    "image": "",
+    "image": "images/school-121-official.jpg",
     "feesByLevel": [
       {
         "level": "Enseignement supérieur — Licence/Master (estimation générale)",
@@ -8562,8 +8569,8 @@
       }
     ],
     "website": "https://www.cmu.ca/",
-    "imageStatus": "manquante — recherche photo réelle requise (aucune image provisoire définitive)",
-    "imageSource": "",
+    "imageStatus": "présente (site officiel — image publique; vérification visuelle humaine requise; droits de réutilisation à confirmer)",
+    "imageSource": "Site officiel: https://www.cmu.ca/ | image: https://www.cmu.ca/banners/cmu.jpg | page titre: Canadian Mennonite University | CMU | Christian University Education in Winnipeg, Manitoba | droits: à confirmer auprès de l'établissement/source",
     "verification": {
       "lastChecked": "2026-11-08",
       "source": "https://www.cmu.ca/",
@@ -8571,32 +8578,16 @@
       "note": "Données du catalogue existant à vérifier.",
       "image": {
         "verified": false,
-        "lastChecked": "2026-11-08",
-        "note": "Photo réelle manquante ou non confirmée."
+        "lastChecked": "2026-11-09",
+        "note": "Site officiel: vérification visuelle + droits à confirmer."
       }
     },
-    "displayImage": "images/provisional-school.svg",
+    "displayImage": "images/school-121-official.jpg",
     "imageResearch": {
-      "status": "recherche_en_cours",
-      "lastChecked": "2026-11-08",
-      "priority": "haute",
-      "queries": [
-        "Canadian Mennonite University Winnipeg Canada bâtiment campus photo officielle"
-      ],
-      "candidateSources": [
-        "Wikimedia Commons (candidats rejetés: candidat Commons = photo d'événement 'Over 50 Retreat' au Camrose Lutheran College, établissement et contexte différents — fausse association exclue)",
-        "site officiel",
-        "presse/actualités",
-        "annuaires éducatifs"
-      ],
-      "constraints": [
-        "privilégier bâtiment/campus/locaux",
-        "ne jamais associer la photo d'un autre établissement",
-        "vérifier correspondance visuelle",
-        "respecter licences/réutilisation",
-        "enregistrer source"
-      ],
-      "note": "Aucune photo réelle pertinente confirmée à ce stade. candidat Commons = photo d'événement 'Over 50 Retreat' au Camrose Lutheran College, établissement et contexte différents — fausse association exclue"
+      "status": "image_trouvée_à_vérifier",
+      "lastChecked": "2026-11-09",
+      "source": "site officiel (og:image)",
+      "note": "Image publique récupérée depuis le site officiel. Confirmer visuellement le bon établissement et les droits de réutilisation avant validation définitive."
     }
   },
   {
@@ -15348,10 +15339,10 @@
       "À vérifier auprès de l'établissement."
     ],
     "description": "",
-    "image": "images/ucao-uua.jpg",
-    "displayImage": "images/ucao-uua.jpg",
-    "imageStatus": "présente (à vérifier)",
-    "imageSource": "fichier catalogue local (correspondance nom/réseau UCAO) — correspondance visuelle à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+    "image": "",
+    "displayImage": "images/provisional-school.svg",
+    "imageStatus": "manquante — image UCAO Abidjan retirée (campus différent: Ziguinchor)",
+    "imageSource": "",
     "website": "https://ucao.org/",
     "feesByLevel": [
       {
@@ -15376,8 +15367,8 @@
       "note": "Entrée d'établissement réel connue ; détails académiques/tarifs/admissions à revérifier sur les pages officielles avant publication.",
       "image": {
         "verified": false,
-        "lastChecked": "2026-11-08",
-        "note": "Image présente: vérifier visuellement le bon établissement (bâtiment/campus/locaux) et confirmer source/licence/droits de réutilisation."
+        "lastChecked": "2026-11-09",
+        "note": "Aucune photo validée pour ce campus."
       }
     },
     "dataSource": [
@@ -15386,7 +15377,12 @@
         "type": "site officiel",
         "checked": "2026-11-08"
       }
-    ]
+    ],
+    "imageResearch": {
+      "status": "à_rechercher",
+      "lastChecked": "2026-11-09",
+      "note": "Rechercher une photo réelle du campus UCAO-UUZ de Ziguinchor."
+    }
   },
   {
     "id": 247,
@@ -16317,10 +16313,10 @@
       "À vérifier auprès de l'établissement."
     ],
     "description": "",
-    "image": "",
-    "displayImage": "images/provisional-school.svg",
-    "imageStatus": "manquante — recherche photo réelle requise (aucune image provisoire définitive)",
-    "imageSource": "Aucune photo officielle récupérée et vérifiée automatiquement dans cette session ; image provisoire clairement identifiée.",
+    "image": "images/school-259-commons.jpg",
+    "displayImage": "images/school-259-commons.jpg",
+    "imageStatus": "présente (Wikimedia Commons — bâtiment Uni/PH Lucerne; vérification visuelle humaine requise; licence FAL)",
+    "imageSource": "Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Luzern_asv2022-10_Universit%C3%A4t_und_PH.jpg | licence: FAL http://artlibre.org/licence/lal/en | auteur: A.Savin | fichier: File:Luzern asv2022-10 Universität und PH.jpg",
     "website": "https://www.unilu.ch/",
     "feesByLevel": [
       {
@@ -16345,8 +16341,8 @@
       "note": "Entrée d'établissement réel connue ; détails académiques/tarifs/admissions à revérifier sur les pages officielles avant publication.",
       "image": {
         "verified": false,
-        "lastChecked": "2026-11-08",
-        "note": "Photo réelle manquante ou non confirmée."
+        "lastChecked": "2026-11-09",
+        "note": "Photo Commons du bâtiment Uni/PH. Vérification visuelle humaine requise (bâtiment partagé Université/PH)."
       }
     },
     "dataSource": [
@@ -16357,30 +16353,10 @@
       }
     ],
     "imageResearch": {
-      "status": "recherche_en_cours",
-      "lastChecked": "2026-11-08",
-      "priority": "haute",
-      "queries": [
-        "Université de Lucerne Lucerne Suisse bâtiment campus",
-        "Université de Lucerne site officiel photo",
-        "Université de Lucerne Suisse établissement scolaire photo"
-      ],
-      "candidateSources": [
-        "Google Images (source d’origine publique à vérifier)",
-        "Wikimedia Commons",
-        "site officiel",
-        "presse/actualités",
-        "annuaires éducatifs",
-        "réseaux sociaux publics"
-      ],
-      "constraints": [
-        "privilégier bâtiment/campus/locaux",
-        "ne jamais associer la photo d’un autre établissement",
-        "vérifier correspondance visuelle",
-        "respecter licences/réutilisation",
-        "enregistrer source"
-      ],
-      "note": "Aucune photo réelle pertinente confirmée à ce stade. SVG provisoire utilisé uniquement comme secours technique d’affichage, non comme solution définitive."
+      "status": "image_trouvée_à_vérifier",
+      "lastChecked": "2026-11-09",
+      "source": "Wikimedia Commons",
+      "note": "Bâtiment Uni/PH de Lucerne (Université de Lucerne + PH partagent le bâtiment) — confirmer que la photo représente bien le site universitaire."
     }
   },
   {
