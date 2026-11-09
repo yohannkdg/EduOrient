@@ -1,0 +1,687 @@
+{
+  "generatedAt": "2026-11-09T11:20:10.824Z",
+  "policy": "Restaurer uniquement les photos d établissements déjà présentes avant c059526, avec fichier existant, correspondance plausible au bon établissement et source identifiable. Ne pas restaurer images risquées/provenance insuffisante.",
+  "before_c059526_displayed": 172,
+  "after_c059526_aff600a_displayed": 73,
+  "restored": [
+    {
+      "id": 88,
+      "name": "Université Sidi Mohamed Ben Abdellah",
+      "city": "Fès",
+      "country": "Maroc",
+      "image": "images/school-88-wiki.jpg",
+      "why": "source Wikimedia/Commons identifiable (à vérifier visuellement/correspondance)",
+      "status": "présente (Wikipedia/Wikimedia, correspondance à vérifier visuellement)",
+      "source": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Sidi_Mohamed_Ben_Abdellah | licence: voir page source  | auteur/crédit: voir page source"
+    },
+    {
+      "id": 154,
+      "name": "Université Paris Cité",
+      "city": "Paris",
+      "country": "France",
+      "image": "images/school-154-wiki.jpg",
+      "why": "source Wikimedia/Commons identifiable (à vérifier visuellement/correspondance)",
+      "status": "présente (Wikipedia/Wikimedia, correspondance à vérifier visuellement)",
+      "source": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Paris-Cit%C3%A9 | image: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Universit%C3%A9_Paris_Descartes%2C_Paris_July_2014.j"
+    },
+    {
+      "id": 275,
+      "name": "Université libre de Bruxelles (ULB)",
+      "city": "Bruxelles",
+      "country": "Belgique",
+      "image": "images/school-275-wiki.jpg",
+      "why": "source Wikimedia/Commons identifiable (à vérifier visuellement/correspondance)",
+      "status": "présente (Wikipedia/Wikimedia, correspondance à vérifier visuellement)",
+      "source": "https://fr.wikipedia.org/wiki/Universit%C3%A9_libre_de_Bruxelles | fichier: DSC_4320©_Lara_Herbinia.jpg | licence/auteur: voir page source"
+    },
+    {
+      "id": 276,
+      "name": "KU Leuven",
+      "city": "Louvain",
+      "country": "Belgique",
+      "image": "images/school-276-wiki.jpg",
+      "why": "source Wikimedia/Commons identifiable (à vérifier visuellement/correspondance)",
+      "status": "présente (Wikipedia/Wikimedia, correspondance à vérifier visuellement)",
+      "source": "https://nl.wikipedia.org/wiki/Katholieke_Universiteit_Leuven | fichier: Library_KU_Leuven.JPG | licence/auteur: voir page source"
+    },
+    {
+      "id": 277,
+      "name": "Université catholique de Louvain (UCLouvain)",
+      "city": "Louvain-la-Neuve",
+      "country": "Belgique",
+      "image": "images/school-277-wiki.jpg",
+      "why": "source Wikimedia/Commons identifiable (à vérifier visuellement/correspondance)",
+      "status": "présente (Wikipedia/Wikimedia, correspondance à vérifier visuellement)",
+      "source": "https://fr.wikipedia.org/wiki/UCLouvain | fichier: Belgique_-_Brabant_wallon_-_Halles_universitaires_de_Louvain-la-Neuve_-_01.jpg | licence/auteur: voir page source"
+    },
+    {
+      "id": 278,
+      "name": "Université de Tunis El Manar",
+      "city": "Tunis",
+      "country": "Tunisie",
+      "image": "images/school-278-wiki.jpg",
+      "why": "source Wikimedia/Commons identifiable (à vérifier visuellement/correspondance)",
+      "status": "présente (Wikipedia/Wikimedia, correspondance à vérifier visuellement)",
+      "source": "https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Tunis_-_El_Manar | fichier: Tunis_ISSHT.JPG | licence/auteur: voir page source"
+    },
+    {
+      "id": 285,
+      "name": "Université Mohammed V de Rabat",
+      "city": "Rabat",
+      "country": "Maroc",
+      "image": "images/school-285-wiki.jpg",
+      "why": "source Wikimedia/Commons identifiable (à vérifier visuellement/correspondance)",
+      "status": "présente (Wikipedia/Wikimedia, correspondance à vérifier visuellement)",
+      "source": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Mohammed-V_de_Rabat | fichier: UM5_Presidence.jpg | licence/auteur: voir page source"
+    },
+    {
+      "id": 287,
+      "name": "Sorbonne Université",
+      "city": "Paris",
+      "country": "France",
+      "image": "images/school-287-wiki.jpg",
+      "why": "source Wikimedia/Commons identifiable (à vérifier visuellement/correspondance)",
+      "status": "présente (Wikipedia/Wikimedia, correspondance à vérifier visuellement)",
+      "source": "https://fr.wikipedia.org/wiki/Sorbonne_Universit%C3%A9 | fichier: Sorbonne_cour_intérieure_et_chapelle_Sainte-Ursule_(façade_nord).jpg | licence/auteur: voir page source"
+    }
+  ],
+  "notRestored": [
+    {
+      "id": 7,
+      "name": "Bordeaux École de Management (BEM Abidjan)",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/bem.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 8,
+      "name": "Université de San Pedro",
+      "country": "Côte d'Ivoire",
+      "city": "San Pedro",
+      "image": "images/universite-san-pedro.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 11,
+      "name": "Lycée Classique d'Abidjan",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/lycee-classique.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 12,
+      "name": "Lycée Moderne de Cocody Angré",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/lycee-moderne-cocody-angre.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 13,
+      "name": "Collège Moderne de Cocody",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/college-moderne-de-cocody.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "fichier catalogue local (nom correspondant) — source/licence à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 14,
+      "name": "Collège Les Florianes",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/college-les-florianes.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 15,
+      "name": "Lycée Sainte-Marie de Cocody",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/lycee-sainte-marie-cocody.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 28,
+      "name": "Collège Le Figuier de la Riviera Palmeraie",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/college-le-figuier.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 30,
+      "name": "Collège Saint-Viateur d'Abidjan",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/college-saint-viateur.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 31,
+      "name": "Groupe Scolaire La Pérouse",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/college-la-perouse.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 34,
+      "name": "Institut Universitaire d'Abidjan (IUA)",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/iua-abidjan.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 36,
+      "name": "Université Catholique de l'Afrique de l'Ouest (UCAO-UUA)",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/ucao-uua.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 37,
+      "name": "Université Méthodiste de Côte d'Ivoire (UMECI)",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/umeci.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 43,
+      "name": "SWISS UMEF University of Côte d'Ivoire",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/swiss-umef-abidjan.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 46,
+      "name": "Lycée International Jean-Mermoz",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/lycee-jean-mermoz.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 47,
+      "name": "Lycée Français Blaise-Pascal",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/lycee-blaise-pascal.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 48,
+      "name": "Lycée Maurice Delafosse",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/lycee-maurice-delafosse.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 63,
+      "name": "IIPEA Université",
+      "country": "Côte d'Ivoire",
+      "city": "Cocody",
+      "image": "images/iipea.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 64,
+      "name": "École Supérieure Africaine des TIC (ESATIC)",
+      "country": "Côte d'Ivoire",
+      "city": "Treichville",
+      "image": "images/esatic.jpg",
+      "reason": "risque signalé (slider/logo/catalogue local non confirmé/autre)",
+      "source": "Fichier catalogue local images/esatic.jpg — fiche corrigée vers Côte d’Ivoire/ESATIC Abidjan; correspondance visuelle et droits/licence de réutilisation à confirmer avant publication.",
+      "status": "présente (fichier catalogue local, correspondance ESATIC Abidjan à vérifier visuellement; source/licence à confirmer)"
+    },
+    {
+      "id": 73,
+      "name": "Institut National Polytechnique Félix Houphouët-Boigny (INP-HB)",
+      "country": "Côte d'Ivoire",
+      "city": "Yamoussoukro",
+      "image": "images/inphb-yamoussoukro.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "catalogue existant — source à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    },
+    {
+      "id": 83,
+      "name": "Centre de Préparation aux Diplômes de l'Expertise Comptable (CPDEC - INP-HB)",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/school-83-official.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "https://www.cpdec.inphb.ci/ (site officiel CPDEC/INP-HB) — image du site/centre; droits potentiellement réservés, réutilisation à confirmer",
+      "status": "présente (source publique, correspondance/licence à vérifier)"
+    },
+    {
+      "id": 87,
+      "name": "Université Ibn Zohr",
+      "country": "Maroc",
+      "city": "Agadir",
+      "image": "images/school-87-official.jpg",
+      "reason": "risque signalé (slider/logo/catalogue local non confirmé/autre)",
+      "source": "https://www.uiz.ac.ma/ | candidate img: https://www.uiz.ac.ma/sites/default/files/gva-sliderlayer-upload/complexe-background-NH.jpg | droits potentiellement réservés; réutilisation/autorisation à conf",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier)"
+    },
+    {
+      "id": 144,
+      "name": "Université Nangui Abrogoua",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/school-144-official.jpg",
+      "reason": "risque signalé (slider/logo/catalogue local non confirmé/autre)",
+      "source": "https://univ-na.ci/ (site officiel Université Nangui Abrogoua) — image slider/campus du site; droits potentiellement réservés, réutilisation à confirmer",
+      "status": "présente (image issue du site officiel, possiblement slider — vérifier bâtiment/campus; droits à confirmer)"
+    },
+    {
+      "id": 145,
+      "name": "Université Péléforo Gon Coulibaly",
+      "country": "Côte d'Ivoire",
+      "city": "Korhogo",
+      "image": "images/school-145-official.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "https://www.univ-pgc.edu.ci/ (site officiel Université Péléforo Gon Coulibaly) — image campus/bâtiment du site; droits potentiellement réservés, réutilisation à confirmer",
+      "status": "présente (source publique, correspondance/licence à vérifier)"
+    },
+    {
+      "id": 146,
+      "name": "Université de Man",
+      "country": "Côte d'Ivoire",
+      "city": "Man",
+      "image": "images/school-146-official.png",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "https://univ-man.edu.ci/ (site officiel Université de Man) — visuel institutionnel/campus du site; droits potentiellement réservés, réutilisation à confirmer",
+      "status": "présente (source publique, correspondance/licence à vérifier)"
+    },
+    {
+      "id": 147,
+      "name": "Université Jean Lorougnon Guédé",
+      "country": "Côte d'Ivoire",
+      "city": "Daloa",
+      "image": "images/school-147-official.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "https://ujlog.edu.ci/ (site officiel Université Jean Lorougnon Guédé) — image institutionnelle du site; droits potentiellement réservés, réutilisation à confirmer",
+      "status": "présente (source publique, correspondance/licence à vérifier)"
+    },
+    {
+      "id": 148,
+      "name": "Institut National Polytechnique Félix Houphouët-Boigny (site officiel)",
+      "country": "Côte d'Ivoire",
+      "city": "Yamoussoukro",
+      "image": "images/inphb-yamoussoukro.jpg",
+      "reason": "provenance/droits insuffisamment identifiables (catalogue existant/source à confirmer)",
+      "source": "fichier catalogue local (correspondance nom) — source/licence à confirmer | attribution/licence non confirmée automatiquement dans cette session",
+      "status": "présente (à vérifier)"
+    }
+  ],
+  "after_restoration_displayed": 81,
+  "kept_without_image": 166,
+  "notRestoredCount": 27,
+  "revertedForRights": [
+    {
+      "id": 41,
+      "name": "Université UNDA - Notre Dame d'Abidjan",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 85,
+      "name": "Université Hassan II",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 91,
+      "name": "Université Euromed de Fès (UEMF)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 92,
+      "name": "Université Internationale de Casablanca (UIC)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 96,
+      "name": "Université Iba Der Thiam de Thiès (UIDT)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 97,
+      "name": "Université Assane Seck de Ziguinchor (UASZ)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 98,
+      "name": "Université Alioune Diop de Bambey (UADB)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 100,
+      "name": "Université du Sahel (UNIS)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 102,
+      "name": "Université Cheikh Ahmadou Bamba (UCAB)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 103,
+      "name": "Université Amadou Hampaté Bâ (UAHB)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 109,
+      "name": "Institut Catholique de Paris (ICP)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 112,
+      "name": "EFREI Paris",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 113,
+      "name": "EDHEC Business School",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 117,
+      "name": "University of Ottawa",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 122,
+      "name": "Crandall University",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 123,
+      "name": "University of Fredericton",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 125,
+      "name": "Université de Lausanne (UNIL)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 127,
+      "name": "Université de Berne",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 129,
+      "name": "Franklin University Switzerland",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 132,
+      "name": "Les Roches Global Hospitality Education",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 133,
+      "name": "Swiss Business School (SBS)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 136,
+      "name": "University of Washington",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 137,
+      "name": "Purdue University",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 140,
+      "name": "Massachusetts Institute of Technology (MIT)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 141,
+      "name": "Stanford University",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 150,
+      "name": "École Nationale Supérieure de Statistique et d'Économie Appliquée (ENSEA)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 153,
+      "name": "Pigier Côte d'Ivoire",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 159,
+      "name": "Université Grenoble Alpes",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 160,
+      "name": "Université de Montpellier",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 162,
+      "name": "Université Claude Bernard Lyon 1",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 163,
+      "name": "Aix-Marseille Université",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 166,
+      "name": "Université Hassan II de Casablanca",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 170,
+      "name": "Université Ibn Tofaïl",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 172,
+      "name": "Al Akhawayn University",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 180,
+      "name": "Université du Sine Saloum El Hadj Ibrahima Niass (USSEIN)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 182,
+      "name": "Institut Supérieur de Management (ISM Dakar)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 185,
+      "name": "Université Laval",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 187,
+      "name": "Université d'Ottawa",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 189,
+      "name": "Université du Québec à Montréal (UQAM)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 193,
+      "name": "York University",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 196,
+      "name": "École polytechnique fédérale de Lausanne (EPFL)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 199,
+      "name": "Université de Berne (UniBE)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 201,
+      "name": "Université de Fribourg (UniFr)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 213,
+      "name": "Carnegie Mellon University",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 222,
+      "name": "Université de Nantes",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 223,
+      "name": "Université de Rennes",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 224,
+      "name": "Université Toulouse - Jean Jaurès",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 225,
+      "name": "Université Toulouse III - Paul Sabatier",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 226,
+      "name": "Université Côte d'Azur",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 227,
+      "name": "Université de Lorraine",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 228,
+      "name": "Université Paris 1 Panthéon-Sorbonne",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 230,
+      "name": "Université de Bourgogne",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 231,
+      "name": "Université Mohammed Premier",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 232,
+      "name": "Université Chouaib Doukkali",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 233,
+      "name": "Université Sultan Moulay Slimane",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 234,
+      "name": "Université Hassan Ier",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 235,
+      "name": "École Mohammadia d'Ingénieurs (EMI)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 238,
+      "name": "ISCAE",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 239,
+      "name": "École Supérieure Polytechnique de Dakar (ESP)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 241,
+      "name": "Sup'IMAX",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 242,
+      "name": "Institut Africain de Management (IAM)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 243,
+      "name": "BEM Dakar (Bordeaux Management School Dakar)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 244,
+      "name": "École Supérieure Multinationale des Télécommunications (ESMT Dakar)",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    },
+    {
+      "id": 248,
+      "name": "Concordia University",
+      "reason": "droits/licence potentiellement réservés — compatibilité de réutilisation non confirmée (affichage retiré par prudence), source identifiable conservée en historique"
+    }
+  ],
+  "restoredCountFinal": 8,
+  "revertedCount": 64
+}

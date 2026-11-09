@@ -6410,7 +6410,7 @@
       "Consulter le site officiel pour les conditions d'accès et les procédures d'inscription."
     ],
     "description": "Université publique située à Fès, proposant des formations dans plusieurs domaines.",
-    "image": "",
+    "image": "images/school-88-wiki.jpg",
     "feesByLevel": [
       {
         "level": "Enseignement supérieur — Licence/Master (estimation générale)",
@@ -6428,8 +6428,8 @@
       }
     ],
     "website": "",
-    "imageStatus": "retirée de l’affichage — source/droits/correspondance non suffisamment établis",
-    "imageSource": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Sidi_Mohamed_Ben_Abdellah | licence: voir page source  | auteur/crédit: voir page source | Affichage retiré: fichier conservé dans le dépôt, non affiché faute de source/droits/correspondance suffisamment établis.",
+    "imageStatus": "présente (Wikipedia/Wikimedia, correspondance à vérifier visuellement)",
+    "imageSource": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Sidi_Mohamed_Ben_Abdellah | licence: voir page source  | auteur/crédit: voir page source",
     "verification": {
       "lastChecked": "2026-11-08",
       "source": "catalogue existant",
@@ -6437,15 +6437,15 @@
       "note": "Données du catalogue existant à vérifier.",
       "image": {
         "verified": false,
-        "lastChecked": "2026-11-09",
-        "note": "Non affichée: fiabilité/source/droits insuffisants."
+        "lastChecked": "2026-11-08",
+        "note": "Correspondance visuelle et licence à confirmer."
       }
     },
-    "displayImage": "",
+    "displayImage": "images/school-88-wiki.jpg",
     "imageResearch": {
-      "status": "non_affichée",
-      "lastChecked": "2026-11-09",
-      "note": "Photo récupérée via API Wikipedia/Wikimedia (source publique). Vérifier visuellement bâtiment/campus du bon établissement et confirmer licence/attribution avant publication. Affichage retiré par règle de fiabilité; rechercher une photo réellement correspondante avec licence/source vérifiable."
+      "status": "image_trouvée_à_vérifier",
+      "lastChecked": "2026-11-08",
+      "note": "Photo récupérée via API Wikipedia/Wikimedia (source publique). Vérifier visuellement bâtiment/campus du bon établissement et confirmer licence/attribution avant publication."
     }
   },
   {
@@ -10836,10 +10836,10 @@
       "À vérifier auprès de l'établissement avant toute candidature."
     ],
     "description": "Université publique française. Vérifier les formations, prérequis et candidatures sur le site officiel.",
-    "image": "",
-    "displayImage": "",
-    "imageStatus": "retirée de l’affichage — source/droits/correspondance non suffisamment établis",
-    "imageSource": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Paris-Cit%C3%A9 | image: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Universit%C3%A9_Paris_Descartes%2C_Paris_July_2014.jpg/1920px-Universit%C3%A9_Paris_Descartes%2C_Paris_July_2014.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail | licence: voir page source  | auteur/crédit: voir page source | Affichage retiré: fichier conservé dans le dépôt, non affiché faute de source/droits/correspondance suffisamment établis.",
+    "image": "images/school-154-wiki.jpg",
+    "displayImage": "images/school-154-wiki.jpg",
+    "imageStatus": "présente (Wikipedia/Wikimedia, correspondance à vérifier visuellement)",
+    "imageSource": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Paris-Cit%C3%A9 | image: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Universit%C3%A9_Paris_Descartes%2C_Paris_July_2014.jpg/1920px-Universit%C3%A9_Paris_Descartes%2C_Paris_July_2014.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail | licence: voir page source  | auteur/crédit: voir page source",
     "website": "https://u-paris.fr/",
     "feesByLevel": [
       {
@@ -10864,8 +10864,8 @@
       "note": "Établissement ajouté comme entrée vérifiable à confirmer : existence institutionnelle connue, mais programmes/diplômes/tarifs/admission doivent être revérifiés sur les pages officielles avant publication.",
       "image": {
         "verified": false,
-        "lastChecked": "2026-11-09",
-        "note": "Non affichée: fiabilité/source/droits insuffisants."
+        "lastChecked": "2026-11-08",
+        "note": "Correspondance visuelle et licence à confirmer."
       }
     },
     "dataSource": [
@@ -10876,9 +10876,9 @@
       }
     ],
     "imageResearch": {
-      "status": "non_affichée",
-      "lastChecked": "2026-11-09",
-      "note": "Image via Wikipedia \"Université Paris-Cité\". Vérifier visuellement bâtiment/campus du bon établissement; confirmer licence/attribution. Affichage retiré par règle de fiabilité; rechercher une photo réellement correspondante avec licence/source vérifiable."
+      "status": "image_trouvée_à_vérifier",
+      "lastChecked": "2026-11-08",
+      "note": "Image via Wikipedia \"Université Paris-Cité\". Vérifier visuellement bâtiment/campus du bon établissement; confirmer licence/attribution."
     }
   },
   {
@@ -17844,19 +17844,19 @@
       "note": "Entrée ajoutée à vérifier (programmes, droits d’inscription, campus, photo/licence).",
       "image": {
         "verified": false,
-        "lastChecked": "2026-11-09",
-        "note": "Non affichée: fiabilité/source/droits insuffisants."
+        "lastChecked": "2026-11-08",
+        "note": "Correspondance visuelle et licence à confirmer."
       }
     },
     "id": 275,
-    "image": "",
-    "displayImage": "",
-    "imageStatus": "retirée de l’affichage — source/droits/correspondance non suffisamment établis",
-    "imageSource": "https://fr.wikipedia.org/wiki/Universit%C3%A9_libre_de_Bruxelles | fichier: DSC_4320©_Lara_Herbinia.jpg | licence/auteur: voir page source | Affichage retiré: fichier conservé dans le dépôt, non affiché faute de source/droits/correspondance suffisamment établis.",
+    "image": "images/school-275-wiki.jpg",
+    "displayImage": "images/school-275-wiki.jpg",
+    "imageStatus": "présente (Wikipedia/Wikimedia, correspondance à vérifier visuellement)",
+    "imageSource": "https://fr.wikipedia.org/wiki/Universit%C3%A9_libre_de_Bruxelles | fichier: DSC_4320©_Lara_Herbinia.jpg | licence/auteur: voir page source",
     "imageResearch": {
-      "status": "non_affichée",
-      "lastChecked": "2026-11-09",
-      "note": "Image via API Wikipedia/Wikimedia; vérifier visuellement bon établissement/bâtiment-campus et licence. Affichage retiré par règle de fiabilité; rechercher une photo réellement correspondante avec licence/source vérifiable."
+      "status": "image_trouvée_à_vérifier",
+      "lastChecked": "2026-11-08",
+      "note": "Image via API Wikipedia/Wikimedia; vérifier visuellement bon établissement/bâtiment-campus et licence."
     }
   },
   {
@@ -17898,14 +17898,14 @@
     "address": "Oude Markt 13, 3000 Leuven, Belgique",
     "website": "https://www.kuleuven.be/",
     "id": 276,
-    "image": "",
-    "displayImage": "",
-    "imageStatus": "retirée de l’affichage — source/droits/correspondance non suffisamment établis",
-    "imageSource": "https://nl.wikipedia.org/wiki/Katholieke_Universiteit_Leuven | fichier: Library_KU_Leuven.JPG | licence/auteur: voir page source | Affichage retiré: fichier conservé dans le dépôt, non affiché faute de source/droits/correspondance suffisamment établis.",
+    "image": "images/school-276-wiki.jpg",
+    "displayImage": "images/school-276-wiki.jpg",
+    "imageStatus": "présente (Wikipedia/Wikimedia, correspondance à vérifier visuellement)",
+    "imageSource": "https://nl.wikipedia.org/wiki/Katholieke_Universiteit_Leuven | fichier: Library_KU_Leuven.JPG | licence/auteur: voir page source",
     "imageResearch": {
-      "status": "non_affichée",
-      "lastChecked": "2026-11-09",
-      "note": "Image via API Wikipedia/Wikimedia; vérifier visuellement bon établissement/bâtiment-campus et licence. Affichage retiré par règle de fiabilité; rechercher une photo réellement correspondante avec licence/source vérifiable."
+      "status": "image_trouvée_à_vérifier",
+      "lastChecked": "2026-11-08",
+      "note": "Image via API Wikipedia/Wikimedia; vérifier visuellement bon établissement/bâtiment-campus et licence."
     },
     "verification": {
       "lastChecked": "2026-11-08",
@@ -17914,8 +17914,8 @@
       "note": "Fiche ajoutée à partir d’informations publiques à vérifier sur le site officiel avant publication.",
       "image": {
         "verified": false,
-        "lastChecked": "2026-11-09",
-        "note": "Non affichée: fiabilité/source/droits insuffisants."
+        "lastChecked": "2026-11-08",
+        "note": "Correspondance visuelle et licence à confirmer."
       }
     }
   },
@@ -17958,14 +17958,14 @@
     "address": "Place de l’Université 1, 1348 Ottignies-Louvain-la-Neuve, Belgique",
     "website": "https://uclouvain.be/",
     "id": 277,
-    "image": "",
-    "displayImage": "",
-    "imageStatus": "retirée de l’affichage — source/droits/correspondance non suffisamment établis",
-    "imageSource": "https://fr.wikipedia.org/wiki/UCLouvain | fichier: Belgique_-_Brabant_wallon_-_Halles_universitaires_de_Louvain-la-Neuve_-_01.jpg | licence/auteur: voir page source | Affichage retiré: fichier conservé dans le dépôt, non affiché faute de source/droits/correspondance suffisamment établis.",
+    "image": "images/school-277-wiki.jpg",
+    "displayImage": "images/school-277-wiki.jpg",
+    "imageStatus": "présente (Wikipedia/Wikimedia, correspondance à vérifier visuellement)",
+    "imageSource": "https://fr.wikipedia.org/wiki/UCLouvain | fichier: Belgique_-_Brabant_wallon_-_Halles_universitaires_de_Louvain-la-Neuve_-_01.jpg | licence/auteur: voir page source",
     "imageResearch": {
-      "status": "non_affichée",
-      "lastChecked": "2026-11-09",
-      "note": "Image via API Wikipedia/Wikimedia; vérifier visuellement bon établissement/bâtiment-campus et licence. Affichage retiré par règle de fiabilité; rechercher une photo réellement correspondante avec licence/source vérifiable."
+      "status": "image_trouvée_à_vérifier",
+      "lastChecked": "2026-11-08",
+      "note": "Image via API Wikipedia/Wikimedia; vérifier visuellement bon établissement/bâtiment-campus et licence."
     },
     "verification": {
       "lastChecked": "2026-11-08",
@@ -17974,8 +17974,8 @@
       "note": "Fiche ajoutée à partir d’informations publiques à vérifier sur le site officiel avant publication.",
       "image": {
         "verified": false,
-        "lastChecked": "2026-11-09",
-        "note": "Non affichée: fiabilité/source/droits insuffisants."
+        "lastChecked": "2026-11-08",
+        "note": "Correspondance visuelle et licence à confirmer."
       }
     }
   },
@@ -18018,14 +18018,14 @@
     "address": "Campus Universitaire Farhat Hached, Tunis, Tunisie",
     "website": "http://www.utm.rnu.tn/",
     "id": 278,
-    "image": "",
-    "displayImage": "",
-    "imageStatus": "retirée de l’affichage — source/droits/correspondance non suffisamment établis",
-    "imageSource": "https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Tunis_-_El_Manar | fichier: Tunis_ISSHT.JPG | licence/auteur: voir page source | Affichage retiré: fichier conservé dans le dépôt, non affiché faute de source/droits/correspondance suffisamment établis.",
+    "image": "images/school-278-wiki.jpg",
+    "displayImage": "images/school-278-wiki.jpg",
+    "imageStatus": "présente (Wikipedia/Wikimedia, correspondance à vérifier visuellement)",
+    "imageSource": "https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Tunis_-_El_Manar | fichier: Tunis_ISSHT.JPG | licence/auteur: voir page source",
     "imageResearch": {
-      "status": "non_affichée",
-      "lastChecked": "2026-11-09",
-      "note": "Image via API Wikipedia/Wikimedia; vérifier visuellement bon établissement/bâtiment-campus et licence. Affichage retiré par règle de fiabilité; rechercher une photo réellement correspondante avec licence/source vérifiable."
+      "status": "image_trouvée_à_vérifier",
+      "lastChecked": "2026-11-08",
+      "note": "Image via API Wikipedia/Wikimedia; vérifier visuellement bon établissement/bâtiment-campus et licence."
     },
     "verification": {
       "lastChecked": "2026-11-08",
@@ -18034,8 +18034,8 @@
       "note": "Fiche ajoutée à partir d’informations publiques à vérifier sur le site officiel avant publication.",
       "image": {
         "verified": false,
-        "lastChecked": "2026-11-09",
-        "note": "Non affichée: fiabilité/source/droits insuffisants."
+        "lastChecked": "2026-11-08",
+        "note": "Correspondance visuelle et licence à confirmer."
       }
     }
   },
@@ -18244,14 +18244,14 @@
     "address": "Avenue des Nations Unies, Agdal, Rabat, Maroc",
     "website": "http://www.um5.ac.ma/",
     "id": 285,
-    "image": "",
-    "displayImage": "",
-    "imageStatus": "retirée de l’affichage — source/droits/correspondance non suffisamment établis",
-    "imageSource": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Mohammed-V_de_Rabat | fichier: UM5_Presidence.jpg | licence/auteur: voir page source | Affichage retiré: fichier conservé dans le dépôt, non affiché faute de source/droits/correspondance suffisamment établis.",
+    "image": "images/school-285-wiki.jpg",
+    "displayImage": "images/school-285-wiki.jpg",
+    "imageStatus": "présente (Wikipedia/Wikimedia, correspondance à vérifier visuellement)",
+    "imageSource": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Mohammed-V_de_Rabat | fichier: UM5_Presidence.jpg | licence/auteur: voir page source",
     "imageResearch": {
-      "status": "non_affichée",
-      "lastChecked": "2026-11-09",
-      "note": "Image via API Wikipedia/Wikimedia; vérifier visuellement bon établissement/bâtiment-campus et licence. Affichage retiré par règle de fiabilité; rechercher une photo réellement correspondante avec licence/source vérifiable."
+      "status": "image_trouvée_à_vérifier",
+      "lastChecked": "2026-11-08",
+      "note": "Image via API Wikipedia/Wikimedia; vérifier visuellement bon établissement/bâtiment-campus et licence."
     },
     "verification": {
       "lastChecked": "2026-11-08",
@@ -18260,8 +18260,8 @@
       "note": "Fiche ajoutée à partir d’informations publiques à vérifier sur le site officiel avant publication.",
       "image": {
         "verified": false,
-        "lastChecked": "2026-11-09",
-        "note": "Non affichée: fiabilité/source/droits insuffisants."
+        "lastChecked": "2026-11-08",
+        "note": "Correspondance visuelle et licence à confirmer."
       },
       "dedup": {
         "mergedFromId": 164,
@@ -18313,14 +18313,14 @@
       }
     ],
     "id": 287,
-    "image": "",
-    "displayImage": "",
-    "imageStatus": "retirée de l’affichage — source/droits/correspondance non suffisamment établis",
-    "imageSource": "https://fr.wikipedia.org/wiki/Sorbonne_Universit%C3%A9 | fichier: Sorbonne_cour_intérieure_et_chapelle_Sainte-Ursule_(façade_nord).jpg | licence/auteur: voir page source | Affichage retiré: fichier conservé dans le dépôt, non affiché faute de source/droits/correspondance suffisamment établis.",
+    "image": "images/school-287-wiki.jpg",
+    "displayImage": "images/school-287-wiki.jpg",
+    "imageStatus": "présente (Wikipedia/Wikimedia, correspondance à vérifier visuellement)",
+    "imageSource": "https://fr.wikipedia.org/wiki/Sorbonne_Universit%C3%A9 | fichier: Sorbonne_cour_intérieure_et_chapelle_Sainte-Ursule_(façade_nord).jpg | licence/auteur: voir page source",
     "imageResearch": {
-      "status": "non_affichée",
-      "lastChecked": "2026-11-09",
-      "note": "Image via API Wikipedia/Wikimedia; vérifier visuellement bon établissement/bâtiment-campus et licence. Affichage retiré par règle de fiabilité; rechercher une photo réellement correspondante avec licence/source vérifiable."
+      "status": "image_trouvée_à_vérifier",
+      "lastChecked": "2026-11-08",
+      "note": "Image via API Wikipedia/Wikimedia; vérifier visuellement bon établissement/bâtiment-campus et licence."
     },
     "verification": {
       "lastChecked": "2026-11-08",
@@ -18329,8 +18329,8 @@
       "note": "Fiche ajoutée à vérifier sur la source officielle.",
       "image": {
         "verified": false,
-        "lastChecked": "2026-11-09",
-        "note": "Non affichée: fiabilité/source/droits insuffisants."
+        "lastChecked": "2026-11-08",
+        "note": "Correspondance visuelle et licence à confirmer."
       },
       "dedup": {
         "mergedFromId": 155,
