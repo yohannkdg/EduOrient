@@ -1,6 +1,19 @@
 let schools = [];
 const PROVISIONAL_IMAGE = "images/provisional-school.svg";
 
+// Verified acronym aliases — only for sigles that do NOT appear in the school name.
+// Each alias maps to the school ID(s) it should resolve to. Aliases are checked
+// BEFORE the general text search so that exact acronym matches take priority.
+const SCHOOL_ALIASES = {
+  "ufhb":    [32],   // Université Félix Houphouët-Boigny
+  "inphb":   [73],   // Institut National Polytechnique Félix Houphouët-Boigny
+  "uicao":   [36],   // Université Catholique de l'Afrique de l'Ouest (UCAO-UUA)
+  "uuao":    [36],   // UCAO-UUA
+  "uua":     [36],   // short form of UCAO-UUA
+  "iugb":    [33],   // Université Internationale de Grand-Bassam
+  "csm":     [29],   // Cours Secondaire Méthodiste de Cocody
+};
+
 const searchInput = document.querySelector("#search");
 const citySelect = document.querySelector("#city");
 const countrySelect = document.querySelector("#country");
@@ -58,26 +71,46 @@ function schoolSearchText(school) {
 function levenshtein(a,b){ if(a===b) return 0; if(!a.length) return b.length; if(!b.length) return a.length; const m=[]; for(let i=0;i<=b.length;i++){m[i]=[i]} for(let j=0;j<=a.length;j++){m[0][j]=j} for(let i=1;i<=b.length;i++) for(let j=1;j<=a.length;j++) m[i][j]=b[i-1]===a[j-1]?m[i-1][j-1]:Math.min(m[i-1][j-1]+1,m[i][j-1]+1,m[i-1][j]+1); return m[b.length][a.length]; }
 
 function searchScore(query, school){
-  const qn = normalize(query); if(!qn) return 0;
-  const terms = qn.split(/\s+/).filter(Boolean); if(!terms.length) return 0;
+  const qn = normalize(query);
+  if(!qn) return 0;
+  // Priority 1: exact alias match (verified acronym → school ID)
+  const aliasIds = SCHOOL_ALIASES[qn];
+  if (aliasIds && aliasIds.includes(Number(school.id))) return 90;
+  // Priority 2: exact name match
+  const terms = qn.split(/\s+/).filter(Boolean);
+  if(!terms.length) return 0;
   const name = normalize(school.name), city=normalize(school.country?school.city:school.city), country=normalize(school.country), type=normalize(school.type);
   const programs=normalize((school.programs||[]).join(" ")), diplomas=normalize((school.diplomas||[]).join(" "));
   const text = normalize(schoolSearchText(school));
+  const nameTokens = name.split(/\s+/).filter(Boolean);
+  const tokenEq = (tok, t) => tok === t;
+  const tokenPrefix = (tok, t) => t.length >= 3 && (tok.startsWith(t) || t.startsWith(tok));
+  // For short acronym-like queries (<=4 chars), avoid matching inside unrelated words (e.g. "emi" in "seminaire"/"premier", "hec" in "edhec").
+  const short = qn.length <= 4 && terms.every(t => t.length <= 4);
+  const nameTokenMatch = short
+    ? terms.every(t => nameTokens.some(w => tokenEq(w, t)))
+    : (name.includes(qn) || terms.every(t => nameTokens.some(w => tokenEq(w,t) || tokenPrefix(w,t))));
   let score=0, matched=0;
-  if (name.includes(qn)) score += 40;
+  if (nameTokenMatch) score += 40;
+  else if (name.includes(qn)) score += short ? 12 : 40;
   else if (text.includes(qn)) score += 18;
   for (const t of terms){
+    const inNameToken = nameTokens.some(w => tokenEq(w, t));
+    const inNamePrefix = !short && nameTokens.some(w => tokenPrefix(w, t));
     let hit=0;
-    if (name.includes(t)) hit=16;
+    if (inNameToken) hit=16;
+    else if (inNamePrefix) hit=14;
+    else if (name.includes(t)) hit = short ? 6 : 16;
     else if (programs.includes(t)) hit=12;
     else if (city.includes(t)||country.includes(t)) hit=11;
     else if (diplomas.includes(t)||type.includes(t)) hit=8;
-    else if (text.includes(t)) hit=6;
-    else if (t.length>=4){
+    else if (text.includes(t)) hit = short ? 4 : 6;
+    else if (t.length>=5){
       for (const w of text.split(/\s+/)){
-        if(!w) continue;
+        if(!w || w.length<4) continue;
         if(w.startsWith(t)||t.startsWith(w)){ hit=5; break; }
-        if(Math.abs(w.length-t.length)<=2 && levenshtein(w,t)<=1){ hit=4; break; }
+        // Strict fuzzy: same length or off-by-one, distance <= 1
+        if(Math.abs(w.length-t.length)<=1 && levenshtein(w,t)<=1){ hit=4; break; }
       }
     }
     if(hit){ score+=hit; matched++; }
@@ -380,7 +413,7 @@ function resetFilters() {
   renderSchools();
 }
 
-[searchInput, fieldInput].forEach(el => el?.addEventListener("input", function(){ renderSchools(); if(typeof renderSearchSuggestions==="function") renderSearchSuggestions(); }));
+[searchInput, fieldInput].forEach(el => el?.addEventListener("input", function(){ renderSchools(); if(typeof window.renderSearchSuggestions==="function") window.renderSearchSuggestions(); }));
 [countrySelect, citySelect, diplomaSelect, typeSelect, budgetSelect].forEach(el => el?.addEventListener("change", () => {
   if (el === countrySelect) refreshFilterOptions();
   renderSchools();
@@ -445,6 +478,7 @@ if (backToTopButton) {
     box.hidden=false; searchInput.setAttribute('aria-expanded','true');
     box.querySelectorAll('[data-id]').forEach(function(btn){btn.addEventListener('click',function(){ if(typeof openSchoolModal==='function') openSchoolModal(btn.dataset.id); box.hidden=true; });});
   }
+  window.renderSearchSuggestions = renderSearchSuggestions;
   // merged search suggestion listener
   document.addEventListener('click', function(e){ var box=document.querySelector('#search-suggestions'); if(box && !e.target.closest('.search-field')) box.hidden=true; });
 })();

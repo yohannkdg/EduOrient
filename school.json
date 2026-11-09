@@ -8495,7 +8495,7 @@
         "note": "Photo réelle manquante ou non confirmée."
       }
     },
-    "displayImage": "images/school-120-commons.jpg",
+    "displayImage": "images/provisional-school.svg",
     "imageResearch": {
       "status": "recherche_en_cours",
       "lastChecked": "2026-11-08",
@@ -8575,7 +8575,7 @@
         "note": "Photo réelle manquante ou non confirmée."
       }
     },
-    "displayImage": "images/school-121-commons.jpg",
+    "displayImage": "images/provisional-school.svg",
     "imageResearch": {
       "status": "recherche_en_cours",
       "lastChecked": "2026-11-08",
@@ -10579,7 +10579,7 @@
     ],
     "description": "Université publique de formation à distance. Vérifier les licences, masters et modalités d'inscription sur le site officiel.",
     "image": "",
-    "displayImage": "images/school-152-commons.jpg",
+    "displayImage": "images/provisional-school.svg",
     "imageStatus": "manquante — recherche photo réelle requise (aucune image provisoire définitive)",
     "imageSource": "",
     "website": "https://uvci.edu.ci/",
