@@ -32,11 +32,13 @@ function renderCards(list, lang){
   if (!list || !list.length) return '';
   const C = window.EduOrientCore;
   return '<div class="assistant-cards">' + list.slice(0,6).map(s=>{
-    const img = C ? C.displayImage(s) : (s.image||'images/provisional-school.svg');
+    const img = C ? C.displayImage(s) : ((s.displayImage||s.image||'').toString().trim());
+    const safeImg = img && !/provisional|placeholder|generic/i.test(img) ? img : '';
     const fee = C ? C.feeSummary(s, lang) : '';
     const programs = (s.programs||[]).slice(0,3).join('; ');
     const site = s.website ? '<a href="'+esc(s.website)+'" target="_blank" rel="noopener noreferrer">'+esc(T('officialSite', lang==='en'?'Official website':'Site officiel'))+'</a>' : '';
-    return '<article class="assistant-card"><img src="'+esc(img)+'" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'images/provisional-school.svg\'><div><h4>'+esc(s.name)+'</h4><p>'+esc([s.city,s.country].filter(Boolean).join(', '))+' · '+esc(s.type||'')+'</p><p><strong>'+esc(T('programsLabel', lang==='en'?'Programs':'Formations'))+':</strong> '+esc(programs||T('toConfirm','À confirmer'))+'</p><p><strong>'+esc(T('feesLabel', lang==='en'?'Fees':'Frais'))+':</strong> '+esc(fee)+'</p><p><strong>'+esc(T('whyMatch', lang==='en'?'Why':'Pourquoi'))+':</strong> '+esc(T('catalogMatch', lang==='en'?'Matched from real catalog data.':'Correspondance basée sur les données réelles du catalogue.'))+'</p><p class="assistant-card-actions">'+site+' <a href="index.html?search='+encodeURIComponent(s.name)+'#ecoles">'+esc(T('viewCatalog', lang==='en'?'View in catalog':'Voir dans le catalogue'))+'</a></p></div></article>';
+    const imgHtml = safeImg ? '<img src="'+esc(safeImg)+'" alt="" loading="lazy" onerror="this.remove();this.closest(\'.assistant-card\')?.classList.add(\'no-image\')">' : '';
+    return '<article class="assistant-card'+(safeImg?'':' no-image')+'">'+imgHtml+'<div><h4>'+esc(s.name)+'</h4><p>'+esc([s.city,s.country].filter(Boolean).join(', '))+' · '+esc(s.type||'')+'</p><p><strong>'+esc(T('programsLabel', lang==='en'?'Programs':'Formations'))+':</strong> '+esc(programs||T('toConfirm','À confirmer'))+'</p><p><strong>'+esc(T('feesLabel', lang==='en'?'Fees':'Frais'))+':</strong> '+esc(fee)+'</p><p><strong>'+esc(T('whyMatch', lang==='en'?'Why':'Pourquoi'))+':</strong> '+esc(T('catalogMatch', lang==='en'?'Matched from real catalog data.':'Correspondance basée sur les données réelles du catalogue.'))+'</p><p class="assistant-card-actions">'+site+' <a href="index.html?search='+encodeURIComponent(s.name)+'#ecoles">'+esc(T('viewCatalog', lang==='en'?'View in catalog':'Voir dans le catalogue'))+'</a></p></div></article>';
   }).join('') + '</div>';
 }
 

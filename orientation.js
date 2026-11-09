@@ -1,5 +1,5 @@
 const SCHOOLS_URL = "./school.json";
-const PROVISIONAL_IMAGE = "images/provisional-school.svg";
+const PROVISIONAL_IMAGE = ""; // no provisional/generic image
 let allSchools = [];
 
 function normalize(value) {
@@ -142,11 +142,13 @@ function createCard(result, ctx) {
   const school = result.school;
   const card = document.createElement("article");
   card.className = "school-card orientation-school-card";
-  const imgSrc = school.displayImage || school.image || PROVISIONAL_IMAGE;
+  const imgSrc = getSchoolImage(school);
+  if (!imgSrc) card.classList.add("no-image");
   const programs = ((school.programs || []).slice(0,3).join(" ; ")) || "À vérifier";
   const meta = [school.city, school.country].filter(Boolean).join(" · ") + " · " + (school.type || "Type à confirmer");
   const site = school.website ? '<a class="mini-link" href="' + escapeAttr(school.website) + '" target="_blank" rel="noopener noreferrer">Site officiel</a>' : "";
-  card.innerHTML = '<img class="school-card-image" src="' + escapeAttr(imgSrc) + '" alt="' + escapeAttr(school.name) + '" loading="lazy" onerror="this.onerror=null;this.src=\'' + PROVISIONAL_IMAGE + '\';">'
+  const imgHtml = imgSrc ? '<img class="school-card-image" src="' + escapeAttr(imgSrc) + '" alt="' + escapeAttr(school.name) + '" loading="lazy" onerror="this.remove();this.closest(\'.school-card\')?.classList.add(\'no-image\');">' : '';
+  card.innerHTML = imgHtml
     + '<div class="school-card-body">'
     + '<h3>' + escapeHtml(school.name) + '</h3>'
     + '<p class="school-meta">' + escapeHtml(meta) + '</p>'

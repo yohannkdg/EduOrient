@@ -1,533 +1,1227 @@
 {
-  "generatedAt": "2026-11-09T10:14:26.456Z",
+  "generatedAt": "2026-11-09T10:29:04.716Z",
   "total": 247,
-  "has": 172,
-  "provisional": 75,
+  "withReliableImageShown": 73,
+  "withoutImage": 174,
+  "rightsOrVisualToConfirmAmongShown": 7,
   "items": [
+    {
+      "id": 7,
+      "name": "Bordeaux École de Management (BEM Abidjan)",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 8,
+      "name": "Université de San Pedro",
+      "city": "San Pedro",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
     {
       "id": 9,
       "name": "Lycée Municipal 2 de Koumassi",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 10,
       "name": "EPP Cocody Sud",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 11,
+      "name": "Lycée Classique d'Abidjan",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 12,
+      "name": "Lycée Moderne de Cocody Angré",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 13,
+      "name": "Collège Moderne de Cocody",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 14,
+      "name": "Collège Les Florianes",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 15,
+      "name": "Lycée Sainte-Marie de Cocody",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 16,
       "name": "EPP Cocody Sud 1",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 17,
       "name": "Groupe Scolaire Shalom",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 18,
       "name": "EPP Deux-Plateaux Nord 1",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 19,
       "name": "EPP Aghien II Plateaux",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 20,
       "name": "EPP Angré 1",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 21,
       "name": "Lycée Moderne de Cocody",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 23,
       "name": "Lycée Moderne de Treichville",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 24,
       "name": "Lycée Moderne Harris d'Adjamé",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 25,
       "name": "Lycée Moderne Amagou Victor de Marcory",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 26,
       "name": "Lycée Moderne de Koumassi",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 27,
       "name": "Lycée Professionnel et Commercial de Cocody",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 28,
+      "name": "Collège Le Figuier de la Riviera Palmeraie",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 30,
+      "name": "Collège Saint-Viateur d'Abidjan",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 31,
+      "name": "Groupe Scolaire La Pérouse",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 34,
+      "name": "Institut Universitaire d'Abidjan (IUA)",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 36,
+      "name": "Université Catholique de l'Afrique de l'Ouest (UCAO-UUA)",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 37,
+      "name": "Université Méthodiste de Côte d'Ivoire (UMECI)",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 39,
       "name": "Université Internationale de Cocody (UIC)",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": "https://bac.mesrs-ci.net/offres/ets-prives"
+      "status": "aucune image affichée"
+    },
+    {
+      "id": 41,
+      "name": "Université UNDA - Notre Dame d'Abidjan",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 42,
       "name": "ETIC University",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 43,
+      "name": "SWISS UMEF University of Côte d'Ivoire",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 44,
       "name": "Université Internationale Clairefontaine (UICF)",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 45,
       "name": "Graduate School of Management (GSM)",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 46,
+      "name": "Lycée International Jean-Mermoz",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 47,
+      "name": "Lycée Français Blaise-Pascal",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 48,
+      "name": "Lycée Maurice Delafosse",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 51,
       "name": "École Étimoé - École des Familles",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 52,
       "name": "École Makoré",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 53,
       "name": "Lycée Mamie Houphouët Fêtai de Bingerville",
       "city": "Bingerville",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 54,
       "name": "Petit Séminaire Saint-Augustin de Bingerville",
       "city": "Bingerville",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 55,
       "name": "Lycée de Garçons de Bingerville",
       "city": "Bingerville",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 56,
       "name": "Lycée Moderne de Jeunes Filles de Yopougon",
       "city": "Yopougon",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 57,
       "name": "Lycée Municipal 1 Gadié Pierre",
       "city": "Yopougon",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 58,
       "name": "Lycée Municipal 2 Gadié Pierre",
       "city": "Yopougon",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 59,
       "name": "Lycée Moderne Hamed Bakayoko d'Abobo PK 18",
       "city": "Abobo",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 60,
       "name": "Lycée Municipal d'Abobo",
       "city": "Abobo",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 61,
       "name": "Collège Adama Sanogo",
       "city": "Abobo",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 62,
       "name": "Collège Anador Abobo",
       "city": "Abobo",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 63,
+      "name": "IIPEA Université",
+      "city": "Cocody",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 64,
+      "name": "École Supérieure Africaine des TIC (ESATIC)",
+      "city": "Treichville",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 65,
       "name": "Lycée Classique et Moderne 1 de Bouaké",
       "city": "Bouaké",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 66,
       "name": "Lycée Municipal Djibo Sounkalo de Bouaké",
       "city": "Bouaké",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 67,
       "name": "Collège Moderne Koko de Bouaké",
       "city": "Bouaké",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 68,
       "name": "Collège Adventiste de Bouaké",
       "city": "Bouaké",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 69,
       "name": "Collège Saint-Jacques de Bouaké",
       "city": "Bouaké",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 70,
       "name": "Collège Privé Tussuamy de Bouaké",
       "city": "Bouaké",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 71,
       "name": "Université Internationale ICK de Bouaké",
       "city": "Bouaké",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 72,
       "name": "Université de l’Atlantique – Campus de Bouaké",
       "city": "Bouaké",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 73,
+      "name": "Institut National Polytechnique Félix Houphouët-Boigny (INP-HB)",
+      "city": "Yamoussoukro",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 75,
       "name": "Lycée Mamie Adjoua de Yamoussoukro",
       "city": "Yamoussoukro",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 76,
       "name": "Collège HELEIS de Yamoussoukro",
       "city": "Yamoussoukro",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — image précédente retirée (ne correspondait pas à cet établissement)"
     },
     {
       "id": 77,
       "name": "Collège Le Pédagogue de Yamoussoukro",
       "city": "Yamoussoukro",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 78,
       "name": "Université Polytechnique de San Pedro (USP)",
       "city": "San Pedro",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 79,
       "name": "Lycée Moderne Inagohi de San Pedro",
       "city": "San Pedro",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 80,
       "name": "Lycée Moderne Lucien Yebarth 1 de San Pedro",
       "city": "San Pedro",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 81,
       "name": "Lycée Moderne Lucien Yebarth 2 de San Pedro",
       "city": "San Pedro",
       "country": "Côte d'Ivoire",
-      "website": ""
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 82,
       "name": "HEC Abidjan (Hautes Études Commerciales d'Abidjan)",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": "https://hecabidjan.ci/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 83,
+      "name": "Centre de Préparation aux Diplômes de l'Expertise Comptable (CPDEC - INP-HB)",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 85,
+      "name": "Université Hassan II",
+      "city": "Casablanca",
+      "country": "Maroc",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 87,
+      "name": "Université Ibn Zohr",
+      "city": "Agadir",
+      "country": "Maroc",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 88,
+      "name": "Université Sidi Mohamed Ben Abdellah",
+      "city": "Fès",
+      "country": "Maroc",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 91,
+      "name": "Université Euromed de Fès (UEMF)",
+      "city": "Fès",
+      "country": "Maroc",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 92,
+      "name": "Université Internationale de Casablanca (UIC)",
+      "city": "Casablanca",
+      "country": "Maroc",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 96,
+      "name": "Université Iba Der Thiam de Thiès (UIDT)",
+      "city": "Thiès",
+      "country": "Sénégal",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 97,
+      "name": "Université Assane Seck de Ziguinchor (UASZ)",
+      "city": "Ziguinchor",
+      "country": "Sénégal",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 98,
+      "name": "Université Alioune Diop de Bambey (UADB)",
+      "city": "Bambey",
+      "country": "Sénégal",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 99,
       "name": "Université Dakar-Bourguiba (UDB)",
       "city": "Dakar",
       "country": "Sénégal",
-      "website": "https://www.udb.sn/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 100,
+      "name": "Université du Sahel (UNIS)",
+      "city": "Dakar",
+      "country": "Sénégal",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 101,
       "name": "Université Kocc Barma",
       "city": "Saint-Louis",
       "country": "Sénégal",
-      "website": ""
+      "status": "aucune image affichée"
+    },
+    {
+      "id": 102,
+      "name": "Université Cheikh Ahmadou Bamba (UCAB)",
+      "city": "Dakar",
+      "country": "Sénégal",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 103,
+      "name": "Université Amadou Hampaté Bâ (UAHB)",
+      "city": "Dakar",
+      "country": "Sénégal",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 109,
+      "name": "Institut Catholique de Paris (ICP)",
+      "city": "Paris",
+      "country": "France",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 112,
+      "name": "EFREI Paris",
+      "city": "Villejuif",
+      "country": "France",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 113,
+      "name": "EDHEC Business School",
+      "city": "Lille",
+      "country": "France",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 117,
+      "name": "University of Ottawa",
+      "city": "Ottawa",
+      "country": "Canada",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 120,
       "name": "The King's University",
       "city": "Edmonton",
       "country": "Canada",
-      "website": "https://www.kingsu.ca/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 122,
+      "name": "Crandall University",
+      "city": "Moncton",
+      "country": "Canada",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 123,
+      "name": "University of Fredericton",
+      "city": "Fredericton",
+      "country": "Canada",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 125,
+      "name": "Université de Lausanne (UNIL)",
+      "city": "Lausanne",
+      "country": "Suisse",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 127,
+      "name": "Université de Berne",
+      "city": "Berne",
+      "country": "Suisse",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 129,
+      "name": "Franklin University Switzerland",
+      "city": "Lugano",
+      "country": "Suisse",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 130,
       "name": "IMD Business School",
       "city": "Lausanne",
       "country": "Suisse",
-      "website": "https://www.imd.org/"
+      "status": "manquante — Fichier image manquant (images/school-130-official.jpg absent). Image OG promotionnelle retirée — recherche photo campus réelle requise."
+    },
+    {
+      "id": 132,
+      "name": "Les Roches Global Hospitality Education",
+      "city": "Crans-Montana",
+      "country": "Suisse",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 133,
+      "name": "Swiss Business School (SBS)",
+      "city": "Kloten",
+      "country": "Suisse",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 136,
+      "name": "University of Washington",
+      "city": "Seattle",
+      "country": "États-Unis",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 137,
+      "name": "Purdue University",
+      "city": "West Lafayette",
+      "country": "États-Unis",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 140,
+      "name": "Massachusetts Institute of Technology (MIT)",
+      "city": "Cambridge",
+      "country": "États-Unis",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 141,
+      "name": "Stanford University",
+      "city": "Stanford",
+      "country": "États-Unis",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 144,
+      "name": "Université Nangui Abrogoua",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 145,
+      "name": "Université Péléforo Gon Coulibaly",
+      "city": "Korhogo",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 146,
+      "name": "Université de Man",
+      "city": "Man",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 147,
+      "name": "Université Jean Lorougnon Guédé",
+      "city": "Daloa",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 148,
+      "name": "Institut National Polytechnique Félix Houphouët-Boigny (site officiel)",
+      "city": "Yamoussoukro",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 150,
+      "name": "École Nationale Supérieure de Statistique et d'Économie Appliquée (ENSEA)",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 151,
       "name": "Institut National de Santé Publique (INSP)",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": "https://insp.ci/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 152,
       "name": "Université Virtuelle de Côte d'Ivoire (UVCI)",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": "https://uvci.edu.ci/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 153,
+      "name": "Pigier Côte d'Ivoire",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 154,
+      "name": "Université Paris Cité",
+      "city": "Paris",
+      "country": "France",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 159,
+      "name": "Université Grenoble Alpes",
+      "city": "Grenoble",
+      "country": "France",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 160,
+      "name": "Université de Montpellier",
+      "city": "Montpellier",
+      "country": "France",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 162,
+      "name": "Université Claude Bernard Lyon 1",
+      "city": "Lyon",
+      "country": "France",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 163,
+      "name": "Aix-Marseille Université",
+      "city": "Marseille",
+      "country": "France",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 166,
+      "name": "Université Hassan II de Casablanca",
+      "city": "Casablanca",
+      "country": "Maroc",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 168,
       "name": "Université Abdelmalek Essaâdi",
       "city": "Tétouan",
       "country": "Maroc",
-      "website": "https://www.uae.ma/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 170,
+      "name": "Université Ibn Tofaïl",
+      "city": "Kénitra",
+      "country": "Maroc",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 171,
       "name": "Université Moulay Ismaïl",
       "city": "Meknès",
       "country": "Maroc",
-      "website": "https://www.umi.ac.ma/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 172,
+      "name": "Al Akhawayn University",
+      "city": "Ifrane",
+      "country": "Maroc",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 176,
       "name": "Université Amadou Mahtar Mbow (UAM)",
       "city": "Diamniadio",
       "country": "Sénégal",
-      "website": "https://www.uam.sn/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 180,
+      "name": "Université du Sine Saloum El Hadj Ibrahima Niass (USSEIN)",
+      "city": "Kaolack",
+      "country": "Sénégal",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 181,
       "name": "Université Virtuelle du Sénégal (UVS)",
       "city": "Dakar",
       "country": "Sénégal",
-      "website": "https://www.uvs.sn/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 182,
+      "name": "Institut Supérieur de Management (ISM Dakar)",
+      "city": "Dakar",
+      "country": "Sénégal",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 185,
+      "name": "Université Laval",
+      "city": "Québec",
+      "country": "Canada",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 187,
+      "name": "Université d'Ottawa",
+      "city": "Ottawa",
+      "country": "Canada",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 189,
+      "name": "Université du Québec à Montréal (UQAM)",
+      "city": "Montréal",
+      "country": "Canada",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 193,
+      "name": "York University",
+      "city": "Toronto",
+      "country": "Canada",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 196,
+      "name": "École polytechnique fédérale de Lausanne (EPFL)",
+      "city": "Lausanne",
+      "country": "Suisse",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 199,
+      "name": "Université de Berne (UniBE)",
+      "city": "Berne",
+      "country": "Suisse",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 200,
       "name": "Université de Bâle (UniBas)",
       "city": "Bâle",
       "country": "Suisse",
-      "website": "https://www.unibas.ch/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 201,
+      "name": "Université de Fribourg (UniFr)",
+      "city": "Fribourg",
+      "country": "Suisse",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 213,
+      "name": "Carnegie Mellon University",
+      "city": "Pittsburgh",
+      "country": "États-Unis",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 214,
       "name": "Institut National de la Jeunesse et des Sports (INJS)",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": "https://injs.ci/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 215,
       "name": "École Normale Supérieure d'Abidjan (ENS)",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": "https://ensabidjan.ci/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 216,
       "name": "Université Internationale des Sciences Appliquées et Technologies (UNISAT)",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": "https://unisat.ci/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 218,
       "name": "AGITEL-FORMATION",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": "https://agitel.ci/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 220,
       "name": "Institut Supérieur de Technologie de Côte d'Ivoire (ISTCI)",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": "https://istci.ci/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 221,
       "name": "ESAM Abidjan",
       "city": "Abidjan",
       "country": "Côte d'Ivoire",
-      "website": "https://esam-edu.ci/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 222,
+      "name": "Université de Nantes",
+      "city": "Nantes",
+      "country": "France",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 223,
+      "name": "Université de Rennes",
+      "city": "Rennes",
+      "country": "France",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 224,
+      "name": "Université Toulouse - Jean Jaurès",
+      "city": "Toulouse",
+      "country": "France",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 225,
+      "name": "Université Toulouse III - Paul Sabatier",
+      "city": "Toulouse",
+      "country": "France",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 226,
+      "name": "Université Côte d'Azur",
+      "city": "Nice",
+      "country": "France",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 227,
+      "name": "Université de Lorraine",
+      "city": "Nancy",
+      "country": "France",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 228,
+      "name": "Université Paris 1 Panthéon-Sorbonne",
+      "city": "Paris",
+      "country": "France",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 230,
+      "name": "Université de Bourgogne",
+      "city": "Dijon",
+      "country": "France",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 231,
+      "name": "Université Mohammed Premier",
+      "city": "Oujda",
+      "country": "Maroc",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 232,
+      "name": "Université Chouaib Doukkali",
+      "city": "El Jadida",
+      "country": "Maroc",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 233,
+      "name": "Université Sultan Moulay Slimane",
+      "city": "Béni Mellal",
+      "country": "Maroc",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 234,
+      "name": "Université Hassan Ier",
+      "city": "Settat",
+      "country": "Maroc",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 235,
+      "name": "École Mohammadia d'Ingénieurs (EMI)",
+      "city": "Rabat",
+      "country": "Maroc",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 237,
       "name": "ENCG Casablanca",
       "city": "Casablanca",
       "country": "Maroc",
-      "website": "https://www.encgcasa.ma/"
+      "status": "manquante — Fichier image manquant (images/school-237-official.jpg absent). Image Actualités retirée — recherche photo campus réelle requise."
+    },
+    {
+      "id": 238,
+      "name": "ISCAE",
+      "city": "Casablanca",
+      "country": "Maroc",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 239,
+      "name": "École Supérieure Polytechnique de Dakar (ESP)",
+      "city": "Dakar",
+      "country": "Sénégal",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 241,
+      "name": "Sup'IMAX",
+      "city": "Dakar",
+      "country": "Sénégal",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 242,
+      "name": "Institut Africain de Management (IAM)",
+      "city": "Dakar",
+      "country": "Sénégal",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 243,
+      "name": "BEM Dakar (Bordeaux Management School Dakar)",
+      "city": "Dakar",
+      "country": "Sénégal",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 244,
+      "name": "École Supérieure Multinationale des Télécommunications (ESMT Dakar)",
+      "city": "Dakar",
+      "country": "Sénégal",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 245,
       "name": "Institut Supérieur d'Informatique (ISI)",
       "city": "Dakar",
       "country": "Sénégal",
-      "website": "https://groupeisi.com/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 246,
       "name": "Université Catholique de l'Afrique de l'Ouest (UCAO-UUZ Ziguinchor)",
       "city": "Ziguinchor",
       "country": "Sénégal",
-      "website": "https://ucao.org/"
+      "status": "manquante — image UCAO Abidjan retirée (campus différent: Ziguinchor)"
     },
     {
       "id": 247,
       "name": "IPG-ISTI",
       "city": "Dakar",
       "country": "Sénégal",
-      "website": "https://istigroupe.com/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 248,
+      "name": "Concordia University",
+      "city": "Montréal",
+      "country": "Canada",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 257,
       "name": "Haute École spécialisée de Suisse occidentale (HES-SO)",
       "city": "Delémont",
       "country": "Suisse",
-      "website": "https://www.hes-so.ch/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 262,
       "name": "Haute école pédagogique Vaud (HEP Vaud)",
       "city": "Lausanne",
       "country": "Suisse",
-      "website": "https://www.hepl.ch/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 265,
       "name": "Scuola universitaria professionale della Svizzera italiana (SUPSI)",
       "city": "Manno",
       "country": "Suisse",
-      "website": "https://www.supsi.ch/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
     },
     {
       "id": 266,
       "name": "Haute École de Gestion de Genève (HEG)",
       "city": "Genève",
       "country": "Suisse",
-      "website": "https://www.hesge.ch/heg/"
+      "status": "manquante — recherche photo réelle requise (aucune image provisoire définitive)"
+    },
+    {
+      "id": 275,
+      "name": "Université libre de Bruxelles (ULB)",
+      "city": "Bruxelles",
+      "country": "Belgique",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 276,
+      "name": "KU Leuven",
+      "city": "Louvain",
+      "country": "Belgique",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 277,
+      "name": "Université catholique de Louvain (UCLouvain)",
+      "city": "Louvain-la-Neuve",
+      "country": "Belgique",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 278,
+      "name": "Université de Tunis El Manar",
+      "city": "Tunis",
+      "country": "Tunisie",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 279,
       "name": "Université de Carthage",
       "city": "Tunis",
       "country": "Tunisie",
-      "website": "http://www.ucar.rnu.tn/"
+      "status": "manquante — recherche photo réelle requise"
     },
     {
       "id": 280,
       "name": "Université de Sfax",
       "city": "Sfax",
       "country": "Tunisie",
-      "website": "https://www.uss.rnu.tn/"
+      "status": "manquante — recherche photo réelle requise"
+    },
+    {
+      "id": 285,
+      "name": "Université Mohammed V de Rabat",
+      "city": "Rabat",
+      "country": "Maroc",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
+    },
+    {
+      "id": 287,
+      "name": "Sorbonne Université",
+      "city": "Paris",
+      "country": "France",
+      "status": "retirée de l’affichage — source/droits/correspondance non suffisamment établis"
     },
     {
       "id": 295,
       "name": "Université de Kara",
       "city": "Kara",
       "country": "Togo",
-      "website": "https://univ-kara.tg/"
+      "status": "manquante — recherche photo réelle requise"
     },
     {
       "id": 296,
       "name": "Université d’Abomey-Calavi",
       "city": "Abomey-Calavi",
       "country": "Bénin",
-      "website": "https://uac.bj/"
+      "status": "manquante — recherche photo réelle requise"
     },
     {
       "id": 297,
       "name": "Université de Parakou",
       "city": "Parakou",
       "country": "Bénin",
-      "website": "http://www.univ-parakou.bj/"
+      "status": "manquante — recherche photo réelle requise"
     }
   ]
 }

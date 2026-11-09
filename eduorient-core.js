@@ -1,7 +1,7 @@
 ﻿(function(){
   const CORE = window.EduOrientCore = window.EduOrientCore || {};
   CORE.SCHOOLS_URL = './school.json';
-  CORE.PROVISIONAL_IMAGE = 'images/provisional-school.svg';
+  CORE.PROVISIONAL_IMAGE = '';
   CORE._schools = null;
   CORE._promise = null;
 
@@ -30,9 +30,9 @@
   };
 
   CORE.displayImage = function(s){
-    if (!s) return CORE.PROVISIONAL_IMAGE;
-    const c = [s.displayImage,s.image,s.imageUrl,s.photo,s.imageProvisional].find(v=>typeof v==='string' && v.trim() && !/placeholder|provisional-school\.svg/i.test(v));
-    return c || CORE.PROVISIONAL_IMAGE;
+    if (!s) return '';
+    const c = [s.displayImage,s.image,s.imageUrl,s.photo].find(v=>typeof v==='string' && v.trim() && !/placeholder|provisional|generic/i.test(v));
+    return c || '';
   };
 
   CORE.feeSummary = function(s, lang){

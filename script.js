@@ -1,5 +1,5 @@
 let schools = [];
-const PROVISIONAL_IMAGE = "images/provisional-school.svg";
+const PROVISIONAL_IMAGE = ""; // No provisional/generic image; only verified photos are shown.
 
 // Verified acronym aliases — only for sigles that do NOT appear in the school name.
 // Each alias maps to the school ID(s) it should resolve to. Aliases are checked
@@ -56,8 +56,9 @@ function getSchoolCurrency(school) {
 }
 
 function getDisplayImage(school) {
-  const img = (school?.displayImage || school?.image || "").trim();
-  return img || PROVISIONAL_IMAGE;
+  const raw = (school?.displayImage || school?.image || "").trim();
+  if (!raw || /provisional|placeholder|generic/i.test(raw)) return "";
+  return raw;
 }
 
 function schoolSearchText(school) {
@@ -298,11 +299,10 @@ function renderSchools() {
     const isFavorite = favoriteIds.includes(Number(school.id));
     const fees = Array.isArray(school.feesByLevel) ? school.feesByLevel : [];
     const img = getDisplayImage(school);
-    const imageNote = /provisional-school.svg/i.test(img) ? '<small class="image-note">Image provisoire — photo officielle à confirmer</small>' : '';
+    const imageHtml = img ? `<img class="school-image" src="${escapeAttr(img)}" alt="Photo de ${escapeAttr(school.name)}" loading="lazy" onerror="this.remove();">` : '';
     return `
-      <article class="school-card">
-        <img class="school-image" src="${escapeAttr(img)}" alt="Photo de ${escapeAttr(school.name)}" loading="lazy" onerror="this.onerror=null;this.src='${PROVISIONAL_IMAGE}';">
-        ${imageNote}
+      <article class="school-card${img ? '' : ' no-image'}" data-school-id="${school.id}">
+        ${imageHtml}
         <div class="school-top">
           <button class="favorite-button ${isFavorite ? "is-favorite" : ""}" data-favorite-id="${school.id}" aria-label="Ajouter ou retirer des favoris" type="button">${isFavorite ? "❤️" : "♡"}</button>
           <span class="school-type">${escapeHtml(school.type || "Type à confirmer")}</span>
@@ -348,10 +348,10 @@ function openSchoolModal(schoolId) {
   const school = schools.find(item => Number(item.id) === Number(schoolId));
   if (!school) return;
   const img = getDisplayImage(school);
-  const provisional = /provisional-school.svg/i.test(img);
+  const imageHtml = img ? `<img class="school-detail-image" src="${escapeAttr(img)}" alt="Photo de ${escapeAttr(school.name)}" onerror="this.remove();">` : '';
   schoolDetails.innerHTML = `
-    <img class="school-detail-image" src="${escapeAttr(img)}" alt="Photo de ${escapeAttr(school.name)}" onerror="this.onerror=null;this.src='${PROVISIONAL_IMAGE}';">
-    ${provisional ? '<p class="image-note">Image provisoire clairement identifiée : aucune photo officielle fiable n\'a pas encore été confirmée pour cette fiche.</p>' : (school.imageSource ? '<p class="image-note">Source image : ' + escapeHtml(school.imageSource) + '</p>' : '<p class="image-note">Image du catalogue — source à confirmer.</p>')}
+    ${imageHtml}
+    ${img && school.imageSource ? '<p class="image-note">Source image : ' + escapeHtml(school.imageSource) + '</p>' : ''}
     <h2 class="school-detail-title">${escapeHtml(school.name)}</h2>
     <div class="school-detail-badges">
       <span class="school-detail-badge">${escapeHtml(school.type||"Type à confirmer")}</span>

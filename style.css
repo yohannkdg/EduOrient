@@ -1715,7 +1715,18 @@ html[data-theme="dark"] .back-to-top {
   }
 }
 
-.school-detail-image{width:100%;max-height:320px;object-fit:cover;border-radius:14px;margin-bottom:14px;background:#eef3f8;}
+.school-card.no-image,
+.orientation-school-card.no-image,
+.assistant-card.no-image {
+  min-height: 0;
+}
+.school-card.no-image .school-content,
+.orientation-school-card.no-image .school-card-body {
+  padding-top: 18px;
+}
+.assistant-card.no-image {
+  display: block;
+}
 .image-note{font-size:12px;color:var(--muted,#5b6573);margin:6px 0 10px;}
 .orientation-school-card .school-card-body{display:flex;flex-direction:column;gap:8px;}
 .orientation-school-card .school-meta,.orientation-school-card .school-programs,.orientation-school-card .school-fee-summary,.orientation-school-card .school-reason{margin:0;font-size:14px;line-height:1.45;}
