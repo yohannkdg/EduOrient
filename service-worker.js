@@ -1,4 +1,4 @@
-const CACHE_NAME = "eduorient-v10";
+const CACHE_NAME = "eduorient-v11";
 
 const FILES_TO_CACHE = [
   "./",

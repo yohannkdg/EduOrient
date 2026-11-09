@@ -220,7 +220,8 @@
     var link = school.website ? '<a class="mini-link" href="' + attr(school.website) + '" target="_blank" rel="noopener noreferrer">Site officiel</a>' : "";
     var detail = '<a class="mini-link" href="index.html?school=' + encodeURIComponent(String(school.id)) + '#ecoles">Voir la fiche</a>';
     var limits = result.limits.length ? '<p class="school-fee-summary"><strong>Limites / à vérifier :</strong> ' + esc(result.limits.join(" · ")) + '.</p>' : '';
-    var img = imgSrc ? '<img class="school-card-image" src="' + attr(imgSrc) + '" alt="' + attr("Photo de " + school.name) + '" loading="lazy" onerror="this.remove();this.closest(\'.school-card\')&&this.closest(\'.school-card\').classList.add(\'no-image\');">' : '';
+    var imgStatus = (window.EduOrientCore && window.EduOrientCore.imageStatusHtml) ? window.EduOrientCore.imageStatusHtml(school) : '';
+    var img = imgSrc ? '<img class="school-card-image" src="' + attr(imgSrc) + '" alt="' + attr("Photo de " + school.name) + '" loading="lazy" onerror="this.remove();this.closest(\'.school-card\')&&this.closest(\'.school-card\').classList.add(\'no-image\');">' + imgStatus : '';
     card.innerHTML = img +
       '<div class="school-card-body">' +
       '<p class="ori-muted"><strong>' + esc(fitLabel(result.fit)) + '</strong></p>' +

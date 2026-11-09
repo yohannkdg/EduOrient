@@ -1,0 +1,750 @@
+{
+  "generatedAt": "2026-11-09T11:32:27.144Z",
+  "objective": "Restaurer toutes les photos historiques affichées dans bd587d1, sans les masquer pour fiabilité/droits non confirmés (statut indiqué honnêtement).",
+  "before_cleanup_bd587d1": 172,
+  "after_cleanup_c059526": 73,
+  "after_previous_restore_3890ac4": 81,
+  "after_full_restore_current": 172,
+  "historical_still_absent": 0,
+  "historical_absent_list": [],
+  "restored_this_run": [
+    {
+      "id": 7,
+      "name": "Bordeaux École de Management (BEM Abidjan)",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/bem.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 8,
+      "name": "Université de San Pedro",
+      "country": "Côte d'Ivoire",
+      "city": "San Pedro",
+      "image": "images/universite-san-pedro.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 11,
+      "name": "Lycée Classique d'Abidjan",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/lycee-classique.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 12,
+      "name": "Lycée Moderne de Cocody Angré",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/lycee-moderne-cocody-angre.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 13,
+      "name": "Collège Moderne de Cocody",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/college-moderne-de-cocody.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 14,
+      "name": "Collège Les Florianes",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/college-les-florianes.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 15,
+      "name": "Lycée Sainte-Marie de Cocody",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/lycee-sainte-marie-cocody.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 28,
+      "name": "Collège Le Figuier de la Riviera Palmeraie",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/college-le-figuier.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 30,
+      "name": "Collège Saint-Viateur d'Abidjan",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/college-saint-viateur.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 31,
+      "name": "Groupe Scolaire La Pérouse",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/college-la-perouse.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 34,
+      "name": "Institut Universitaire d'Abidjan (IUA)",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/iua-abidjan.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 36,
+      "name": "Université Catholique de l'Afrique de l'Ouest (UCAO-UUA)",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/ucao-uua.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 37,
+      "name": "Université Méthodiste de Côte d'Ivoire (UMECI)",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/umeci.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 41,
+      "name": "Université UNDA - Notre Dame d'Abidjan",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/school-41-official.jpg",
+      "status": "présente (source publique, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 43,
+      "name": "SWISS UMEF University of Côte d'Ivoire",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/swiss-umef-abidjan.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 46,
+      "name": "Lycée International Jean-Mermoz",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/lycee-jean-mermoz.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 47,
+      "name": "Lycée Français Blaise-Pascal",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/lycee-blaise-pascal.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 48,
+      "name": "Lycée Maurice Delafosse",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/lycee-maurice-delafosse.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 63,
+      "name": "IIPEA Université",
+      "country": "Côte d'Ivoire",
+      "city": "Cocody",
+      "image": "images/iipea.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 64,
+      "name": "École Supérieure Africaine des TIC (ESATIC)",
+      "country": "Côte d'Ivoire",
+      "city": "Treichville",
+      "image": "images/esatic.jpg",
+      "status": "présente (fichier catalogue local, correspondance ESATIC Abidjan à vérifier visuellement; source/licence à confirmer) — photo historique non vérifiée"
+    },
+    {
+      "id": 73,
+      "name": "Institut National Polytechnique Félix Houphouët-Boigny (INP-HB)",
+      "country": "Côte d'Ivoire",
+      "city": "Yamoussoukro",
+      "image": "images/inphb-yamoussoukro.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 83,
+      "name": "Centre de Préparation aux Diplômes de l'Expertise Comptable (CPDEC - INP-HB)",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/school-83-official.jpg",
+      "status": "présente (source publique, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 85,
+      "name": "Université Hassan II",
+      "country": "Maroc",
+      "city": "Casablanca",
+      "image": "images/school-85-official.png",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 87,
+      "name": "Université Ibn Zohr",
+      "country": "Maroc",
+      "city": "Agadir",
+      "image": "images/school-87-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 91,
+      "name": "Université Euromed de Fès (UEMF)",
+      "country": "Maroc",
+      "city": "Fès",
+      "image": "images/school-91-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 92,
+      "name": "Université Internationale de Casablanca (UIC)",
+      "country": "Maroc",
+      "city": "Casablanca",
+      "image": "images/school-92-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 96,
+      "name": "Université Iba Der Thiam de Thiès (UIDT)",
+      "country": "Sénégal",
+      "city": "Thiès",
+      "image": "images/school-96-official.jpg",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 97,
+      "name": "Université Assane Seck de Ziguinchor (UASZ)",
+      "country": "Sénégal",
+      "city": "Ziguinchor",
+      "image": "images/school-97-official.jpg",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 98,
+      "name": "Université Alioune Diop de Bambey (UADB)",
+      "country": "Sénégal",
+      "city": "Bambey",
+      "image": "images/school-98-official.png",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 100,
+      "name": "Université du Sahel (UNIS)",
+      "country": "Sénégal",
+      "city": "Dakar",
+      "image": "images/school-100-official.png",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 102,
+      "name": "Université Cheikh Ahmadou Bamba (UCAB)",
+      "country": "Sénégal",
+      "city": "Dakar",
+      "image": "images/school-102-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 103,
+      "name": "Université Amadou Hampaté Bâ (UAHB)",
+      "country": "Sénégal",
+      "city": "Dakar",
+      "image": "images/school-103-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 109,
+      "name": "Institut Catholique de Paris (ICP)",
+      "country": "France",
+      "city": "Paris",
+      "image": "images/school-109-official.jpg",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 112,
+      "name": "EFREI Paris",
+      "country": "France",
+      "city": "Villejuif",
+      "image": "images/school-112-official.jpg",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 113,
+      "name": "EDHEC Business School",
+      "country": "France",
+      "city": "Lille",
+      "image": "images/school-113-official.jpg",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 117,
+      "name": "University of Ottawa",
+      "country": "Canada",
+      "city": "Ottawa",
+      "image": "images/school-117-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 122,
+      "name": "Crandall University",
+      "country": "Canada",
+      "city": "Moncton",
+      "image": "images/school-122-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 123,
+      "name": "University of Fredericton",
+      "country": "Canada",
+      "city": "Fredericton",
+      "image": "images/school-123-official.webp",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 125,
+      "name": "Université de Lausanne (UNIL)",
+      "country": "Suisse",
+      "city": "Lausanne",
+      "image": "images/school-125-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 127,
+      "name": "Université de Berne",
+      "country": "Suisse",
+      "city": "Berne",
+      "image": "images/school-127-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 129,
+      "name": "Franklin University Switzerland",
+      "country": "Suisse",
+      "city": "Lugano",
+      "image": "images/school-129-official.webp",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 132,
+      "name": "Les Roches Global Hospitality Education",
+      "country": "Suisse",
+      "city": "Crans-Montana",
+      "image": "images/school-132-official.jpg",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 133,
+      "name": "Swiss Business School (SBS)",
+      "country": "Suisse",
+      "city": "Kloten",
+      "image": "images/school-133-official.jpg",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 136,
+      "name": "University of Washington",
+      "country": "États-Unis",
+      "city": "Seattle",
+      "image": "images/school-136-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 137,
+      "name": "Purdue University",
+      "country": "États-Unis",
+      "city": "West Lafayette",
+      "image": "images/school-137-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 140,
+      "name": "Massachusetts Institute of Technology (MIT)",
+      "country": "États-Unis",
+      "city": "Cambridge",
+      "image": "images/school-140-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 141,
+      "name": "Stanford University",
+      "country": "États-Unis",
+      "city": "Stanford",
+      "image": "images/school-141-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 144,
+      "name": "Université Nangui Abrogoua",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/school-144-official.jpg",
+      "status": "présente (image issue du site officiel, possiblement slider — vérifier bâtiment/campus; droits à confirmer) — photo historique non vérifiée"
+    },
+    {
+      "id": 145,
+      "name": "Université Péléforo Gon Coulibaly",
+      "country": "Côte d'Ivoire",
+      "city": "Korhogo",
+      "image": "images/school-145-official.jpg",
+      "status": "présente (source publique, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 146,
+      "name": "Université de Man",
+      "country": "Côte d'Ivoire",
+      "city": "Man",
+      "image": "images/school-146-official.png",
+      "status": "présente (source publique, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 147,
+      "name": "Université Jean Lorougnon Guédé",
+      "country": "Côte d'Ivoire",
+      "city": "Daloa",
+      "image": "images/school-147-official.jpg",
+      "status": "présente (source publique, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 148,
+      "name": "Institut National Polytechnique Félix Houphouët-Boigny (site officiel)",
+      "country": "Côte d'Ivoire",
+      "city": "Yamoussoukro",
+      "image": "images/inphb-yamoussoukro.jpg",
+      "status": "présente (à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 150,
+      "name": "École Nationale Supérieure de Statistique et d'Économie Appliquée (ENSEA)",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/school-150-official.jpg",
+      "status": "présente (source officielle publique, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 153,
+      "name": "Pigier Côte d'Ivoire",
+      "country": "Côte d'Ivoire",
+      "city": "Abidjan",
+      "image": "images/school-153-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 159,
+      "name": "Université Grenoble Alpes",
+      "country": "France",
+      "city": "Grenoble",
+      "image": "images/school-159-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 160,
+      "name": "Université de Montpellier",
+      "country": "France",
+      "city": "Montpellier",
+      "image": "images/school-160-official.jpg",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 162,
+      "name": "Université Claude Bernard Lyon 1",
+      "country": "France",
+      "city": "Lyon",
+      "image": "images/school-162-official.jpg",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 163,
+      "name": "Aix-Marseille Université",
+      "country": "France",
+      "city": "Marseille",
+      "image": "images/school-163-official.jpg",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 166,
+      "name": "Université Hassan II de Casablanca",
+      "country": "Maroc",
+      "city": "Casablanca",
+      "image": "images/school-166-official.png",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 170,
+      "name": "Université Ibn Tofaïl",
+      "country": "Maroc",
+      "city": "Kénitra",
+      "image": "images/school-170-official.jpg",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 172,
+      "name": "Al Akhawayn University",
+      "country": "Maroc",
+      "city": "Ifrane",
+      "image": "images/school-172-official.jpg",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 180,
+      "name": "Université du Sine Saloum El Hadj Ibrahima Niass (USSEIN)",
+      "country": "Sénégal",
+      "city": "Kaolack",
+      "image": "images/school-180-official.jpg",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 182,
+      "name": "Institut Supérieur de Management (ISM Dakar)",
+      "country": "Sénégal",
+      "city": "Dakar",
+      "image": "images/school-182-official.jpg",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 185,
+      "name": "Université Laval",
+      "country": "Canada",
+      "city": "Québec",
+      "image": "images/school-185-official.png",
+      "status": "présente (site public/officiel lié à la fiche, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 187,
+      "name": "Université d'Ottawa",
+      "country": "Canada",
+      "city": "Ottawa",
+      "image": "images/school-187-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 189,
+      "name": "Université du Québec à Montréal (UQAM)",
+      "country": "Canada",
+      "city": "Montréal",
+      "image": "images/school-189-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 193,
+      "name": "York University",
+      "country": "Canada",
+      "city": "Toronto",
+      "image": "images/school-193-official.png",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 196,
+      "name": "École polytechnique fédérale de Lausanne (EPFL)",
+      "country": "Suisse",
+      "city": "Lausanne",
+      "image": "images/school-196-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 199,
+      "name": "Université de Berne (UniBE)",
+      "country": "Suisse",
+      "city": "Berne",
+      "image": "images/school-199-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 201,
+      "name": "Université de Fribourg (UniFr)",
+      "country": "Suisse",
+      "city": "Fribourg",
+      "image": "images/school-201-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 213,
+      "name": "Carnegie Mellon University",
+      "country": "États-Unis",
+      "city": "Pittsburgh",
+      "image": "images/school-213-official.webp",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 222,
+      "name": "Université de Nantes",
+      "country": "France",
+      "city": "Nantes",
+      "image": "images/school-222-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 223,
+      "name": "Université de Rennes",
+      "country": "France",
+      "city": "Rennes",
+      "image": "images/school-223-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 224,
+      "name": "Université Toulouse - Jean Jaurès",
+      "country": "France",
+      "city": "Toulouse",
+      "image": "images/school-224-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 225,
+      "name": "Université Toulouse III - Paul Sabatier",
+      "country": "France",
+      "city": "Toulouse",
+      "image": "images/school-225-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 226,
+      "name": "Université Côte d'Azur",
+      "country": "France",
+      "city": "Nice",
+      "image": "images/school-226-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 227,
+      "name": "Université de Lorraine",
+      "country": "France",
+      "city": "Nancy",
+      "image": "images/school-227-official.png",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 228,
+      "name": "Université Paris 1 Panthéon-Sorbonne",
+      "country": "France",
+      "city": "Paris",
+      "image": "images/school-228-official.webp",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 230,
+      "name": "Université de Bourgogne",
+      "country": "France",
+      "city": "Dijon",
+      "image": "images/school-230-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 231,
+      "name": "Université Mohammed Premier",
+      "country": "Maroc",
+      "city": "Oujda",
+      "image": "images/school-231-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 232,
+      "name": "Université Chouaib Doukkali",
+      "country": "Maroc",
+      "city": "El Jadida",
+      "image": "images/school-232-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 233,
+      "name": "Université Sultan Moulay Slimane",
+      "country": "Maroc",
+      "city": "Béni Mellal",
+      "image": "images/school-233-official.png",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 234,
+      "name": "Université Hassan Ier",
+      "country": "Maroc",
+      "city": "Settat",
+      "image": "images/school-234-official.png",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 235,
+      "name": "École Mohammadia d'Ingénieurs (EMI)",
+      "country": "Maroc",
+      "city": "Rabat",
+      "image": "images/school-235-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 238,
+      "name": "ISCAE",
+      "country": "Maroc",
+      "city": "Casablanca",
+      "image": "images/school-238-official.png",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 239,
+      "name": "École Supérieure Polytechnique de Dakar (ESP)",
+      "country": "Sénégal",
+      "city": "Dakar",
+      "image": "images/school-239-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 241,
+      "name": "Sup'IMAX",
+      "country": "Sénégal",
+      "city": "Dakar",
+      "image": "images/school-241-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 242,
+      "name": "Institut Africain de Management (IAM)",
+      "country": "Sénégal",
+      "city": "Dakar",
+      "image": "images/school-242-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 243,
+      "name": "BEM Dakar (Bordeaux Management School Dakar)",
+      "country": "Sénégal",
+      "city": "Dakar",
+      "image": "images/school-243-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 244,
+      "name": "École Supérieure Multinationale des Télécommunications (ESMT Dakar)",
+      "country": "Sénégal",
+      "city": "Dakar",
+      "image": "images/school-244-official.webp",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    },
+    {
+      "id": 248,
+      "name": "Concordia University",
+      "country": "Canada",
+      "city": "Montréal",
+      "image": "images/school-248-official.jpg",
+      "status": "présente (site public/officiel, correspondance/licence à vérifier) — photo historique non vérifiée"
+    }
+  ],
+  "missing_or_unreadable_files": [],
+  "unverified_or_rights_to_verify_count": 91,
+  "tests": {
+    "json_valid": true,
+    "ids_unique": true,
+    "total": 247,
+    "displayed": 172,
+    "broken_refs": 0,
+    "service_worker": "eduorient-v11"
+  }
+}

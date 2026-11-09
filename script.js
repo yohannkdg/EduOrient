@@ -311,7 +311,8 @@ function renderSchools() {
     const isFavorite = favoriteIds.includes(Number(school.id));
     const fees = Array.isArray(school.feesByLevel) ? school.feesByLevel : [];
     const img = getDisplayImage(school);
-    const imageHtml = img ? `<img class="school-image" src="${escapeAttr(img)}" alt="Photo de ${escapeAttr(school.name)}" loading="lazy" onerror="this.remove();">` : '';
+    const imageStatusHtml = (window.EduOrientCore && window.EduOrientCore.imageStatusHtml) ? window.EduOrientCore.imageStatusHtml(school) : (img ? '' : '');
+    const imageHtml = img ? `<img class="school-image" src="${escapeAttr(img)}" alt="Photo de ${escapeAttr(school.name)}" loading="lazy" onerror="this.remove();this.closest('.school-card')?.classList.add('no-image');">${imageStatusHtml}` : '';
     return `
       <article class="school-card${img ? '' : ' no-image'}" data-school-id="${school.id}">
         ${imageHtml}
@@ -360,7 +361,8 @@ function openSchoolModal(schoolId) {
   const school = schools.find(item => Number(item.id) === Number(schoolId));
   if (!school) return;
   const img = getDisplayImage(school);
-  const imageHtml = img ? `<img class="school-detail-image" src="${escapeAttr(img)}" alt="Photo de ${escapeAttr(school.name)}" onerror="this.remove();">` : '';
+  const imageStatusHtml = (window.EduOrientCore && window.EduOrientCore.imageStatusHtml) ? window.EduOrientCore.imageStatusHtml(school) : '';
+  const imageHtml = img ? `<img class="school-detail-image" src="${escapeAttr(img)}" alt="Photo de ${escapeAttr(school.name)}" onerror="this.remove();this.closest('.school-modal-content')?.classList.add('no-image');">${imageStatusHtml}` : '';
   schoolDetails.innerHTML = `
     ${imageHtml}
     ${img && school.imageSource ? '<p class="image-note">Source image : ' + escapeHtml(school.imageSource) + '</p>' : ''}

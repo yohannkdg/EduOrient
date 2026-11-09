@@ -35,6 +35,22 @@
     return c || '';
   };
 
+  CORE.imageStatus = function(s){
+    if (!s) return {displayed:false, label:'', className:'', unverified:false, historical:false};
+    const src = CORE.displayImage(s);
+    if (!src) return {displayed:false, label:'Sans photo vérifiée', className:'image-status-missing', unverified:false, historical:false};
+    const txt = ((s.imageStatus||'')+' '+JSON.stringify(s.imageResearch||{})+' '+JSON.stringify((s.verification&&s.verification.image)||{})).toLowerCase();
+    const unverified = /non vérifiée|non verifiee|à vérifier|a verifier|droits|licence|source à confirmer|catalogue existant|correspondance/i.test(txt) || s.imageVerified===false;
+    const historical = !!s.imageHistorical;
+    if (unverified || historical) return {displayed:true, label:'Photo non vérifiée', className:'image-status-unverified', unverified:true, historical};
+    return {displayed:true, label:'Photo', className:'image-status-ok', unverified:false, historical};
+  };
+  CORE.imageStatusHtml = function(s){
+    const st = CORE.imageStatus(s);
+    if (!st.displayed) return '';
+    return '<p class="image-status '+CORE.escapeAttr(st.className)+'" title="'+CORE.escapeAttr(String((s&&s.imageSource)||'Photo historique — source ou droits à vérifier'))+'">'+CORE.escapeHtml(st.label)+'</p>';
+  };
+
   CORE.feeSummary = function(s, lang){
     lang = lang || CORE.lang();
     const fees = Array.isArray(s.feesByLevel)?s.feesByLevel:[];
