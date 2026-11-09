@@ -48,11 +48,42 @@ function getDisplayImage(school) {
 }
 
 function schoolSearchText(school) {
-  return normalize([
+  return [
     school.name, school.city, school.country, school.type, school.address, school.description,
     ...(school.programs || []), ...(school.diplomas || []), ...(school.admission || []),
     ...(school.levels || [])
-  ].join(" "));
+  ].join(" ");
+}
+
+function levenshtein(a,b){ if(a===b) return 0; if(!a.length) return b.length; if(!b.length) return a.length; const m=[]; for(let i=0;i<=b.length;i++){m[i]=[i]} for(let j=0;j<=a.length;j++){m[0][j]=j} for(let i=1;i<=b.length;i++) for(let j=1;j<=a.length;j++) m[i][j]=b[i-1]===a[j-1]?m[i-1][j-1]:Math.min(m[i-1][j-1]+1,m[i][j-1]+1,m[i-1][j]+1); return m[b.length][a.length]; }
+
+function searchScore(query, school){
+  const qn = normalize(query); if(!qn) return 0;
+  const terms = qn.split(/\s+/).filter(Boolean); if(!terms.length) return 0;
+  const name = normalize(school.name), city=normalize(school.country?school.city:school.city), country=normalize(school.country), type=normalize(school.type);
+  const programs=normalize((school.programs||[]).join(" ")), diplomas=normalize((school.diplomas||[]).join(" "));
+  const text = normalize(schoolSearchText(school));
+  let score=0, matched=0;
+  if (name.includes(qn)) score += 40;
+  else if (text.includes(qn)) score += 18;
+  for (const t of terms){
+    let hit=0;
+    if (name.includes(t)) hit=16;
+    else if (programs.includes(t)) hit=12;
+    else if (city.includes(t)||country.includes(t)) hit=11;
+    else if (diplomas.includes(t)||type.includes(t)) hit=8;
+    else if (text.includes(t)) hit=6;
+    else if (t.length>=4){
+      for (const w of text.split(/\s+/)){
+        if(!w) continue;
+        if(w.startsWith(t)||t.startsWith(w)){ hit=5; break; }
+        if(Math.abs(w.length-t.length)<=2 && levenshtein(w,t)<=1){ hit=4; break; }
+      }
+    }
+    if(hit){ score+=hit; matched++; }
+  }
+  if (matched===terms.length) score += 14;
+  return score;
 }
 
 function tuitionValue(school) {
@@ -197,14 +228,12 @@ function renderSchools() {
   const field = normalize(fieldInput?.value);
   const budget = budgetSelect?.value || "";
 
-  const filtered = schools.filter(school => {
-    const text = schoolSearchText(school);
-    if (query && !text.includes(query)) return false;
+  const qCombined = [query, field].filter(Boolean).join(" ").trim();
+  let filtered = schools.filter(school => {
     if (city && school.city !== city) return false;
     if (country && (school.country || "") !== country) return false;
     if (diploma && !(school.diplomas || []).includes(diploma)) return false;
     if (type && school.type !== type) return false;
-    if (field && !text.includes(field)) return false;
     if (budget === "known" && !hasKnownFees(school)) return false;
     if (budget && budget !== "known") {
       const max = Number(budget);
@@ -215,6 +244,14 @@ function renderSchools() {
     if (!matchesOrientation(school)) return false;
     return true;
   });
+  if (qCombined) {
+    filtered = filtered.map(school => ({ school, _score: searchScore(qCombined, school) }))
+      .filter(x => x._score > 0)
+      .sort((a,b) => b._score - a._score || String(a.school.name).localeCompare(String(b.school.name), "fr"))
+      .map(x => x.school);
+  } else {
+    filtered = filtered.slice().sort((a,b)=>String(a.name).localeCompare(String(b.name),"fr"));
+  }
 
   if (resultsCount) resultsCount.textContent = `${filtered.length} établissement(s) trouvé(s)`;
   if (listTitle) listTitle.textContent = showOnlyFavorites ? "Mes établissements favoris" : (orientationActive ? "Suggestions d'orientation" : "Les établissements");
@@ -397,3 +434,17 @@ if (backToTopButton) {
   update();
   backToTopButton.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 }
+
+(function(){
+  function renderSearchSuggestions(){
+    var box=document.querySelector('#search-suggestions'); if(!box||typeof searchInput==='undefined'||!searchInput) return;
+    var q=(searchInput.value||'').trim(); if(q.length<2){ box.hidden=true; box.innerHTML=''; searchInput.setAttribute('aria-expanded','false'); return; }
+    var items=schools.map(function(s){return {s:s,score:searchScore(q,s)};}).filter(function(x){return x.score>0;}).sort(function(a,b){return b.score-a.score;}).slice(0,8);
+    if(!items.length){ box.hidden=true; box.innerHTML=''; searchInput.setAttribute('aria-expanded','false'); return; }
+    box.innerHTML=items.map(function(x){var s=x.s; return '<button type="button" class="search-suggestion" data-id="'+s.id+'"><strong>'+escapeHtml(s.name)+'</strong><small>'+escapeHtml([s.city,s.country].filter(Boolean).join(', '))+'</small></button>';}).join('');
+    box.hidden=false; searchInput.setAttribute('aria-expanded','true');
+    box.querySelectorAll('[data-id]').forEach(function(btn){btn.addEventListener('click',function(){ if(typeof openSchoolModal==='function') openSchoolModal(btn.dataset.id); box.hidden=true; });});
+  }
+  if(typeof searchInput!=='undefined' && searchInput) searchInput.addEventListener('input', renderSearchSuggestions);
+  document.addEventListener('click', function(e){ var box=document.querySelector('#search-suggestions'); if(box && !e.target.closest('.search-field')) box.hidden=true; });
+})();

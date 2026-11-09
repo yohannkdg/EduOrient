@@ -1,102 +1,60 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0f766e">
-  <title>Assistant IA - EduOrient</title>
+  <title data-i18n="assistantPageTitle">Assistant IA - EduOrient</title>
   <link rel="stylesheet" href="assistant.css">
   <script src="language.js" defer></script>
+  <script src="assistant-config.js" defer></script>
+  <script src="eduorient-core.js" defer></script>
   <script src="assistant.js" defer></script>
 </head>
 <body>
   <header class="topbar">
-    <a href="index.html" class="back-link" data-i18n="back">← Retour au site</a>
-
+    <a href="index.html" class="back-link" data-i18n="back">← Back to site</a>
     <div class="brand">
       <div class="brand-icon">E</div>
       <div>
         <h1>EduOrient</h1>
-        <p data-i18n="assistantSubtitle">Assistant d’orientation scolaire</p>
+        <p data-i18n="assistantSubtitle">Educational guidance assistant</p>
       </div>
     </div>
-
     <div class="header-actions">
-      <div class="status">
-        <span class="status-dot"></span>
-        <span data-i18n="localAI">IA locale</span>
-      </div>
-
-      <button
-  type="button"
-  id="language-toggle"
-  style="display: inline-block !important; visibility: visible !important; background: orange; color: white; padding: 12px 20px; border: 2px solid black; border-radius: 8px; font-weight: bold;"
->
-  🇬🇧 EN
-</button>
+      <div class="status"><span class="status-dot"></span><span data-i18n="assistantModeLabel">Catalog + AI ready</span></div>
+      <button type="button" id="language-toggle" class="language-toggle" aria-label="Change language">EN</button>
     </div>
   </header>
-
   <main class="chat-layout">
     <section class="welcome">
-      <span class="eyebrow" data-i18n="guide">TON GUIDE D’ORIENTATION</span>
-      <h2 data-i18n="welcomeTitle">Construisons ton avenir ensemble.</h2>
-      <p data-i18n="welcomeText">
-        Pose tes questions sur les études, les formations et les écoles.
-        Je t’aiderai à explorer tes possibilités.
-      </p>
+      <span class="eyebrow" data-i18n="guide">YOUR GUIDANCE GUIDE</span>
+      <h2 data-i18n="welcomeTitle">Let's build your future together.</h2>
+      <p data-i18n="welcomeText">Ask about schools, programs, admissions, countries, budgets, or comparisons. Answers use the EduOrient catalog and, when configured, a secure AI/web backend.</p>
+      <p class="welcome-note" data-i18n="assistantScopeNote">I know all schools currently loaded from school.json. I do not invent fees, diplomas, deadlines, or admissions; missing data is marked for confirmation with the institution.</p>
     </section>
-
-    <section class="chat-card" aria-label="Conversation avec l’assistant">
+    <section class="chat-card" aria-label="Assistant conversation">
       <div class="chat-heading">
         <div class="avatar">E</div>
-        <div>
-          <h2 data-i18n="assistantName">Assistant EduOrient</h2>
-          <p data-i18n="helpToday">Comment puis-je t’aider aujourd’hui ?</p>
-        </div>
+        <div><h2 data-i18n="assistantName">Assistant EduOrient</h2><p data-i18n="helpToday">How can I help you today?</p></div>
       </div>
-
       <div id="messages" class="messages" aria-live="polite">
         <article class="message assistant-message">
           <div class="message-avatar">E</div>
-          <div class="message-content" data-i18n="greeting">
-            Bonjour ! Je suis l’assistant IA d’EduOrient.
-            Qu’aimerais-tu savoir sur ton orientation scolaire ?
-          </div>
+          <div class="message-content" data-i18n="greeting">Hello! Ask me to recommend schools from the EduOrient catalog based on your field, level, country, or budget.</div>
         </article>
       </div>
-
       <div id="suggestions" class="suggestions">
-        <button type="button" data-question-fr="Comment choisir une formation adaptée à mes intérêts ?" data-question-en="How can I choose a course that matches my interests?" data-i18n="suggestion1">
-          Choisir une formation
-        </button>
-        <button type="button" data-question-fr="Quelles questions dois-je poser avant de choisir une école ?" data-question-en="What questions should I ask before choosing a school?" data-i18n="suggestion2">
-          Bien choisir mon école
-        </button>
-        <button type="button" data-question-fr="Comment préparer mon admission dans une école ?" data-question-en="How can I prepare for admission to a school?" data-i18n="suggestion3">
-          Préparer mon admission
-        </button>
+        <button type="button" data-question-fr="Quels établissements proposent l'informatique ou la cybersécurité au Canada ?" data-question-en="Which schools offer computer science or cybersecurity in Canada?" data-i18n="suggestion1">Computer science schools</button>
+        <button type="button" data-question-fr="Compare deux universités en France pour le commerce ou la gestion." data-question-en="Compare two universities in France for business or management." data-i18n="suggestion2">Compare schools</button>
+        <button type="button" data-question-fr="Quelles options correspondent à un budget limité et au diplôme de baccalauréat ?" data-question-en="Which options fit a limited budget and a high school diploma?" data-i18n="suggestion3">Budget & admission</button>
       </div>
-
       <form id="chat-form" class="chat-form">
-        <label class="sr-only" for="message-input">Ton message</label>
-        <textarea
-          id="message-input"
-          data-i18n-placeholder="placeholder"
-          placeholder="Écris ta question ici..."
-          rows="1"
-          maxlength="2000"
-          required
-        ></textarea>
-        <button id="send-button" type="submit" aria-label="Envoyer le message" data-i18n="send">
-          Envoyer ↑
-        </button>
+        <label class="sr-only" for="message-input" data-i18n="assistantInputLabel">Your message</label>
+        <textarea id="message-input" data-i18n-placeholder="placeholder" placeholder="Write your question here..." rows="2" maxlength="2000" required></textarea>
+        <button id="send-button" type="submit" data-i18n="send">Send</button>
       </form>
-
-      <p class="disclaimer" data-i18n="disclaimer">
-        Les informations importantes sur les écoles et les admissions doivent être vérifiées auprès des établissements.
-      </p>
+      <p class="disclaimer" id="assistant-status" data-i18n="disclaimer">Important school, fee, admission, scholarship, and deadline information must be confirmed with each institution.</p>
     </section>
   </main>
 </body>
